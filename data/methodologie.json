@@ -1,0 +1,228 @@
+{
+  "source": "Programme officiel structuré et corpus de sujets corrigés",
+  "version_schema": "v1-manuel",
+  "principes_generaux": [
+    {
+      "titre": "Lire l’énoncé comme un document de travail",
+      "conseil": "Repérer d’abord la question posée, les grandeurs données, les unités, les documents utiles et les hypothèses implicites.",
+      "justification": "Une part importante des erreurs vient d’une lecture trop rapide des données ou d’une confusion entre grandeurs."
+    },
+    {
+      "titre": "Identifier le modèle physique ou chimique",
+      "conseil": "Avant de calculer, nommer le modèle mobilisé : titrage, loi de Newton, gaz parfait, diffraction, circuit RC, loi de Kepler, bilan énergétique, etc.",
+      "justification": "Le modèle fixe les relations utilisables et leurs conditions de validité."
+    },
+    {
+      "titre": "Écrire les relations avant de remplacer par les nombres",
+      "conseil": "Commencer par une expression littérale, puis vérifier les unités avant l’application numérique.",
+      "justification": "Cela réduit les erreurs d’unités, de puissances de dix et de raisonnement."
+    },
+    {
+      "titre": "Valider le résultat",
+      "conseil": "Contrôler l’ordre de grandeur, le signe, l’unité et la cohérence avec la situation expérimentale.",
+      "justification": "Un résultat numérique isolé ne suffit pas : il doit avoir un sens physique ou chimique."
+    }
+  ],
+  "demarche_resolution": [
+    {
+      "etape": "1",
+      "titre": "S’approprier",
+      "actions": [
+        "Identifier le système étudié.",
+        "Lister les données utiles.",
+        "Traduire les grandeurs dans les unités SI lorsque c’est nécessaire.",
+        "Repérer les documents à exploiter."
+      ],
+      "erreurs_a_eviter": [
+        "Commencer par calculer sans savoir quelle grandeur est recherchée.",
+        "Utiliser toutes les données sans hiérarchiser leur utilité."
+      ]
+    },
+    {
+      "etape": "2",
+      "titre": "Modéliser",
+      "actions": [
+        "Choisir la loi ou la relation adaptée.",
+        "Énoncer les hypothèses : transformation totale, champ uniforme, frottements négligés, régime permanent, petit angle, etc.",
+        "Vérifier les conditions de validité du modèle."
+      ],
+      "erreurs_a_eviter": [
+        "Appliquer une formule hors de son domaine de validité.",
+        "Confondre équivalence et équilibre, vitesse et accélération, énergie et puissance."
+      ]
+    },
+    {
+      "etape": "3",
+      "titre": "Réaliser",
+      "actions": [
+        "Écrire l’expression littérale.",
+        "Remplacer par les valeurs numériques avec les unités cohérentes.",
+        "Conserver suffisamment de chiffres pendant les calculs."
+      ],
+      "erreurs_a_eviter": [
+        "Arrondir trop tôt.",
+        "Oublier une conversion de mL en L, de cm en m, de kJ en J."
+      ]
+    },
+    {
+      "etape": "4",
+      "titre": "Valider et communiquer",
+      "actions": [
+        "Vérifier l’unité finale.",
+        "Comparer à une valeur de référence ou à un ordre de grandeur.",
+        "Rédiger une conclusion explicite."
+      ],
+      "erreurs_a_eviter": [
+        "Donner un nombre sans phrase de conclusion.",
+        "Ignorer une incompatibilité manifeste avec le contexte."
+      ]
+    }
+  ],
+  "par_competence": {
+    "s_approprier": [
+      "Reformuler la question en identifiant la grandeur cherchée.",
+      "Extraire les informations pertinentes des textes, schémas, graphes et tableaux."
+    ],
+    "analyser_raisonner": [
+      "Choisir un modèle et justifier son emploi.",
+      "Relier les grandeurs par une loi physique ou chimique adaptée."
+    ],
+    "realiser": [
+      "Conduire un calcul littéral puis numérique.",
+      "Exploiter correctement une courbe, une pente, une équivalence ou une modélisation."
+    ],
+    "valider": [
+      "Contrôler les unités, les signes et les ordres de grandeur.",
+      "Comparer le résultat à une valeur attendue ou à un critère."
+    ],
+    "communiquer": [
+      "Rédiger des réponses courtes mais justifiées.",
+      "Faire apparaître clairement les étapes du raisonnement."
+    ]
+  },
+  "par_theme": {
+    "constitution-matiere": [
+      {
+        "situation_typique": "Titrage",
+        "methode": "Identifier la réaction support, vérifier son caractère rapide et total, écrire la relation à l’équivalence puis exploiter les volumes et concentrations.",
+        "pieges": [
+          "Confondre équivalence et équilibre.",
+          "Oublier les coefficients stœchiométriques."
+        ],
+        "bloc_ids_programme": [
+          "constitution-matiere-bloc-003"
+        ]
+      },
+      {
+        "situation_typique": "Acide-base",
+        "methode": "Écrire le couple acide/base, l’équation de réaction, l’expression de la constante d’acidité et utiliser pH, pKa ou le diagramme de prédominance.",
+        "pieges": [
+          "Confondre acide fort et acide faible.",
+          "Oublier que pH = pKa à demi-équivalence pour certains titrages."
+        ],
+        "bloc_ids_programme": [
+          "constitution-matiere-bloc-011",
+          "constitution-matiere-bloc-012"
+        ]
+      }
+    ],
+    "mouvement-interactions": [
+      {
+        "situation_typique": "Deuxième loi de Newton",
+        "methode": "Définir le système, le référentiel, faire le bilan des forces, projeter la deuxième loi de Newton sur les axes pertinents.",
+        "pieges": [
+          "Oublier le référentiel.",
+          "Confondre vecteur vitesse et vecteur accélération."
+        ],
+        "bloc_ids_programme": [
+          "mouvement-interactions-bloc-003"
+        ]
+      },
+      {
+        "situation_typique": "Kepler et gravitation",
+        "methode": "Relier force gravitationnelle, accélération centripète, vitesse orbitale ou période selon la question posée.",
+        "pieges": [
+          "Oublier que le rayon orbital est la distance au centre de l’astre.",
+          "Utiliser le rayon de la planète au lieu du rayon orbital."
+        ],
+        "bloc_ids_programme": [
+          "mouvement-interactions-bloc-006"
+        ]
+      }
+    ],
+    "energie-conversions": [
+      {
+        "situation_typique": "Bilan énergétique",
+        "methode": "Définir le système, identifier les transferts d’énergie, appliquer le premier principe, puis interpréter le signe des échanges.",
+        "pieges": [
+          "Confondre chaleur et température.",
+          "Oublier la convention de signe."
+        ],
+        "bloc_ids_programme": [
+          "energie-conversions-bloc-004",
+          "energie-conversions-bloc-005"
+        ]
+      }
+    ],
+    "ondes-signaux": [
+      {
+        "situation_typique": "Diffraction et interférences",
+        "methode": "Identifier la grandeur mesurée, utiliser les petits angles si le contexte le permet, puis relier distance, longueur d’onde, ouverture ou interfrange.",
+        "pieges": [
+          "Confondre largeur de tache et demi-largeur.",
+          "Oublier l’unité de la longueur d’onde."
+        ],
+        "bloc_ids_programme": [
+          "ondes-signaux-bloc-002",
+          "ondes-signaux-bloc-004"
+        ]
+      },
+      {
+        "situation_typique": "Circuit RC",
+        "methode": "Écrire la loi des mailles, utiliser la relation courant-charge-tension du condensateur, identifier la constante de temps.",
+        "pieges": [
+          "Confondre tension aux bornes du condensateur et du conducteur ohmique.",
+          "Mal identifier la valeur finale."
+        ],
+        "bloc_ids_programme": [
+          "ondes-signaux-bloc-009"
+        ]
+      }
+    ]
+  },
+  "checklists": [
+    {
+      "titre": "Avant de calculer",
+      "items": [
+        "Ai-je identifié la grandeur demandée ?",
+        "Ai-je choisi le bon modèle ?",
+        "Les unités sont-elles cohérentes ?",
+        "La relation utilisée est-elle valable dans cette situation ?"
+      ]
+    },
+    {
+      "titre": "Avant de conclure",
+      "items": [
+        "Le résultat a-t-il une unité ?",
+        "L’ordre de grandeur est-il crédible ?",
+        "La réponse répond-elle explicitement à la question ?",
+        "Ai-je justifié le choix du modèle ou du critère utilisé ?"
+      ]
+    }
+  ],
+  "redaction_bac": [
+    "Une bonne réponse combine formule, substitution numérique, unité et conclusion.",
+    "Pour une justification qualitative, il faut citer le phénomène ou la loi mobilisée.",
+    "Une phrase de conclusion est attendue lorsqu’il faut décider d’une conformité, d’une compatibilité ou d’un choix expérimental."
+  ],
+  "usage_des_figures_et_donnees": [
+    "Sur un graphe, préciser la grandeur lue, l’unité et la méthode de lecture.",
+    "Pour une pente, écrire explicitement le rapport des variations.",
+    "Pour une modélisation, distinguer la grandeur mesurée, le modèle ajusté et le paramètre exploité."
+  ],
+  "validation_des_resultats": [
+    "Comparer à une valeur de référence lorsque l’énoncé en fournit une.",
+    "Discuter les écarts par les incertitudes, les hypothèses ou la précision de lecture.",
+    "Refuser un résultat physiquement absurde même si le calcul semble formellement correct."
+  ]
+}

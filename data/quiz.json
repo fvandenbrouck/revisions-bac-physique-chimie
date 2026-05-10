@@ -1,0 +1,76 @@
+{
+  "constitution-matiere": [
+    {
+      "question": "À l'équivalence d'un titrage 1:1, quelle relation est correcte ?",
+      "options": [
+        "c_A/V_A=c_B/V_E",
+        "c_A V_A=c_B V_E",
+        "c_A c_B=V_A V_E",
+        "V_A=V_E toujours"
+      ],
+      "correct": 1,
+      "explanation": "L'égalité porte sur les quantités de matière, donc sur c×V si les coefficients sont 1:1."
+    },
+    {
+      "question": "Quel indice IR permet d'écarter un acide carboxylique ?",
+      "options": [
+        "Une bande C=O",
+        "Une bande C-H",
+        "L'absence de large bande O-H 2500-3200 cm⁻¹",
+        "Une bande vers 3000 cm⁻¹"
+      ],
+      "correct": 2,
+      "explanation": "L'acide carboxylique possède une large bande O-H caractéristique."
+    }
+  ],
+  "mouvement-interactions": [
+    {
+      "question": "Dans un mouvement circulaire uniforme, l'accélération est surtout…",
+      "options": [
+        "tangentielle",
+        "nulle",
+        "normale vers le centre",
+        "verticale vers le haut"
+      ],
+      "correct": 2,
+      "explanation": "La vitesse change de direction ; l'accélération est centripète."
+    }
+  ],
+  "energie-conversions": [
+    {
+      "question": "Si le système cède de l'énergie thermique au milieu extérieur, avec l'énergie reçue comptée positive, Q est…",
+      "options": [
+        "positif",
+        "nul",
+        "négatif",
+        "toujours égal à P"
+      ],
+      "correct": 2,
+      "explanation": "Une énergie perdue par le système est négative dans cette convention."
+    }
+  ],
+  "ondes-signaux": [
+    {
+      "question": "Pour une charge de condensateur initialement déchargé, u_C(τ) vaut environ…",
+      "options": [
+        "37 % de E",
+        "50 % de E",
+        "63 % de E",
+        "100 % de E"
+      ],
+      "correct": 2,
+      "explanation": "u_C(τ)=E(1-e^{-1})≈0,632E."
+    },
+    {
+      "question": "En diffraction par un fil, si le diamètre du fil diminue, la largeur L de la tache centrale…",
+      "options": [
+        "diminue",
+        "augmente",
+        "reste constante",
+        "devient nulle"
+      ],
+      "correct": 1,
+      "explanation": "L=2λD/a : L est inversement proportionnelle à a."
+    }
+  ]
+}

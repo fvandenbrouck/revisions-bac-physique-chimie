@@ -1,0 +1,1443 @@
+{
+  "source": "site/programme/Terminale PC.pdf",
+  "version_pipeline": "programme-structure-pdf-pages-v3",
+  "themes": [
+    {
+      "theme_id": "mesure-incertitudes",
+      "titre": "Mesure et incertitudes",
+      "resume_officiel": "Ce thème prolonge les notions de mesure et d'incertitude introduites en seconde et approfondies en première. En terminale, il introduit la notion d'incertitude-type composée et développe l'esprit critique de l'élève sur les valeurs mesurées, calculées ou estimées. Il couvre la variabilité des mesures, l'évaluation des incertitudes-types par approches statistique (type A) et non statistique (type B), le calcul d'incertitudes composées à partir d'une formule fournie, ainsi que l'écriture correcte du résultat et sa comparaison quantitative à une valeur de référence via un critère normalisé. Une compétence numérique de simulation est également exigée.",
+      "sous_parties": [
+        {
+          "id": "mesure-incertitudes-bloc-001",
+          "titre": "Variabilité de la mesure d'une grandeur physique",
+          "notions": [
+            "Variabilité de la mesure d'une grandeur physique"
+          ],
+          "capacites_exigibles": [
+            "Exploiter une série de mesures indépendantes d'une grandeur physique : histogramme, moyenne et écart-type.",
+            "Discuter de l'influence de l'instrument de mesure et du protocole.",
+            "Évaluer qualitativement la dispersion d'une série de mesures indépendantes."
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [
+            "Représenter l'histogramme associé à une série de mesures à l'aide d'un tableur ou d'un langage de programmation."
+          ],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "variabilité",
+            "mesure",
+            "série de mesures indépendantes",
+            "histogramme",
+            "moyenne",
+            "écart-type",
+            "dispersion",
+            "instrument de mesure",
+            "protocole"
+          ]
+        },
+        {
+          "id": "mesure-incertitudes-bloc-002",
+          "titre": "Incertitude-type",
+          "notions": [
+            "Incertitude-type"
+          ],
+          "capacites_exigibles": [
+            "Définir qualitativement une incertitude-type.",
+            "Procéder à l'évaluation d'une incertitude-type par une approche statistique (évaluation de type A).",
+            "Procéder à l'évaluation d'une incertitude-type par une autre approche que statistique (évaluation de type B)."
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "incertitude-type",
+            "évaluation de type A",
+            "évaluation de type B",
+            "approche statistique",
+            "approche non statistique"
+          ]
+        },
+        {
+          "id": "mesure-incertitudes-bloc-003",
+          "titre": "Incertitudes-types composées",
+          "notions": [
+            "Incertitudes-types composées"
+          ],
+          "capacites_exigibles": [
+            "Évaluer, à l'aide d'une formule fournie, l'incertitude-type d'une grandeur s'exprimant en fonction d'autres grandeurs dont les incertitudes-types associées sont connues."
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [
+            "Simuler, à l'aide d'un langage de programmation, un processus aléatoire illustrant la détermination de la valeur d'une grandeur avec incertitudes-types composées."
+          ],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "incertitudes-types composées",
+            "formule de propagation des incertitudes",
+            "simulation",
+            "processus aléatoire",
+            "langage de programmation"
+          ]
+        },
+        {
+          "id": "mesure-incertitudes-bloc-004",
+          "titre": "Écriture du résultat et comparaison à une valeur de référence",
+          "notions": [
+            "Écriture du résultat",
+            "Valeur de référence"
+          ],
+          "capacites_exigibles": [
+            "Écrire, avec un nombre adapté de chiffres significatifs, le résultat d'une mesure.",
+            "Comparer, le cas échéant, le résultat d'une mesure mmes à une valeur de référence mref en utilisant le quotient |mmes − mref| / u(m) où u(m) est l'incertitude-type associée au résultat."
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "chiffres significatifs",
+            "écriture du résultat",
+            "valeur de référence",
+            "comparaison quantitative",
+            "incertitude-type",
+            "critère de comparaison",
+            "esprit critique"
+          ]
+        }
+      ],
+      "couverture": {
+        "notions_total": 5,
+        "capacites_total": 9,
+        "remarques": [
+          "Les 4 blocs correspondent exactement à la structure indicative fournie et couvrent l'intégralité des notions et contenus ainsi que toutes les capacités exigibles de l'extrait officiel.",
+          "Les deux capacités numériques mentionnées dans l'extrait ont été rattachées à leur bloc respectif : histogramme (bloc 001) et simulation de processus aléatoire (bloc 003).",
+          "Aucune activité expérimentale support ni capacité mathématique spécifique n'est explicitement mentionnée dans l'extrait officiel.",
+          "Le critère de comparaison |mmes − mref| / u(m) est reproduit fidèlement depuis le texte officiel."
+        ]
+      }
+    },
+    {
+      "theme_id": "constitution-matiere",
+      "titre": "Constitution et transformations de la matière",
+      "resume_officiel": "Ce thème couvre la détermination de la composition d'un système par des méthodes physiques et chimiques (pH-métrie, conductimétrie, spectroscopie), la modélisation des transformations acide-base par transfert d'ion H+, le suivi cinétique et la modélisation macroscopique et microscopique des transformations chimiques, la décroissance radioactive et ses applications, la prévision de l'état final d'un système chimique via le quotient de réaction et la constante d'équilibre, l'étude des piles et de l'électrolyse, la comparaison de la force des acides et des bases, ainsi que l'élaboration de stratégies de synthèse organique écoresponsables et multi-étapes.",
+      "sous_parties": [
+        {
+          "id": "constitution-matiere-bloc-001",
+          "titre": "Modéliser des transformations acide-base par des transferts d'ion hydrogène H+",
+          "notions": [
+            "Transformation modélisée par des transferts d'ion hydrogène H+",
+            "Acide et base de Brönsted",
+            "Couple acide-base",
+            "Réaction acide-base",
+            "Couples acide-base de l'eau, de l'acide carbonique, d'acides carboxyliques, d'amines",
+            "Espèce amphotère"
+          ],
+          "capacites_exigibles": [
+            "Identifier, à partir d'observations ou de données expérimentales, un transfert d'ion hydrogène, les couples acide-base mis en jeu et établir l'équation d'une réaction acide-base",
+            "Représenter le schéma de Lewis et la formule semi-développée d'un acide carboxylique, d'un ion carboxylate, d'une amine et d'un ion ammonium",
+            "Identifier le caractère amphotère d'une espèce chimique"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "acide de Brönsted",
+            "base de Brönsted",
+            "couple acide-base",
+            "transfert d'ion H+",
+            "amphotère",
+            "acide carboxylique",
+            "amine",
+            "ion ammonium",
+            "ion carboxylate"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-002",
+          "titre": "Analyser un système chimique par des méthodes physiques",
+          "notions": [
+            "pH et relation pH = - log ([H3O+] / c°) avec c° = 1 mol·L-1, concentration standard",
+            "Absorbance ; loi de Beer-Lambert",
+            "Conductance, conductivité ; loi de Kohlrausch",
+            "Spectroscopie infrarouge et UV-visible",
+            "Identification de groupes caractéristiques et d'espèces chimiques"
+          ],
+          "capacites_exigibles": [
+            "Déterminer, à partir de la valeur de la concentration en ion oxonium H3O+, la valeur du pH de la solution et inversement",
+            "Exploiter la loi de Beer-Lambert, la loi de Kohlrausch ou l'équation d'état du gaz parfait pour déterminer une concentration ou une quantité de matière",
+            "Citer les domaines de validité de ces relations",
+            "Mesurer une conductance et tracer une courbe d'étalonnage pour déterminer une concentration",
+            "Exploiter, à partir de données tabulées, un spectre d'absorption infrarouge ou UV-visible pour identifier un groupe caractéristique ou une espèce chimique"
+          ],
+          "activites_experimentales": [
+            "Mesurer le pH de solutions d'acide chlorhydrique (H3O+, Cl-) obtenues par dilutions successives d'un facteur 10 pour tester la relation entre le pH et la concentration en ion oxonium H3O+ apporté",
+            "Mesurer une conductance et tracer une courbe d'étalonnage pour déterminer une concentration"
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [
+            "Utiliser la fonction logarithme décimal et sa réciproque"
+          ],
+          "mots_cles": [
+            "pH",
+            "ion oxonium",
+            "loi de Beer-Lambert",
+            "absorbance",
+            "conductance",
+            "conductivité",
+            "loi de Kohlrausch",
+            "spectroscopie infrarouge",
+            "spectroscopie UV-visible",
+            "groupe caractéristique",
+            "concentration standard"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-003",
+          "titre": "Analyser un système par des méthodes chimiques",
+          "notions": [
+            "Titre massique et densité d'une solution",
+            "Titrage avec suivi pH-métrique",
+            "Titrage avec suivi conductimétrique"
+          ],
+          "capacites_exigibles": [
+            "Réaliser une solution de concentration donnée en soluté apporté à partir d'une solution de titre massique et de densité fournis",
+            "Établir la composition du système après ajout d'un volume de solution titrante, la transformation étant considérée comme totale",
+            "Exploiter un titrage pour déterminer une quantité de matière, une concentration ou une masse",
+            "Dans le cas d'un titrage avec suivi conductimétrique, justifier qualitativement l'évolution de la pente de la courbe à l'aide de données sur les conductivités ioniques molaires",
+            "Mettre en œuvre le suivi pH-métrique d'un titrage ayant pour support une réaction acide-base",
+            "Mettre en œuvre le suivi conductimétrique d'un titrage"
+          ],
+          "activites_experimentales": [
+            "Mettre en œuvre le suivi pH-métrique d'un titrage ayant pour support une réaction acide-base",
+            "Mettre en œuvre le suivi conductimétrique d'un titrage"
+          ],
+          "capacites_numeriques": [
+            "Représenter, à l'aide d'un langage de programmation, l'évolution des quantités de matière des espèces en fonction du volume de solution titrante versé"
+          ],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "titre massique",
+            "densité",
+            "titrage pH-métrique",
+            "titrage conductimétrique",
+            "équivalence",
+            "conductivité ionique molaire",
+            "solution titrante"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-004",
+          "titre": "Suivre et modéliser l'évolution temporelle d'un système siège d'une transformation chimique",
+          "notions": [
+            "Transformations lentes et rapides",
+            "Facteurs cinétiques : température, concentration des réactifs",
+            "Catalyse, catalyseur",
+            "Vitesse volumique de disparition d'un réactif et d'apparition d'un produit",
+            "Temps de demi-réaction",
+            "Loi de vitesse d'ordre 1"
+          ],
+          "capacites_exigibles": [
+            "Justifier le choix d'un capteur de suivi temporel de l'évolution d'un système",
+            "Identifier, à partir de données expérimentales, des facteurs cinétiques",
+            "Citer les propriétés d'un catalyseur et identifier un catalyseur à partir de données expérimentales",
+            "À partir de données expérimentales, déterminer une vitesse volumique de disparition d'un réactif, une vitesse volumique d'apparition d'un produit ou un temps de demi-réaction",
+            "Identifier, à partir de données expérimentales, si l'évolution d'une concentration suit ou non une loi de vitesse d'ordre 1"
+          ],
+          "activites_experimentales": [
+            "Mettre en évidence des facteurs cinétiques et l'effet d'un catalyseur",
+            "Mettre en œuvre une méthode physique pour suivre l'évolution d'une concentration et déterminer la vitesse volumique de formation d'un produit ou de disparition d'un réactif"
+          ],
+          "capacites_numeriques": [
+            "À l'aide d'un langage de programmation et à partir de données expérimentales, tracer l'évolution temporelle d'une concentration, d'une vitesse volumique d'apparition ou de disparition et tester une relation donnée entre la vitesse volumique de disparition et la concentration d'un réactif"
+          ],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "cinétique chimique",
+            "vitesse volumique",
+            "temps de demi-réaction",
+            "facteurs cinétiques",
+            "catalyseur",
+            "catalyse",
+            "loi de vitesse d'ordre 1",
+            "transformation lente",
+            "transformation rapide"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-005",
+          "titre": "Modélisation microscopique : mécanisme réactionnel",
+          "notions": [
+            "Mécanisme réactionnel : acte élémentaire, intermédiaire réactionnel, formalisme de la flèche courbe",
+            "Modification du mécanisme par ajout d'un catalyseur",
+            "Interprétation microscopique de l'influence des facteurs cinétiques"
+          ],
+          "capacites_exigibles": [
+            "À partir d'un mécanisme réactionnel fourni, identifier un intermédiaire réactionnel, un catalyseur et établir l'équation de la réaction qu'il modélise au niveau microscopique",
+            "Représenter les flèches courbes d'un acte élémentaire, en justifiant leur sens",
+            "Interpréter l'influence des concentrations et de la température sur la vitesse d'un acte élémentaire, en termes de fréquence et d'efficacité des chocs entre entités"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "mécanisme réactionnel",
+            "acte élémentaire",
+            "intermédiaire réactionnel",
+            "flèche courbe",
+            "chocs entre entités",
+            "catalyseur microscopique"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-006",
+          "titre": "Transformation nucléaire : stabilité, radioactivités et équations",
+          "notions": [
+            "Stabilité et instabilité des noyaux : diagramme (N,Z)",
+            "Radioactivité α et β",
+            "Radioactivité γ",
+            "Équation d'une réaction nucléaire",
+            "Lois de conservation"
+          ],
+          "capacites_exigibles": [
+            "Déterminer, à partir d'un diagramme (N,Z), les isotopes radioactifs d'un élément",
+            "Utiliser des données et les lois de conservation pour écrire l'équation d'une réaction nucléaire et identifier le type de radioactivité"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "diagramme (N,Z)",
+            "radioactivité alpha",
+            "radioactivité bêta",
+            "radioactivité gamma",
+            "équation nucléaire",
+            "lois de conservation",
+            "isotope",
+            "instabilité nucléaire"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-007",
+          "titre": "Loi de décroissance radioactive et temps de demi-vie",
+          "notions": [
+            "Évolution temporelle d'une population de noyaux radioactifs",
+            "Constante radioactive",
+            "Loi de décroissance radioactive",
+            "Temps de demi-vie",
+            "Activité"
+          ],
+          "capacites_exigibles": [
+            "Établir l'expression de l'évolution temporelle de la population de noyaux radioactifs",
+            "Exploiter la loi et une courbe de décroissance radioactive"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [
+            "Résoudre une équation différentielle linéaire du premier ordre à coefficients constants"
+          ],
+          "mots_cles": [
+            "décroissance radioactive",
+            "constante radioactive",
+            "temps de demi-vie",
+            "activité radioactive",
+            "équation différentielle",
+            "population de noyaux"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-008",
+          "titre": "Applications de la radioactivité",
+          "notions": [
+            "Radioactivité naturelle ; applications à la datation",
+            "Applications dans le domaine médical",
+            "Protection contre les rayonnements ionisants"
+          ],
+          "capacites_exigibles": [
+            "Expliquer le principe de la datation à l'aide de noyaux radioactifs et dater un événement",
+            "Citer quelques applications de la radioactivité dans le domaine médical",
+            "Citer des méthodes de protection contre les rayonnements ionisants et des facteurs d'influence de ces protections"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "datation",
+            "radioactivité naturelle",
+            "médecine nucléaire",
+            "rayonnements ionisants",
+            "protection radiologique",
+            "archéologie"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-009",
+          "titre": "Équilibre chimique, quotient de réaction et constante d'équilibre",
+          "notions": [
+            "État final d'un système siège d'une transformation non totale : état d'équilibre chimique",
+            "Modèle de l'équilibre dynamique",
+            "Quotient de réaction Qr",
+            "Système à l'équilibre chimique : constante d'équilibre K(T)",
+            "Critère d'évolution spontanée d'un système hors équilibre chimique"
+          ],
+          "capacites_exigibles": [
+            "Relier le caractère non total d'une transformation à la présence, à l'état final du système, de tous les réactifs et de tous les produits",
+            "Déterminer le sens d'évolution spontanée d'un système",
+            "Déterminer un taux d'avancement final à partir de données sur la composition de l'état final et le relier au caractère total ou non total de la transformation",
+            "Déterminer la valeur du quotient de réaction à l'état final d'un système, siège d'une transformation non totale, et montrer son indépendance vis-à-vis de la composition initiale du système à une température donnée"
+          ],
+          "activites_experimentales": [
+            "Mettre en évidence la présence de tous les réactifs dans l'état final d'un système siège d'une transformation non totale, par un nouvel ajout de réactifs"
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "équilibre chimique",
+            "équilibre dynamique",
+            "quotient de réaction",
+            "constante d'équilibre K(T)",
+            "taux d'avancement final",
+            "transformation non totale",
+            "critère d'évolution"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-010",
+          "titre": "Piles et oxydoréduction",
+          "notions": [
+            "Transformation spontanée modélisée par une réaction d'oxydo-réduction",
+            "Pile, demi-piles, pont salin ou membrane, tension à vide",
+            "Fonctionnement d'une pile ; réactions électrochimiques aux électrodes",
+            "Usure d'une pile, capacité électrique d'une pile",
+            "Oxydants et réducteurs usuels"
+          ],
+          "capacites_exigibles": [
+            "Illustrer un transfert spontané d'électrons par contact entre réactifs et par l'intermédiaire d'un circuit extérieur",
+            "Justifier la stratégie de séparation des réactifs dans deux demi-piles et l'utilisation d'un pont salin",
+            "Modéliser et schématiser, à partir de résultats expérimentaux, le fonctionnement d'une pile",
+            "Déterminer la capacité électrique d'une pile à partir de sa constitution initiale",
+            "Citer des oxydants et des réducteurs usuels : eau de Javel, dioxygène, dichlore, acide ascorbique, dihydrogène, métaux",
+            "Justifier le caractère réducteur des métaux du bloc s"
+          ],
+          "activites_experimentales": [
+            "Réaliser une pile, déterminer sa tension à vide et la polarité des électrodes, identifier la transformation mise en jeu, illustrer le rôle du pont salin"
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "pile électrochimique",
+            "demi-pile",
+            "pont salin",
+            "tension à vide",
+            "capacité électrique",
+            "oxydant",
+            "réducteur",
+            "transfert d'électrons",
+            "électrode",
+            "métaux du bloc s"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-011",
+          "titre": "Force des acides et des bases, KA, Ke et pH",
+          "notions": [
+            "Constante d'acidité KA d'un couple acide-base",
+            "Produit ionique de l'eau Ke",
+            "Réaction d'un acide ou d'une base avec l'eau",
+            "Cas limite des acides forts et des bases fortes dans l'eau",
+            "Solutions courantes d'acides et de bases"
+          ],
+          "capacites_exigibles": [
+            "Associer KA et Ke aux équations de réactions correspondantes",
+            "Estimer la valeur de la constante d'acidité d'un couple acide-base à l'aide d'une mesure de pH",
+            "Associer le caractère fort d'un acide (d'une base) à la transformation quasi-totale de cet acide (cette base) avec l'eau",
+            "Prévoir la composition finale d'une solution aqueuse de concentration donnée en acide fort ou faible apporté",
+            "Comparer la force de différents acides ou de différentes bases dans l'eau",
+            "Citer des solutions aqueuses d'acides et de bases courantes et les formules des espèces dissoutes associées : acide chlorhydrique (H3O+(aq), Cl-(aq)), acide nitrique (H3O+(aq), NO3-(aq)), acide éthanoïque (CH3COOH(aq)), soude ou hydroxyde de sodium (Na+(aq), HO-(aq)), ammoniac (NH3(aq))"
+          ],
+          "activites_experimentales": [
+            "Mesurer le pH de solutions d'acide ou de base de concentration donnée pour en déduire le caractère fort ou faible de l'acide ou de la base"
+          ],
+          "capacites_numeriques": [
+            "Déterminer, à l'aide d'un langage de programmation, le taux d'avancement final d'une transformation, modélisée par la réaction d'un acide sur l'eau"
+          ],
+          "capacites_mathematiques": [
+            "Résoudre une équation du second degré"
+          ],
+          "mots_cles": [
+            "constante d'acidité KA",
+            "pKA",
+            "produit ionique de l'eau Ke",
+            "acide fort",
+            "acide faible",
+            "base forte",
+            "base faible",
+            "acide chlorhydrique",
+            "acide nitrique",
+            "acide éthanoïque",
+            "soude",
+            "ammoniac"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-012",
+          "titre": "Diagrammes de prédominance et de distribution, solution tampon",
+          "notions": [
+            "Diagrammes de prédominance et de distribution d'un couple acide-base",
+            "Espèce prédominante",
+            "Cas des indicateurs colorés et des acides alpha-aminés",
+            "Solution tampon"
+          ],
+          "capacites_exigibles": [
+            "Représenter le diagramme de prédominance d'un couple acide-base",
+            "Exploiter un diagramme de prédominance ou de distribution",
+            "Justifier le choix d'un indicateur coloré lors d'un titrage",
+            "Citer les propriétés d'une solution tampon"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [
+            "Tracer, à l'aide d'un langage de programmation, le diagramme de distribution des espèces d'un couple acide-base de pKA donné"
+          ],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "diagramme de prédominance",
+            "diagramme de distribution",
+            "espèce prédominante",
+            "indicateur coloré",
+            "acide alpha-aminé",
+            "solution tampon",
+            "pKA"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-013",
+          "titre": "Électrolyse et passage forcé d'un courant",
+          "notions": [
+            "Passage forcé d'un courant pour réaliser une transformation chimique",
+            "Constitution et fonctionnement d'un électrolyseur",
+            "Stockage et conversion d'énergie chimique"
+          ],
+          "capacites_exigibles": [
+            "Modéliser et schématiser, à partir de résultats expérimentaux, les transferts d'électrons aux électrodes par des réactions électrochimiques",
+            "Déterminer les variations de quantité de matière à partir de la durée de l'électrolyse et de la valeur de l'intensité du courant",
+            "Identifier les produits formés lors du passage forcé d'un courant dans un électrolyseur",
+            "Relier la durée, l'intensité du courant et les quantités de matière de produits formés",
+            "Citer des exemples de dispositifs mettant en jeu des conversions et stockages d'énergie chimique (piles, accumulateurs, organismes chlorophylliens) et les enjeux sociétaux associés"
+          ],
+          "activites_experimentales": [
+            "Identifier les produits formés lors du passage forcé d'un courant dans un électrolyseur"
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "électrolyse",
+            "électrolyseur",
+            "passage forcé du courant",
+            "réaction électrochimique",
+            "intensité du courant",
+            "stockage d'énergie",
+            "accumulateur",
+            "conversion d'énergie chimique"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-014",
+          "titre": "Structure et propriétés en synthèse organique",
+          "notions": [
+            "Formule topologique",
+            "Familles fonctionnelles : esters, amines, amides et halogénoalcanes",
+            "Squelettes carbonés insaturés, cycliques",
+            "Isomérie de constitution",
+            "Polymères"
+          ],
+          "capacites_exigibles": [
+            "Exploiter des règles de nomenclature fournies pour nommer une espèce chimique ou représenter l'entité associée",
+            "Représenter des formules topologiques d'isomères de constitution, à partir d'une formule brute ou semi-développée",
+            "Identifier le motif d'un polymère à partir de sa formule",
+            "Citer des polymères naturels et synthétiques et des utilisations courantes des polymères"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "formule topologique",
+            "ester",
+            "amine",
+            "amide",
+            "halogénoalcane",
+            "squelette carboné insaturé",
+            "squelette cyclique",
+            "isomérie de constitution",
+            "polymère",
+            "nomenclature"
+          ]
+        },
+        {
+          "id": "constitution-matiere-bloc-015",
+          "titre": "Optimisation, stratégie multi-étapes, protection/déprotection et synthèses écoresponsables",
+          "notions": [
+            "Optimisation de la vitesse de formation d'un produit et du rendement d'une synthèse",
+            "Modification de groupe caractéristique, modification de chaîne carbonée, polymérisation",
+            "Protection / déprotection",
+            "Synthèses écoresponsables"
+          ],
+          "capacites_exigibles": [
+            "Identifier, dans un protocole, les opérations réalisées pour optimiser la vitesse de formation d'un produit",
+            "Justifier l'augmentation du rendement d'une synthèse par introduction d'un excès d'un réactif ou par élimination d'un produit du milieu réactionnel",
+            "Élaborer une séquence réactionnelle de synthèse d'une espèce à partir d'une banque de réactions",
+            "Identifier des réactions d'oxydo-réduction, acide-base, de substitution, d'addition, d'élimination",
+            "Identifier des étapes de protection / déprotection et justifier leur intérêt, à partir d'une banque de réactions",
+            "Discuter l'impact environnemental d'une synthèse et proposer des améliorations à l'aide de données fournies, par exemple en termes d'énergie, de formation et valorisation de sous-produits et de choix des réactifs et solvants"
+          ],
+          "activites_experimentales": [
+            "Mettre en œuvre un protocole de synthèse pour étudier l'influence de la modification des conditions expérimentales sur le rendement ou la vitesse",
+            "Mettre en œuvre un protocole de synthèse conduisant à la modification d'un groupe caractéristique ou d'une chaîne carbonée"
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "rendement",
+            "optimisation",
+            "synthèse multi-étapes",
+            "protection",
+            "déprotection",
+            "synthèse écoresponsable",
+            "banque de réactions",
+            "substitution",
+            "addition",
+            "élimination",
+            "solvant",
+            "sous-produit",
+            "impact environnemental"
+          ]
+        }
+      ],
+      "couverture": {
+        "notions_total": 47,
+        "capacites_total": 57,
+        "remarques": [
+          "Tous les blocs indicatifs attendus sont couverts par les 15 sous-parties produites.",
+          "Les notions et capacités exigibles sont intégralement issues de l'extrait officiel fourni, sans ajout extérieur.",
+          "Les capacités numériques et mathématiques sont distinguées des capacités exigibles générales conformément à la présentation du programme officiel.",
+          "Les activités expérimentales support sont extraites fidèlement du texte officiel.",
+          "La notion de pression partielle n'est pas abordée conformément à la restriction explicite du programme.",
+          "La vitesse de réaction comme dérivée temporelle de l'avancement n'est pas au programme, conformément à la précision officielle."
+        ]
+      }
+    },
+    {
+      "theme_id": "mouvement-interactions",
+      "titre": "Mouvement et interactions",
+      "resume_officiel": "Ce thème approfondit la description du mouvement par les vecteurs position, vitesse et accélération, en s'appuyant sur le repère de Frenet pour les mouvements circulaires. La deuxième loi de Newton est au cœur de l'étude, permettant d'établir et de résoudre les équations du mouvement dans des champs uniformes (pesanteur, électrique) et dans un champ de gravitation newtonien (satellites, planètes, lois de Kepler). Les aspects énergétiques complètent l'analyse mécanique. Le thème se conclut par une introduction à la dynamique des fluides : poussée d'Archimède, conservation du débit et relation de Bernoulli, avec des applications dans des domaines variés tels que la médecine, l'aéronautique et la géophysique.",
+      "sous_parties": [
+        {
+          "id": "mouvement-interactions-bloc-001",
+          "titre": "Décrire un mouvement : vecteurs position, vitesse et accélération",
+          "notions": [
+            "Vecteur position d'un point",
+            "Vecteur vitesse défini comme la dérivée du vecteur position par rapport au temps",
+            "Vecteur accélération défini comme la dérivée du vecteur vitesse par rapport au temps",
+            "Coordonnées cartésiennes des vecteurs vitesse et accélération"
+          ],
+          "capacites_exigibles": [
+            "Définir le vecteur vitesse comme la dérivée du vecteur position par rapport au temps et le vecteur accélération comme la dérivée du vecteur vitesse par rapport au temps",
+            "Établir les coordonnées cartésiennes des vecteurs vitesse et accélération à partir des coordonnées du vecteur position et/ou du vecteur vitesse"
+          ],
+          "activites_experimentales": [
+            "Réaliser et/ou exploiter une vidéo ou une chronophotographie pour déterminer les coordonnées du vecteur position en fonction du temps et en déduire les coordonnées approchées ou les représentations des vecteurs vitesse et accélération"
+          ],
+          "capacites_numeriques": [
+            "Représenter, à l'aide d'un langage de programmation, des vecteurs accélération d'un point lors d'un mouvement"
+          ],
+          "capacites_mathematiques": [
+            "Dériver une fonction"
+          ],
+          "mots_cles": [
+            "vecteur position",
+            "vecteur vitesse",
+            "vecteur accélération",
+            "dérivée",
+            "coordonnées cartésiennes",
+            "chronophotographie",
+            "programmation"
+          ]
+        },
+        {
+          "id": "mouvement-interactions-bloc-002",
+          "titre": "Repère de Frenet et caractérisation des mouvements",
+          "notions": [
+            "Coordonnées des vecteurs vitesse et accélération dans le repère de Frenet pour un mouvement circulaire",
+            "Mouvement rectiligne uniformément accéléré",
+            "Mouvement circulaire uniforme",
+            "Caractérisation du vecteur accélération selon le type de mouvement"
+          ],
+          "capacites_exigibles": [
+            "Citer et exploiter les expressions des coordonnées des vecteurs vitesse et accélération dans le repère de Frenet, dans le cas d'un mouvement circulaire",
+            "Caractériser le vecteur accélération pour les mouvements suivants : rectiligne, rectiligne uniforme, rectiligne uniformément accéléré, circulaire, circulaire uniforme"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "repère de Frenet",
+            "mouvement circulaire",
+            "mouvement rectiligne",
+            "mouvement uniforme",
+            "mouvement uniformément accéléré",
+            "accélération tangentielle",
+            "accélération centripète"
+          ]
+        },
+        {
+          "id": "mouvement-interactions-bloc-003",
+          "titre": "Relier les actions appliquées à un système à son mouvement : deuxième loi de Newton",
+          "notions": [
+            "Centre de masse d'un système",
+            "Référentiel galiléen",
+            "Deuxième loi de Newton",
+            "Équilibre d'un système"
+          ],
+          "capacites_exigibles": [
+            "Justifier qualitativement la position du centre de masse d'un système, cette position étant donnée",
+            "Discuter qualitativement du caractère galiléen d'un référentiel donné pour le mouvement étudié",
+            "Utiliser la deuxième loi de Newton dans des situations variées pour en déduire le vecteur accélération du centre de masse, les forces appliquées au système étant connues",
+            "Utiliser la deuxième loi de Newton dans des situations variées pour en déduire la somme des forces appliquées au système, le mouvement du centre de masse étant connu"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "deuxième loi de Newton",
+            "centre de masse",
+            "référentiel galiléen",
+            "équilibre",
+            "somme des forces",
+            "accélération"
+          ]
+        },
+        {
+          "id": "mouvement-interactions-bloc-004",
+          "titre": "Mouvement dans un champ uniforme : pesanteur et champ électrique",
+          "notions": [
+            "Mouvement dans un champ de pesanteur uniforme",
+            "Champ électrique créé par un condensateur plan",
+            "Mouvement d'une particule chargée dans un champ électrique uniforme",
+            "Principe de l'accélérateur linéaire de particules chargées"
+          ],
+          "capacites_exigibles": [
+            "Montrer que le mouvement dans un champ uniforme est plan",
+            "Établir et exploiter les équations horaires du mouvement",
+            "Établir l'équation de la trajectoire",
+            "Discuter de l'influence des grandeurs physiques sur les caractéristiques du champ électrique créé par un condensateur plan, son expression étant donnée",
+            "Décrire le principe d'un accélérateur linéaire de particules chargées"
+          ],
+          "activites_experimentales": [
+            "Utiliser des capteurs ou une vidéo pour déterminer les équations horaires du mouvement du centre de masse d'un système dans un champ uniforme"
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [
+            "Résoudre une équation différentielle",
+            "Déterminer la primitive d'une fonction",
+            "Utiliser la représentation paramétrique d'une courbe"
+          ],
+          "mots_cles": [
+            "champ uniforme",
+            "champ de pesanteur",
+            "condensateur plan",
+            "champ électrique",
+            "particule chargée",
+            "équations horaires",
+            "trajectoire",
+            "accélérateur linéaire"
+          ]
+        },
+        {
+          "id": "mouvement-interactions-bloc-005",
+          "titre": "Aspects énergétiques du mouvement dans un champ uniforme",
+          "notions": [
+            "Énergie cinétique",
+            "Énergie potentielle",
+            "Énergie mécanique",
+            "Conservation de l'énergie mécanique",
+            "Théorème de l'énergie cinétique"
+          ],
+          "capacites_exigibles": [
+            "Exploiter la conservation de l'énergie mécanique ou le théorème de l'énergie cinétique dans le cas du mouvement dans un champ uniforme",
+            "Étudier l'évolution des énergies cinétique, potentielle et mécanique d'un système en mouvement dans un champ uniforme"
+          ],
+          "activites_experimentales": [
+            "Utiliser des capteurs ou une vidéo pour déterminer les équations horaires du mouvement du centre de masse d'un système dans un champ uniforme et étudier l'évolution des énergies cinétique, potentielle et mécanique"
+          ],
+          "capacites_numeriques": [
+            "Représenter, à partir de données expérimentales variées, l'évolution des grandeurs énergétiques d'un système en mouvement dans un champ uniforme à l'aide d'un langage de programmation ou d'un tableur"
+          ],
+          "capacites_mathematiques": [
+            "Résoudre une équation différentielle",
+            "Déterminer la primitive d'une fonction"
+          ],
+          "mots_cles": [
+            "énergie cinétique",
+            "énergie potentielle",
+            "énergie mécanique",
+            "conservation de l'énergie",
+            "théorème de l'énergie cinétique",
+            "champ uniforme",
+            "tableur",
+            "programmation"
+          ]
+        },
+        {
+          "id": "mouvement-interactions-bloc-006",
+          "titre": "Mouvement dans un champ de gravitation : satellites, planètes et lois de Kepler",
+          "notions": [
+            "Mouvement des satellites et des planètes",
+            "Orbite",
+            "Lois de Kepler",
+            "Période de révolution",
+            "Satellite géostationnaire",
+            "Champ de gravitation newtonien"
+          ],
+          "capacites_exigibles": [
+            "Déterminer les caractéristiques des vecteurs vitesse et accélération du centre de masse d'un système en mouvement circulaire dans un champ de gravitation newtonien",
+            "Établir et exploiter la troisième loi de Kepler dans le cas du mouvement circulaire"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [
+            "Exploiter, à l'aide d'un langage de programmation, des données astronomiques ou satellitaires pour tester les deuxième et troisième lois de Kepler"
+          ],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "gravitation",
+            "satellite",
+            "planète",
+            "orbite",
+            "lois de Kepler",
+            "période de révolution",
+            "satellite géostationnaire",
+            "mouvement circulaire",
+            "données astronomiques"
+          ]
+        },
+        {
+          "id": "mouvement-interactions-bloc-007",
+          "titre": "Modéliser l'écoulement d'un fluide : poussée d'Archimède, débit, Bernoulli et Venturi",
+          "notions": [
+            "Poussée d'Archimède",
+            "Écoulement d'un fluide en régime permanent",
+            "Débit volumique d'un fluide incompressible",
+            "Relation de Bernoulli",
+            "Effet Venturi"
+          ],
+          "capacites_exigibles": [
+            "Expliquer qualitativement l'origine de la poussée d'Archimède",
+            "Utiliser l'expression vectorielle de la poussée d'Archimède",
+            "Exploiter la conservation du débit volumique pour déterminer la vitesse d'un fluide incompressible",
+            "Exploiter la relation de Bernoulli, celle-ci étant fournie, pour étudier qualitativement puis quantitativement l'écoulement d'un fluide incompressible en régime permanent"
+          ],
+          "activites_experimentales": [
+            "Mettre en œuvre un dispositif permettant de tester ou d'exploiter l'expression de la poussée d'Archimède",
+            "Mettre en œuvre un dispositif expérimental pour étudier l'écoulement permanent d'un fluide et pour tester la relation de Bernoulli"
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "poussée d'Archimède",
+            "fluide",
+            "écoulement",
+            "régime permanent",
+            "débit volumique",
+            "fluide incompressible",
+            "relation de Bernoulli",
+            "effet Venturi"
+          ]
+        }
+      ],
+      "couverture": {
+        "notions_total": 25,
+        "capacites_total": 22,
+        "remarques": [
+          "L'ensemble des notions et contenus du programme officiel est couvert de manière exhaustive sur les 7 blocs.",
+          "Les capacités mathématiques relatives au bloc 4 (équation différentielle, primitive, représentation paramétrique) sont également mentionnées dans le bloc 5 car elles s'appliquent aux deux contextes selon le programme.",
+          "Les activités expérimentales relatives aux capteurs/vidéo dans un champ uniforme sont partagées entre les blocs 4 et 5 conformément au programme qui les associe à la fois aux équations horaires et aux aspects énergétiques.",
+          "Les outils numériques (smartphones, capteurs, simulation, programmation) mentionnés dans l'introduction générale sont intégrés dans les blocs concernés via les capacités numériques et expérimentales."
+        ]
+      }
+    },
+    {
+      "theme_id": "energie-conversions",
+      "titre": "L'énergie : conversions et transferts",
+      "resume_officiel": "Ce thème prolonge l'étude de la loi de Mariotte par le modèle du gaz parfait, dont la validité est interrogée. Il place le premier principe de la thermodynamique au cœur des bilans d'énergie : identification des transferts thermiques et mécaniques, étude des systèmes incompressibles, modes de transfert thermique et résistance thermique. Une approche simplifiée du bilan thermique Terre-atmosphère intègre albédo et effet de serre. L'évolution temporelle de la température au contact d'un thermostat introduit la modélisation par équation différentielle du premier ordre et la notion de temps caractéristique. Les domaines d'application couvrent transport, habitat, espace, santé et vivant.",
+      "sous_parties": [
+        {
+          "id": "energie-conversions-bloc-001",
+          "titre": "Modèle du gaz parfait : grandeurs macroscopiques et vision microscopique",
+          "notions": [
+            "Modèle du gaz parfait",
+            "Masse volumique",
+            "Température thermodynamique",
+            "Pression"
+          ],
+          "capacites_exigibles": [
+            "Relier qualitativement les valeurs des grandeurs macroscopiques mesurées aux propriétés du système à l'échelle microscopique"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "gaz parfait",
+            "masse volumique",
+            "température thermodynamique",
+            "pression",
+            "échelle microscopique",
+            "grandeurs macroscopiques"
+          ]
+        },
+        {
+          "id": "energie-conversions-bloc-002",
+          "titre": "Équation d'état du gaz parfait et limites du modèle",
+          "notions": [
+            "Équation d'état du gaz parfait",
+            "Limites du modèle du gaz parfait"
+          ],
+          "capacites_exigibles": [
+            "Exploiter l'équation d'état du gaz parfait pour décrire le comportement d'un gaz",
+            "Identifier quelques limites du modèle du gaz parfait"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "équation d'état",
+            "gaz parfait",
+            "limites du modèle",
+            "comportement d'un gaz",
+            "loi de Mariotte"
+          ]
+        },
+        {
+          "id": "energie-conversions-bloc-003",
+          "titre": "Énergie interne d'un système et contributions microscopiques",
+          "notions": [
+            "Énergie interne d'un système",
+            "Aspects microscopiques de l'énergie interne"
+          ],
+          "capacites_exigibles": [
+            "Citer les différentes contributions microscopiques à l'énergie interne d'un système"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "énergie interne",
+            "contributions microscopiques",
+            "système thermodynamique",
+            "énergie cinétique microscopique",
+            "énergie potentielle d'interaction"
+          ]
+        },
+        {
+          "id": "energie-conversions-bloc-004",
+          "titre": "Premier principe de la thermodynamique : transfert thermique et travail",
+          "notions": [
+            "Premier principe de la thermodynamique",
+            "Transfert thermique",
+            "Travail"
+          ],
+          "capacites_exigibles": [
+            "Prévoir le sens d'un transfert thermique",
+            "Distinguer, dans un bilan d'énergie, le terme correspondant à la variation de l'énergie du système des termes correspondant à des transferts d'énergie entre le système et l'extérieur"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "premier principe",
+            "thermodynamique",
+            "transfert thermique",
+            "travail",
+            "bilan d'énergie",
+            "système",
+            "extérieur",
+            "variation d'énergie"
+          ]
+        },
+        {
+          "id": "energie-conversions-bloc-005",
+          "titre": "Capacité thermique et bilan énergétique d'un système incompressible",
+          "notions": [
+            "Capacité thermique d'un système incompressible",
+            "Énergie interne d'un système incompressible"
+          ],
+          "capacites_exigibles": [
+            "Exploiter l'expression de la variation d'énergie interne d'un système incompressible en fonction de sa capacité thermique et de la variation de sa température pour effectuer un bilan énergétique",
+            "Effectuer l'étude énergétique d'un système thermodynamique"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "capacité thermique",
+            "système incompressible",
+            "énergie interne",
+            "bilan énergétique",
+            "variation de température",
+            "étude énergétique"
+          ]
+        },
+        {
+          "id": "energie-conversions-bloc-006",
+          "titre": "Modes de transfert thermique, flux thermique et résistance thermique",
+          "notions": [
+            "Modes de transfert thermique",
+            "Flux thermique",
+            "Résistance thermique"
+          ],
+          "capacites_exigibles": [
+            "Caractériser qualitativement les trois modes de transfert thermique : conduction, convection, rayonnement",
+            "Exploiter la relation entre flux thermique, résistance thermique et écart de température, l'expression de la résistance thermique étant donnée"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "conduction",
+            "convection",
+            "rayonnement",
+            "flux thermique",
+            "résistance thermique",
+            "écart de température",
+            "transfert thermique"
+          ]
+        },
+        {
+          "id": "energie-conversions-bloc-007",
+          "titre": "Bilan thermique Terre-atmosphère, albédo et effet de serre",
+          "notions": [
+            "Bilan thermique du système Terre-atmosphère",
+            "Effet de serre",
+            "Albédo"
+          ],
+          "capacites_exigibles": [
+            "Effectuer un bilan quantitatif d'énergie pour estimer la température terrestre moyenne, la loi de Stefan-Boltzmann étant donnée",
+            "Discuter qualitativement de l'influence de l'albédo et de l'effet de serre sur la température terrestre moyenne"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "bilan thermique",
+            "Terre-atmosphère",
+            "effet de serre",
+            "albédo",
+            "température terrestre moyenne",
+            "loi de Stefan-Boltzmann",
+            "rayonnement solaire",
+            "bilan radiatif"
+          ]
+        },
+        {
+          "id": "energie-conversions-bloc-008",
+          "titre": "Loi de Newton et évolution temporelle de la température au contact d'un thermostat",
+          "notions": [
+            "Loi phénoménologique de Newton",
+            "Modélisation de l'évolution de la température d'un système au contact d'un thermostat"
+          ],
+          "capacites_exigibles": [
+            "Effectuer un bilan d'énergie pour un système incompressible échangeant de l'énergie par un transfert thermique modélisé à l'aide de la loi de Newton fournie",
+            "Établir l'expression de la température du système en fonction du temps",
+            "Suivre et modéliser l'évolution de la température d'un système incompressible"
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [
+            "Résoudre une équation différentielle linéaire du premier ordre à coefficients constants avec un second membre constant"
+          ],
+          "mots_cles": [
+            "loi de Newton",
+            "thermostat",
+            "évolution temporelle",
+            "température",
+            "équation différentielle",
+            "premier ordre",
+            "temps caractéristique",
+            "système incompressible",
+            "modélisation"
+          ]
+        }
+      ],
+      "couverture": {
+        "notions_total": 16,
+        "capacites_total": 15,
+        "remarques": [
+          "Toutes les notions et contenus de l'extrait officiel sont couverts dans les 8 blocs.",
+          "Toutes les capacités exigibles sont réparties fidèlement selon leur section d'origine.",
+          "La capacité mathématique relative à l'équation différentielle du premier ordre est isolée dans le bloc 008 conformément au texte officiel.",
+          "Aucune activité expérimentale support n'est explicitement nommée dans l'extrait officiel pour ce thème.",
+          "Les notions abordées en classe de première sont mentionnées dans le texte introductif à titre de prérequis et ne constituent pas des notions nouvelles du programme de terminale ; elles ne sont donc pas intégrées comme notions de blocs."
+        ]
+      }
+    },
+    {
+      "theme_id": "ondes-signaux",
+      "titre": "Ondes et signaux",
+      "resume_officiel": "Ce thème enrichit la modélisation des ondes en caractérisant les phénomènes qui leur sont propres : diffraction, interférences et effet Doppler, en se limitant aux ondes progressives sinusoïdales. Il aborde ensuite la formation d'images par la lunette astronomique afocale, puis la description corpusculaire de la lumière via le photon, l'effet photoélectrique et les cellules photovoltaïques. Enfin, il étudie la dynamique des systèmes électriques à travers le comportement capacitif, le modèle du condensateur, le circuit RC série et les capteurs capacitifs, en introduisant les notions de régime transitoire, de régime stationnaire et de temps caractéristique.",
+      "sous_parties": [
+        {
+          "id": "ondes-signaux-bloc-001",
+          "titre": "Intensité sonore, niveau d'intensité sonore, atténuation",
+          "notions": [
+            "Intensité sonore",
+            "Intensité sonore de référence",
+            "Niveau d'intensité sonore",
+            "Atténuation (en dB)"
+          ],
+          "capacites_exigibles": [
+            "Exploiter l'expression donnant le niveau d'intensité sonore d'un signal.",
+            "Illustrer l'atténuation géométrique et l'atténuation par absorption."
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [
+            "Utiliser la fonction logarithme décimal et sa fonction réciproque."
+          ],
+          "mots_cles": [
+            "intensité sonore",
+            "niveau d'intensité sonore",
+            "décibel",
+            "atténuation géométrique",
+            "atténuation par absorption",
+            "logarithme décimal"
+          ]
+        },
+        {
+          "id": "ondes-signaux-bloc-002",
+          "titre": "Diffraction d'une onde par une ouverture",
+          "notions": [
+            "Diffraction d'une onde par une ouverture : conditions d'observation et caractéristiques",
+            "Angle caractéristique de diffraction"
+          ],
+          "capacites_exigibles": [
+            "Caractériser le phénomène de diffraction dans des situations variées et en citer des conséquences concrètes.",
+            "Exploiter la relation exprimant l'angle caractéristique de diffraction en fonction de la longueur d'onde et de la taille de l'ouverture.",
+            "Illustrer et caractériser qualitativement le phénomène de diffraction dans des situations variées.",
+            "Exploiter la relation donnant l'angle caractéristique de diffraction dans le cas d'une onde lumineuse diffractée par une fente rectangulaire en utilisant éventuellement un logiciel de traitement d'image."
+          ],
+          "activites_experimentales": [
+            "Illustrer et caractériser qualitativement le phénomène de diffraction dans des situations variées.",
+            "Exploiter la relation donnant l'angle caractéristique de diffraction dans le cas d'une onde lumineuse diffractée par une fente rectangulaire en utilisant éventuellement un logiciel de traitement d'image."
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "diffraction",
+            "ouverture",
+            "angle caractéristique",
+            "longueur d'onde",
+            "fente rectangulaire",
+            "onde lumineuse",
+            "logiciel de traitement d'image"
+          ]
+        },
+        {
+          "id": "ondes-signaux-bloc-003",
+          "titre": "Interférences de deux ondes mécaniques",
+          "notions": [
+            "Interférences de deux ondes, conditions d'observation",
+            "Interférences constructives",
+            "Interférences destructives"
+          ],
+          "capacites_exigibles": [
+            "Caractériser le phénomène d'interférences de deux ondes et en citer des conséquences concrètes.",
+            "Établir les conditions d'interférences constructives et destructives de deux ondes issues de deux sources ponctuelles en phase dans le cas d'un milieu de propagation homogène.",
+            "Tester les conditions d'interférences constructives ou destructives à la surface de l'eau dans le cas de deux ondes issues de deux sources ponctuelles en phase."
+          ],
+          "activites_experimentales": [
+            "Tester les conditions d'interférences constructives ou destructives à la surface de l'eau dans le cas de deux ondes issues de deux sources ponctuelles en phase."
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "interférences",
+            "ondes mécaniques",
+            "sources ponctuelles en phase",
+            "interférences constructives",
+            "interférences destructives",
+            "milieu homogène",
+            "surface de l'eau"
+          ]
+        },
+        {
+          "id": "ondes-signaux-bloc-004",
+          "titre": "Interférences de deux ondes lumineuses, différence de chemin optique, interfrange",
+          "notions": [
+            "Interférences de deux ondes lumineuses",
+            "Différence de chemin optique",
+            "Conditions d'interférences constructives ou destructives"
+          ],
+          "capacites_exigibles": [
+            "Prévoir les lieux d'interférences constructives et les lieux d'interférences destructives dans le cas des trous d'Young, l'expression linéarisée de la différence de chemin optique étant donnée.",
+            "Établir l'expression de l'interfrange.",
+            "Exploiter l'expression donnée de l'interfrange dans le cas des interférences de deux ondes lumineuses, en utilisant éventuellement un logiciel de traitement d'image."
+          ],
+          "activites_experimentales": [
+            "Exploiter l'expression donnée de l'interfrange dans le cas des interférences de deux ondes lumineuses, en utilisant éventuellement un logiciel de traitement d'image."
+          ],
+          "capacites_numeriques": [
+            "Représenter, à l'aide d'un langage de programmation, la somme de deux signaux sinusoïdaux périodiques synchrones en faisant varier la phase à l'origine de l'un des deux."
+          ],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "interférences lumineuses",
+            "différence de chemin optique",
+            "trous d'Young",
+            "interfrange",
+            "expression linéarisée",
+            "logiciel de traitement d'image",
+            "langage de programmation",
+            "signaux sinusoïdaux synchrones"
+          ]
+        },
+        {
+          "id": "ondes-signaux-bloc-005",
+          "titre": "Effet Doppler et décalage Doppler",
+          "notions": [
+            "Effet Doppler",
+            "Décalage Doppler"
+          ],
+          "capacites_exigibles": [
+            "Décrire et interpréter qualitativement les observations correspondant à une manifestation de l'effet Doppler.",
+            "Établir l'expression du décalage Doppler dans le cas d'un observateur fixe, d'un émetteur mobile et dans une configuration à une dimension.",
+            "Exploiter l'expression du décalage Doppler dans des situations variées utilisant des ondes acoustiques ou des ondes électromagnétiques.",
+            "Exploiter l'expression du décalage Doppler en acoustique pour déterminer une vitesse."
+          ],
+          "activites_experimentales": [
+            "Exploiter l'expression du décalage Doppler en acoustique pour déterminer une vitesse."
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "effet Doppler",
+            "décalage Doppler",
+            "observateur fixe",
+            "émetteur mobile",
+            "ondes acoustiques",
+            "ondes électromagnétiques",
+            "vitesse",
+            "vélocimétrie"
+          ]
+        },
+        {
+          "id": "ondes-signaux-bloc-006",
+          "titre": "Lunette astronomique afocale et grossissement",
+          "notions": [
+            "Modèle optique d'une lunette astronomique avec objectif et oculaire convergents",
+            "Grossissement"
+          ],
+          "capacites_exigibles": [
+            "Représenter le schéma d'une lunette afocale modélisée par deux lentilles minces convergentes ; identifier l'objectif et l'oculaire.",
+            "Représenter le faisceau émergent issu d'un point objet situé « à l'infini » et traversant une lunette afocale.",
+            "Établir l'expression du grossissement d'une lunette afocale.",
+            "Exploiter les données caractéristiques d'une lunette commerciale."
+          ],
+          "activites_experimentales": [
+            "Réaliser une maquette de lunette astronomique ou utiliser une lunette commerciale pour en déterminer le grossissement.",
+            "Vérifier la position de l'image intermédiaire en la visualisant sur un écran."
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "lunette astronomique",
+            "lunette afocale",
+            "objectif",
+            "oculaire",
+            "lentille convergente",
+            "grossissement",
+            "image intermédiaire",
+            "point à l'infini"
+          ]
+        },
+        {
+          "id": "ondes-signaux-bloc-007",
+          "titre": "Photon, effet photoélectrique et travail d'extraction",
+          "notions": [
+            "Le photon : énergie, vitesse, masse",
+            "Effet photoélectrique",
+            "Travail d'extraction"
+          ],
+          "capacites_exigibles": [
+            "Décrire l'effet photoélectrique, ses caractéristiques et son importance historique.",
+            "Interpréter qualitativement l'effet photoélectrique à l'aide du modèle particulaire de la lumière.",
+            "Établir, par un bilan d'énergie, la relation entre l'énergie cinétique des électrons et la fréquence.",
+            "Expliquer qualitativement le fonctionnement d'une cellule photoélectrique."
+          ],
+          "activites_experimentales": [],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "photon",
+            "énergie du photon",
+            "effet photoélectrique",
+            "travail d'extraction",
+            "modèle particulaire",
+            "énergie cinétique des électrons",
+            "fréquence",
+            "cellule photoélectrique"
+          ]
+        },
+        {
+          "id": "ondes-signaux-bloc-008",
+          "titre": "Absorption et émission de photons, rendement d'une cellule photovoltaïque",
+          "notions": [
+            "Absorption et émission de photons",
+            "Enjeux énergétiques : rendement d'une cellule photovoltaïque"
+          ],
+          "capacites_exigibles": [
+            "Citer quelques applications actuelles mettant en jeu l'interaction photon-matière (capteurs de lumière, cellules photovoltaïques, diodes électroluminescentes, spectroscopies UV-visible et IR, etc.).",
+            "Déterminer le rendement d'une cellule photovoltaïque."
+          ],
+          "activites_experimentales": [
+            "Déterminer le rendement d'une cellule photovoltaïque."
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [],
+          "mots_cles": [
+            "absorption de photons",
+            "émission de photons",
+            "interaction photon-matière",
+            "cellule photovoltaïque",
+            "rendement",
+            "diode électroluminescente",
+            "capteur de lumière",
+            "spectroscopie UV-visible",
+            "spectroscopie IR"
+          ]
+        },
+        {
+          "id": "ondes-signaux-bloc-009",
+          "titre": "Dynamique d'un système électrique : courant variable, condensateur, circuit RC et capteurs capacitifs",
+          "notions": [
+            "Intensité d'un courant électrique en régime variable",
+            "Comportement capacitif",
+            "Modèle du condensateur",
+            "Relation entre charge et tension ; capacité d'un condensateur",
+            "Modèle du circuit RC série : charge d'un condensateur par une source idéale de tension, décharge d'un condensateur, temps caractéristique",
+            "Capteurs capacitifs"
+          ],
+          "capacites_exigibles": [
+            "Relier l'intensité d'un courant électrique au débit de charges.",
+            "Identifier des situations variées où il y a accumulation de charges de signes opposés sur des surfaces en regard.",
+            "Citer des ordres de grandeur de valeurs de capacités usuelles.",
+            "Identifier et tester le comportement capacitif d'un dipôle.",
+            "Illustrer qualitativement, par exemple à l'aide d'un microcontrôleur, d'un multimètre ou d'une carte d'acquisition, l'effet de la géométrie d'un condensateur sur la valeur de sa capacité.",
+            "Établir et résoudre l'équation différentielle vérifiée par la tension aux bornes d'un condensateur dans le cas de sa charge par une source idéale de tension et dans le cas de sa décharge.",
+            "Expliquer le principe de fonctionnement de quelques capteurs capacitifs.",
+            "Étudier la réponse d'un dispositif modélisé par un dipôle RC.",
+            "Déterminer le temps caractéristique d'un dipôle RC à l'aide d'un microcontrôleur, d'une carte d'acquisition ou d'un oscilloscope."
+          ],
+          "activites_experimentales": [
+            "Illustrer qualitativement, par exemple à l'aide d'un microcontrôleur, d'un multimètre ou d'une carte d'acquisition, l'effet de la géométrie d'un condensateur sur la valeur de sa capacité.",
+            "Étudier la réponse d'un dispositif modélisé par un dipôle RC.",
+            "Déterminer le temps caractéristique d'un dipôle RC à l'aide d'un microcontrôleur, d'une carte d'acquisition ou d'un oscilloscope."
+          ],
+          "capacites_numeriques": [],
+          "capacites_mathematiques": [
+            "Résoudre une équation différentielle linéaire du premier ordre à coefficients constants avec un second membre constant."
+          ],
+          "mots_cles": [
+            "courant variable",
+            "débit de charges",
+            "comportement capacitif",
+            "condensateur",
+            "capacité",
+            "charge",
+            "tension",
+            "circuit RC",
+            "temps caractéristique",
+            "régime transitoire",
+            "régime stationnaire",
+            "équation différentielle",
+            "capteurs capacitifs",
+            "microcontrôleur",
+            "oscilloscope",
+            "carte d'acquisition"
+          ]
+        }
+      ],
+      "couverture": {
+        "notions_total": 20,
+        "capacites_total": 30,
+        "remarques": [
+          "Toutes les notions et contenus de l'extrait officiel sont couverts dans les 9 blocs.",
+          "Toutes les capacités exigibles, y compris les capacités mathématiques et numériques, sont intégrées dans les blocs correspondants.",
+          "Les activités expérimentales support mentionnées dans l'extrait ont été réparties dans les blocs concernés.",
+          "La capacité numérique relative à la représentation de la somme de deux signaux sinusoïdaux est rattachée au bloc sur les interférences lumineuses (bloc-004), conformément à sa position dans le texte officiel.",
+          "Les notions abordées en classe de première sont mentionnées dans le résumé officiel comme prérequis mais ne constituent pas des blocs à part entière du programme de terminale."
+        ]
+      }
+    }
+  ],
+  "capacites_experimentales": {
+    "capacites_experimentales_communes": [
+      "Respecter les règles de sécurité liées au travail en laboratoire.",
+      "Mettre en œuvre un dispositif d'acquisition et de traitement de données : microcontrôleur, interface d'acquisition, tableur, langage de programmation.",
+      "Utiliser un logiciel de simulation."
+    ],
+    "par_theme": {
+      "constitution-matiere": [
+        "Préparer une solution par dissolution ou par dilution en choisissant le matériel adapté.",
+        "Réaliser le spectre d'absorption UV-visible d'une espèce chimique.",
+        "Réaliser des mesures d'absorbance, de pH, de conductivité en s'aidant d'une notice.",
+        "Mettre en œuvre un test de reconnaissance pour identifier une espèce chimique.",
+        "Tracer une courbe d'étalonnage pour déterminer une concentration.",
+        "Mettre en œuvre le protocole expérimental d'un titrage.",
+        "Réaliser une pile et un circuit électrique intégrant un électrolyseur.",
+        "Utiliser un logiciel de simulation de structures moléculaires et des modèles moléculaires.",
+        "Mettre en œuvre une extraction liquide-liquide.",
+        "Réaliser le montage des dispositifs de chauffage à reflux et de distillation fractionnée et les mettre en œuvre.",
+        "Mettre en œuvre un dispositif pour estimer une température de changement d'état.",
+        "Réaliser une filtration simple ou sous pression réduite, un lavage, un séchage.",
+        "Réaliser une chromatographie sur couche mince.",
+        "Respecter les règles de sécurité lors de l'utilisation de produits chimiques et de verrerie.",
+        "Respecter le mode d'élimination d'une espèce chimique ou d'un mélange pour minimiser l'impact sur l'environnement."
+      ],
+      "mouvement-interactions": [
+        "Mettre en œuvre un dispositif permettant d'illustrer l'interaction électrostatique.",
+        "Utiliser un dispositif permettant de repérer la direction du champ électrostatique.",
+        "Collecter des données sur un mouvement (vidéo, chronophotographie, etc.).",
+        "Utiliser un dispositif permettant d'étudier la poussée d'Archimède.",
+        "Mesurer une pression et une vitesse d'écoulement dans un gaz et dans un liquide."
+      ],
+      "energie-conversions": [
+        "Utiliser un multimètre, adapter le calibre si nécessaire.",
+        "Réaliser un montage électrique conformément à un schéma électrique normalisé.",
+        "Mettre en œuvre un protocole permettant d'estimer une énergie transférée électriquement ou mécaniquement.",
+        "Mettre en œuvre un dispositif pour réaliser un bilan énergétique et suivre l'évolution de la température d'un système."
+      ],
+      "ondes-signaux": [
+        "Mettre en œuvre un dispositif expérimental permettant d'illustrer la propagation d'une perturbation mécanique.",
+        "Mettre en œuvre un dispositif expérimental permettant de collecter des données sur la propagation d'une perturbation mécanique (vidéo, chronophotographie, etc.).",
+        "Mettre en œuvre un dispositif permettant de mesurer la période, la longueur d'onde, la célérité d'une onde périodique.",
+        "Commander la production d'un signal grâce à un microcontrôleur.",
+        "Mesurer un niveau d'intensité sonore.",
+        "Utiliser un luxmètre ou une photorésistance.",
+        "Estimer la distance focale d'une lentille mince convergente.",
+        "Réaliser un montage optique comportant une ou deux lentilles minces.",
+        "Mettre en œuvre un dispositif pour illustrer la synthèse additive ou la synthèse soustractive.",
+        "Mettre en œuvre un dispositif pour illustrer que la couleur apparente d'un objet dépend de la source de lumière.",
+        "Mettre en œuvre un protocole expérimental permettant d'obtenir un spectre d'émission.",
+        "Mettre en œuvre des dispositifs permettant d'étudier les phénomènes de diffraction et d'interférences.",
+        "Mettre en œuvre un dispositif permettant d'étudier l'effet Doppler en acoustique.",
+        "Utiliser une cellule photovoltaïque.",
+        "Utiliser un oscilloscope.",
+        "Réaliser un montage électrique pour étudier la charge et la décharge d'un condensateur dans un circuit RC.",
+        "Respecter les règles de sécurité préconisées lors de l'utilisation de sources lumineuses.",
+        "Respecter les règles de sécurité préconisées lors de l'utilisation d'appareils électriques."
+      ]
+    }
+  },
+  "theme_index": {
+    "mesure-incertitudes": "Mesure et incertitudes",
+    "constitution-matiere": "Constitution et transformations de la matière",
+    "mouvement-interactions": "Mouvement et interactions",
+    "energie-conversions": "L’énergie : conversions et transferts",
+    "ondes-signaux": "Ondes et signaux"
+  }
+}

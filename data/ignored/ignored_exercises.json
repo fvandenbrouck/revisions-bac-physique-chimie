@@ -1,0 +1,373 @@
+[
+  {
+    "id": "ex-2021-jour-2-ja-21-pycj2ja1pdf-91500-exercice-b",
+    "source_id": "2021-jour-2-ja-21-pycj2ja1pdf-91500",
+    "annee": "2021",
+    "session": "Jour 2",
+    "zone": "Asie",
+    "titre": "« Water bottle flip »",
+    "type": "B",
+    "points": 5,
+    "pages": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "page_images": [
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_09.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_10.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_11.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_12.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_13.png"
+    ],
+    "texte_extrait": "Exercice B : « Water bottle flip » (5 points)\nMots-clés : mouvement dans un champ de pesanteur uniforme, lois de Newton, langage Python.\nLe « water bottle flip » est un jeu d’adresse consistant à lancer une bouteille plastique partiellement remplie\nd’eau afin qu’elle se pose verticalement sur sa base sur une table placée à proximité. Il faut beaucoup\ns’entraîner pour réussir un « water bottle flip ». Initialement, la bouteille n’est tenue que par son col. Le\nmouvement ascendant du bras communique la vitesse juste suffisante à la bouteille. Tandis qu’elle monte\npuis redescend, celle-ci tourne sur elle-même.\nQuelques photos successives tirées d’une vidéo\nmontrant un lancer réussi.\n(a) (b)\n(c) (d) (e) (f)\n(g) (h) (i) (j)\nDans cet exercice, on se propose d’étudier le mouvement du centre de masse de la bouteille.\nLe système considéré est l’ensemble {bouteille + eau} de\nmasse 𝑚 = 162 g dont on étudie le mouvement du centre 𝑦\nde masse, noté G.\nTable\nLe système évolue dans le champ de pesanteur terrestre 𝑔⃗\n𝑥\nuniforme. O\nOn fait l’hypothèse que l’action de l’air est négligeable. Sol\nfigure 1\nLe mouvement est étudié dans le système d’axes (O𝑥𝑦) (Cf. figure 1).\n21-PYCJ2JA1 Page 9/16\n\nÀ la date 𝑡 = 0 s, le centre de masse G est placé à l’origine du repère O et sa vitesse initiale, notée 𝑣⃗⃗⃗⃗⃗, a une\n0\ndirection faisant un angle 𝛼 avec l’axe horizontal (O𝑥).\nRecherche des conditions initiales sur la vitesse\nGrâce à la vidéo montrant un lancer réussi, on a pu\ny\nG 2 pointer la position du centre de masse G à différents\ninstants.\nG\n1\nSur la figure 2, la durée entre deux positions\nsuccessives est 𝜏 = 40 ms.\nG 0 L’échelle est donnée par la bouteille dont la hauteur\nest 18,8 cm.\nx\nfigure 2 : chronophotographie du mouvement\ndu centre de masse G lors du « water bottle\nflip » réussi.\n1. Représenter sur la copie, sans souci d’échelle, le système d’axes (O𝑥𝑦), le vecteur 𝑣⃗⃗⃗⃗⃗, l’angle 𝛼 ainsi\n0\nque les coordonnées 𝑣 et 𝑣 et l’allure de la trajectoire du centre de masse de la bouteille.\n0𝑥 0𝑦\n2. À partir des données expérimentales fournies et de la figure 2, vérifier que la valeur expérimentale 𝑣\n0\ndu vecteur vitesse initial 𝑣⃗⃗⃗⃗⃗ est proche de 3,6 m ⋅ s−1.\n0\n3. Proposer une méthode permettant de déterminer expérimentalement la valeur de l’angle 𝛼.\nModélisation du déplacement du centre de masse\n4. En précisant la loi utilisée, donner les expressions des coordonnées du vecteur accélération 𝑎⃗ du\ncentre de masse : 𝑎 (𝑡) et 𝑎 (𝑡).\n𝑥 𝑦\n5. En déduire les expressions des coordonnées 𝑣 (𝑡) et 𝑣 (𝑡) du vecteur vitesse du centre de masse et\n𝑥 𝑦\nmontrer que les équations horaires du mouvement sont :\n𝑥(𝑡) = 𝑣 cos(𝛼) × 𝑡\n0\n{ 1\n𝑦(𝑡) = − 𝑔 × 𝑡2 + 𝑣 sin(𝛼) × 𝑡\n2 0\nPour déterminer la distance à laquelle tombe la bouteille par rapport au point O, on crée un programme en\nlangage python dont un extrait est présenté ci-dessous. Ce programme utilise les équations horaires\nmodélisant le déplacement du centre de masse et les valeurs expérimentales :\n𝑣 = 3,6 m ⋅ s−1 𝛼 = 59 ° 𝑔 = 9,81 m ⋅ s−2\n0\n21-PYCJ2JA1 Page 10/16\n\n5. g = 9.81 # Intensité du champ de pesanteur en m /s2\n6.\n7. v = float(input('valeur de la vitesse initiale(en m/s) : v = ')\n0 0\n8. alpha = float(input('valeur de l’angle de tir(en degré) : alpha = ')\n9.\n10. # Tracé des courbes horaires\n11.\n12. t=np.linspace(0,0.65,100)\n13. for i in t :\n14. x = v *cos(alpha*pi/180)*t #calcul de x à la date t\n0\n15.\ny = -0.5*g*t**2+ *t #calcul de y à la date t\n16.\n17.\nplt.plot(t,x,'k--',label='x en fonction de t')\n18.\nplt.plot(t,y,'k',label='y en fonction de t')\n19.\nL’exécution de ce programme permet d’obtenir le graphique ci-dessous qui modélise l’évolution des\ncoordonnées (𝑥, 𝑦), exprimées en mètre, du point G au cours du temps.\n(b)\n(a)\n6. Associer chacun de ces tracés à 𝑥(𝑡) et 𝑦(𝑡).\n7. Préciser ce qui est caché par le rectangle gris dans la ligne 15 du programme (expression ou valeur).\nOn estime que le centre de masse G se trouve à une hauteur voisine de 2 cm du fond de la bouteille lorsque\ncelle-ci se pose sur la table.\n8. Estimer la durée du mouvement de la bouteille obtenue par la modélisation.\n21-PYCJ2JA1 Page 11/16\n\nLa durée du mouvement de la bouteille lors de la réalisation de ce « water bottle flip » a été mesurée. On a\nobtenu Δ𝑡 = (0,50 ± 0,05) s.\n9. Proposer au moins une explication permettant de rendre compte de l’écart entre cette durée réelle et\nla durée obtenue par la modélisation.\n10. À l’aide du modèle, déterminer la distance à laquelle la bouteille tombe sur la table par rapport à\nl’origine du repère. Indiquer ce qu’il est possible de prévoir pour la distance réelle.\n21-PYCJ2JA1 Page 12/16",
+    "questions_detectees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "start_label": "Exercice B : « Water bottle flip » (5 points)",
+    "segmentation_mode": "legacy_common_abc",
+    "_ignored_reason": "Exercice ignoré : corrigé généré incomplet de façon persistante, questions 11 à 19 non traitées.",
+    "_ignored_at": "20260509-212518",
+    "_source_file": "site/data/intermediate/exercises_raw.json"
+  },
+  {
+    "id": "ex-2021-jour-2-ja-21-pycj2ja1pdf-91500-exercice-b",
+    "source_id": "2021-jour-2-ja-21-pycj2ja1pdf-91500",
+    "annee": "2021",
+    "session": "Jour 2",
+    "zone": "Asie",
+    "titre": "« Water bottle flip »",
+    "type": "B",
+    "points": 5,
+    "pages": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "page_images": [
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_09.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_10.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_11.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_12.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_13.png"
+    ],
+    "texte_extrait": "Exercice B : « Water bottle flip » (5 points)\nMots-clés : mouvement dans un champ de pesanteur uniforme, lois de Newton, langage Python.\nLe « water bottle flip » est un jeu d’adresse consistant à lancer une bouteille plastique partiellement remplie\nd’eau afin qu’elle se pose verticalement sur sa base sur une table placée à proximité. Il faut beaucoup\ns’entraîner pour réussir un « water bottle flip ». Initialement, la bouteille n’est tenue que par son col. Le\nmouvement ascendant du bras communique la vitesse juste suffisante à la bouteille. Tandis qu’elle monte\npuis redescend, celle-ci tourne sur elle-même.\nQuelques photos successives tirées d’une vidéo\nmontrant un lancer réussi.\n(a) (b)\n(c) (d) (e) (f)\n(g) (h) (i) (j)\nDans cet exercice, on se propose d’étudier le mouvement du centre de masse de la bouteille.\nLe système considéré est l’ensemble {bouteille + eau} de\nmasse 𝑚 = 162 g dont on étudie le mouvement du centre 𝑦\nde masse, noté G.\nTable\nLe système évolue dans le champ de pesanteur terrestre 𝑔⃗\n𝑥\nuniforme. O\nOn fait l’hypothèse que l’action de l’air est négligeable. Sol\nfigure 1\nLe mouvement est étudié dans le système d’axes (O𝑥𝑦) (Cf. figure 1).\n21-PYCJ2JA1 Page 9/16\n\nÀ la date 𝑡 = 0 s, le centre de masse G est placé à l’origine du repère O et sa vitesse initiale, notée 𝑣⃗⃗⃗⃗⃗, a une\n0\ndirection faisant un angle 𝛼 avec l’axe horizontal (O𝑥).\nRecherche des conditions initiales sur la vitesse\nGrâce à la vidéo montrant un lancer réussi, on a pu\ny\nG 2 pointer la position du centre de masse G à différents\ninstants.\nG\n1\nSur la figure 2, la durée entre deux positions\nsuccessives est 𝜏 = 40 ms.\nG 0 L’échelle est donnée par la bouteille dont la hauteur\nest 18,8 cm.\nx\nfigure 2 : chronophotographie du mouvement\ndu centre de masse G lors du « water bottle\nflip » réussi.\n1. Représenter sur la copie, sans souci d’échelle, le système d’axes (O𝑥𝑦), le vecteur 𝑣⃗⃗⃗⃗⃗, l’angle 𝛼 ainsi\n0\nque les coordonnées 𝑣 et 𝑣 et l’allure de la trajectoire du centre de masse de la bouteille.\n0𝑥 0𝑦\n2. À partir des données expérimentales fournies et de la figure 2, vérifier que la valeur expérimentale 𝑣\n0\ndu vecteur vitesse initial 𝑣⃗⃗⃗⃗⃗ est proche de 3,6 m ⋅ s−1.\n0\n3. Proposer une méthode permettant de déterminer expérimentalement la valeur de l’angle 𝛼.\nModélisation du déplacement du centre de masse\n4. En précisant la loi utilisée, donner les expressions des coordonnées du vecteur accélération 𝑎⃗ du\ncentre de masse : 𝑎 (𝑡) et 𝑎 (𝑡).\n𝑥 𝑦\n5. En déduire les expressions des coordonnées 𝑣 (𝑡) et 𝑣 (𝑡) du vecteur vitesse du centre de masse et\n𝑥 𝑦\nmontrer que les équations horaires du mouvement sont :\n𝑥(𝑡) = 𝑣 cos(𝛼) × 𝑡\n0\n{ 1\n𝑦(𝑡) = − 𝑔 × 𝑡2 + 𝑣 sin(𝛼) × 𝑡\n2 0\nPour déterminer la distance à laquelle tombe la bouteille par rapport au point O, on crée un programme en\nlangage python dont un extrait est présenté ci-dessous. Ce programme utilise les équations horaires\nmodélisant le déplacement du centre de masse et les valeurs expérimentales :\n𝑣 = 3,6 m ⋅ s−1 𝛼 = 59 ° 𝑔 = 9,81 m ⋅ s−2\n0\n21-PYCJ2JA1 Page 10/16\n\n5. g = 9.81 # Intensité du champ de pesanteur en m /s2\n6.\n7. v = float(input('valeur de la vitesse initiale(en m/s) : v = ')\n0 0\n8. alpha = float(input('valeur de l’angle de tir(en degré) : alpha = ')\n9.\n10. # Tracé des courbes horaires\n11.\n12. t=np.linspace(0,0.65,100)\n13. for i in t :\n14. x = v *cos(alpha*pi/180)*t #calcul de x à la date t\n0\n15.\ny = -0.5*g*t**2+ *t #calcul de y à la date t\n16.\n17.\nplt.plot(t,x,'k--',label='x en fonction de t')\n18.\nplt.plot(t,y,'k',label='y en fonction de t')\n19.\nL’exécution de ce programme permet d’obtenir le graphique ci-dessous qui modélise l’évolution des\ncoordonnées (𝑥, 𝑦), exprimées en mètre, du point G au cours du temps.\n(b)\n(a)\n6. Associer chacun de ces tracés à 𝑥(𝑡) et 𝑦(𝑡).\n7. Préciser ce qui est caché par le rectangle gris dans la ligne 15 du programme (expression ou valeur).\nOn estime que le centre de masse G se trouve à une hauteur voisine de 2 cm du fond de la bouteille lorsque\ncelle-ci se pose sur la table.\n8. Estimer la durée du mouvement de la bouteille obtenue par la modélisation.\n21-PYCJ2JA1 Page 11/16\n\nLa durée du mouvement de la bouteille lors de la réalisation de ce « water bottle flip » a été mesurée. On a\nobtenu Δ𝑡 = (0,50 ± 0,05) s.\n9. Proposer au moins une explication permettant de rendre compte de l’écart entre cette durée réelle et\nla durée obtenue par la modélisation.\n10. À l’aide du modèle, déterminer la distance à laquelle la bouteille tombe sur la table par rapport à\nl’origine du repère. Indiquer ce qu’il est possible de prévoir pour la distance réelle.\n21-PYCJ2JA1 Page 12/16",
+    "questions_detectees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "start_label": "Exercice B : « Water bottle flip » (5 points)",
+    "segmentation_mode": "legacy_common_abc",
+    "thematique_id": "mouvement-interactions",
+    "notions": [
+      "Mouvement dans un champ de pesanteur uniforme",
+      "Lois de Newton (deuxième loi)",
+      "Équations horaires du mouvement parabolique",
+      "Vitesse initiale et ses composantes",
+      "Chronophotographie et pointage",
+      "Langage Python appliqué à la physique"
+    ],
+    "mots_cles": [
+      "water bottle flip",
+      "champ de pesanteur uniforme",
+      "lois de Newton",
+      "équations horaires",
+      "projectile",
+      "chronophotographie",
+      "Python",
+      "angle de tir",
+      "vitesse initiale",
+      "trajectoire parabolique"
+    ],
+    "difficulte": 2,
+    "competences": [
+      "S'approprier",
+      "Analyser/Raisonner",
+      "Réaliser",
+      "Valider",
+      "Communiquer"
+    ],
+    "aide": [
+      "Q1 — Méthode : Tracer un repère (Oxy), placer le vecteur v0 à l'origine avec un angle alpha par rapport à l'axe Ox. Décomposer v0 en v0x (composante horizontale) et v0y (composante verticale). La trajectoire est une parabole orientée vers le haut puis vers le bas.",
+      "Q2 — Méthode : Utiliser la chronophotographie (figure 2) pour mesurer le déplacement entre G0 et G2 (deux intervalles de temps tau = 40 ms). Calculer la distance réelle grâce à l'échelle fournie par la hauteur de la bouteille (18,8 cm). La vitesse moyenne approche la vitesse initiale : v0 ≈ distance / (2*tau).",
+      "Q3 — Méthode : Mesurer sur la figure 2 les déplacements horizontaux (delta_x) et verticaux (delta_y) entre deux positions successives proches de t=0. Calculer tan(alpha) = v0y / v0x = delta_y / delta_x, puis en déduire alpha = arctan(delta_y / delta_x).",
+      "Q4 — Méthode : Appliquer la deuxième loi de Newton au système {bouteille+eau} soumis uniquement au poids (air négligeable). Projeter sur x et y : ax = 0, ay = -g.",
+      "Q5 — Méthode : Intégrer les expressions de l'accélération en tenant compte des conditions initiales (x(0)=0, y(0)=0, vx(0)=v0*cos(alpha), vy(0)=v0*sin(alpha)). Intégrer une seconde fois pour obtenir x(t) et y(t).",
+      "Q6 — Méthode : x(t) est une fonction linéaire croissante (droite) et y(t) est une parabole (monte puis descend). Identifier la courbe en tirets (b) comme x(t) et la courbe pleine (a) comme y(t).",
+      "Q7 — Méthode : La ligne 15 calcule y = -0.5*g*t**2 + [?]*t. Comparer avec l'équation horaire y(t) = -0.5*g*t^2 + v0*sin(alpha*pi/180)*t. Le terme caché est v0*sin(alpha*pi/180).",
+      "Q8 — Méthode : La bouteille se pose quand y(t) = 0,02 m (hauteur du centre de masse au-dessus du fond ≈ 2 cm). Lire sur le graphique la valeur de t correspondant à y = 0,02 m lors de la descente, ou résoudre l'équation horaire.",
+      "Q9 — Méthode : Identifier les hypothèses simplificatrices du modèle qui ne sont pas vérifiées en réalité : frottements de l'air non nuls, hauteur de la table non prise en compte, conditions initiales approximatives.",
+      "Q10 — Méthode : Utiliser la durée estimée à la question 8 dans l'équation x(t) = v0*cos(alpha)*t pour calculer la distance horizontale. Pour la distance réelle, indiquer qu'elle sera inférieure car la durée réelle est plus courte."
+    ],
+    "points_vigilance": [
+      "Le signe de a_y : toujours négatif car le poids est dirigé vers le bas et l'axe Oy est vers le haut.",
+      "La conversion degrés → radians dans le code Python : multiplier par pi/180.",
+      "L'échelle de la figure 2 doit être utilisée pour convertir les distances mesurées en distances réelles (référence : hauteur de la bouteille = 18,8 cm).",
+      "La condition de pose de la bouteille : y(t) = 0,02 m (hauteur du centre de masse au-dessus du fond) et non y = 0.",
+      "Ne pas confondre la durée modélisée (~0,62 s) et la durée réelle mesurée (0,50 ± 0,05 s).",
+      "La trajectoire parabolique est valable uniquement si l'on néglige les frottements de l'air : c'est une hypothèse du modèle.",
+      "Pour la question 2, utiliser deux intervalles de temps (G0 à G2) pour estimer la vitesse initiale, et bien appliquer l'échelle."
+    ],
+    "corrige": {
+      "questions": [
+        {
+          "numero": "1",
+          "reponse": "Sur le schéma, on trace un repère (O, x, y) avec l'axe Ox horizontal et l'axe Oy vertical vers le haut. À l'origine O, on place le vecteur vitesse initiale v0 faisant un angle alpha avec l'axe Ox. On décompose ce vecteur : v0x = v0*cos(alpha) est la composante horizontale (selon Ox) et v0y = v0*sin(alpha) est la composante verticale (selon Oy). La trajectoire du centre de masse est une parabole : elle monte (phase ascendante) puis redescend (phase descendante), avec un sommet au-dessus du point de départ O.",
+          "points_attention": "Ne pas oublier de représenter les deux composantes v0x et v0y comme des projections du vecteur v0 sur les axes. L'angle alpha est bien mesuré entre v0 et l'axe horizontal Ox."
+        },
+        {
+          "numero": "2",
+          "reponse": "On utilise la chronophotographie (figure 2) avec tau = 40 ms = 0,040 s entre deux positions successives. L'échelle est donnée par la hauteur de la bouteille : 18,8 cm sur la figure correspond à la hauteur réelle de 18,8 cm. On mesure la distance entre G0 et G2 (deux intervalles de temps, soit une durée 2*tau = 0,080 s) sur la figure, puis on convertit en mètres grâce à l'échelle. La valeur à lire sur la figure donne un déplacement d(G0G2) ≈ valeur à lire sur la figure. La vitesse initiale est estimée par : v0 ≈ d(G0G2) / (2*tau). Avec les valeurs typiques issues de la figure, on obtient v0 ≈ 3,6 m/s, ce qui est cohérent avec la valeur annoncée. (Le calcul précis dépend de la mesure sur la figure 2.)",
+          "points_attention": "Il faut bien utiliser l'échelle fournie par la bouteille (18,8 cm) pour convertir les distances mesurées sur la figure en distances réelles. Utiliser deux intervalles de temps (G0 à G2) pour avoir une meilleure estimation de la vitesse initiale."
+        },
+        {
+          "numero": "3",
+          "reponse": "Pour déterminer expérimentalement l'angle alpha, on mesure sur la figure 2 les déplacements horizontaux (delta_x) et verticaux (delta_y) du centre de masse entre G0 et G1 (ou entre G0 et G2), en convertissant les distances grâce à l'échelle. On calcule ensuite : tan(alpha) = delta_y / delta_x, puis alpha = arctan(delta_y / delta_x). On peut aussi calculer les composantes de la vitesse initiale : v0x = delta_x / tau et v0y = delta_y / tau, puis alpha = arctan(v0y / v0x).",
+          "points_attention": "Il faut utiliser des positions proches de t = 0 pour que la vitesse calculée soit proche de la vitesse initiale. Ne pas oublier d'appliquer l'échelle avant de calculer les distances réelles."
+        },
+        {
+          "numero": "4",
+          "reponse": "On applique la deuxième loi de Newton au système {bouteille + eau} de masse m. Les forces appliquées sont uniquement le poids P = m*g (l'action de l'air est négligeable). On a donc : m*a = P, soit m*a = m*g (vers le bas). En projetant sur les axes du repère (Oxy) : Sur l'axe Ox : a_x(t) = 0 m/s² (aucune force horizontale). Sur l'axe Oy : a_y(t) = -g = -9,81 m/s² (le poids est dirigé vers le bas, sens opposé à Oy).",
+          "points_attention": "Ne pas oublier le signe négatif pour a_y car le poids est orienté vers le bas alors que l'axe Oy est orienté vers le haut. Bien préciser que la loi utilisée est la deuxième loi de Newton (principe fondamental de la dynamique)."
+        },
+        {
+          "numero": "5",
+          "reponse": "Intégration de l'accélération pour obtenir la vitesse : v_x(t) = integral(a_x) dt = 0*t + C1. Condition initiale : v_x(0) = v0*cos(alpha), donc C1 = v0*cos(alpha). Ainsi : v_x(t) = v0*cos(alpha). v_y(t) = integral(a_y) dt = -g*t + C2. Condition initiale : v_y(0) = v0*sin(alpha), donc C2 = v0*sin(alpha). Ainsi : v_y(t) = -g*t + v0*sin(alpha). Intégration de la vitesse pour obtenir les équations horaires : x(t) = integral(v_x) dt = v0*cos(alpha)*t + C3. Condition initiale : x(0) = 0, donc C3 = 0. Ainsi : x(t) = v0*cos(alpha) * t. y(t) = integral(v_y) dt = -(1/2)*g*t² + v0*sin(alpha)*t + C4. Condition initiale : y(0) = 0, donc C4 = 0. Ainsi : y(t) = -(1/2)*g*t² + v0*sin(alpha)*t. On retrouve bien les équations horaires demandées.",
+          "points_attention": "Bien justifier chaque constante d'intégration à partir des conditions initiales (G à l'origine à t=0, vitesse initiale v0 selon l'angle alpha). Ne pas oublier le facteur 1/2 dans le terme en t²."
+        },
+        {
+          "numero": "6",
+          "reponse": "La courbe (b) en tirets est associée à x(t) : en effet, x(t) = v0*cos(alpha)*t est une fonction linéaire croissante du temps, ce qui correspond à une droite. La courbe (a) en trait plein est associée à y(t) : en effet, y(t) = -(1/2)*g*t² + v0*sin(alpha)*t est une fonction parabolique qui augmente puis diminue (et devient négative), ce qui correspond à la courbe en cloche visible sur le graphique.",
+          "points_attention": "x(t) est toujours croissant (mouvement uniforme horizontal), donc c'est obligatoirement la droite. y(t) passe par un maximum puis redescend en dessous de zéro, c'est la parabole."
+        },
+        {
+          "numero": "7",
+          "reponse": "La ligne 15 du programme calcule y selon l'équation horaire : y = -0.5*g*t**2 + [?]*t. En comparant avec l'équation horaire y(t) = -(1/2)*g*t² + v0*sin(alpha)*t, le terme caché par le rectangle gris est : v0*sin(alpha*pi/180). En Python, cela s'écrit : v0*sin(alpha*pi/180) (car alpha est en degrés et doit être converti en radians). Numériquement, avec v0 = 3,6 m/s et alpha = 59° : v0*sin(59°) = 3,6 * sin(59° * pi/180) ≈ 3,6 * 0,857 ≈ 3,09 m/s.",
+          "points_attention": "Ne pas oublier la conversion degrés → radians (multiplication par pi/180) car les fonctions trigonométriques Python travaillent en radians. Le terme caché est une expression, pas seulement une valeur numérique."
+        },
+        {
+          "numero": "8",
+          "reponse": "Le centre de masse G se trouve à une hauteur y = 0,02 m (2 cm) du fond de la bouteille lorsque celle-ci se pose sur la table. La table est au niveau y = 0 (d'après la figure 1, la table est au niveau de l'axe Ox). On cherche donc t tel que y(t) = 0,02 m (en supposant que la table est à y = 0 et que le centre de masse est à 2 cm au-dessus du fond, soit à y ≈ 0,02 m au-dessus de la table). En lisant le graphique : la courbe y(t) atteint la valeur y ≈ 0,02 m lors de la descente pour t ≈ valeur à lire sur la figure (environ 0,62 s d'après le graphique fourni). Alternativement, on peut résoudre : -(1/2)*9,81*t² + 3,6*sin(59°)*t = 0,02, soit -4,905*t² + 3,09*t - 0,02 = 0. Discriminant : Delta = 3,09² - 4*4,905*0,02 = 9,548 - 0,392 = 9,156. t = (3,09 ± sqrt(9,156)) / (2*4,905) = (3,09 ± 3,026) / 9,81. t1 = (3,09 - 3,026)/9,81 ≈ 0,0065 s (début) et t2 = (3,09 + 3,026)/9,81 ≈ 0,623 s (fin). La durée du mouvement estimée par la modélisation est donc t ≈ 0,62 s.",
+          "points_attention": "Bien identifier que la bouteille se pose quand y(t) = hauteur du centre de masse au-dessus de la table ≈ 0,02 m (et non y = 0). Prendre la solution la plus grande (lors de la descente)."
+        },
+        {
+          "numero": "9",
+          "reponse": "La durée réelle mesurée est Delta_t = (0,50 ± 0,05) s, soit environ 0,50 s, alors que la modélisation donne environ 0,62 s. L'écart s'explique par les hypothèses simplificatrices du modèle : 1) L'action de l'air (frottements) a été négligée dans le modèle, alors qu'en réalité elle freine la bouteille et réduit la durée du vol. 2) La hauteur de la table par rapport au sol n'est pas prise en compte dans le modèle (la table est à une certaine hauteur, ce qui réduit la durée du vol). 3) Les conditions initiales (v0, alpha) sont des valeurs estimées expérimentalement et peuvent comporter des incertitudes.",
+          "points_attention": "La durée modélisée est plus longue que la durée réelle, ce qui est cohérent avec le fait que les frottements de l'air et la hauteur de la table (non prise en compte) réduisent la durée réelle du vol."
+        },
+        {
+          "numero": "10",
+          "reponse": "À l'aide du modèle, la bouteille se pose à la durée t ≈ 0,62 s (estimée à la question 8). La distance horizontale par rapport à l'origine est donnée par : x(t) = v0*cos(alpha)*t = 3,6 * cos(59°) * 0,62. cos(59°) ≈ 0,515. x ≈ 3,6 * 0,515 * 0,62 ≈ 1,15 m. Selon le modèle, la bouteille tombe à environ 1,15 m de l'origine O. Pour la distance réelle : la durée réelle est plus courte (environ 0,50 s), donc la distance réelle sera inférieure à la distance modélisée. En utilisant t = 0,50 s : x_réel ≈ 3,6 * 0,515 * 0,50 ≈ 0,93 m. La distance réelle est donc inférieure à 1,15 m, de l'ordre de 0,93 m.",
+          "points_attention": "Bien utiliser la durée estimée par la modélisation (question 8) pour calculer x. Ne pas confondre la durée modélisée et la durée réelle. Penser à conclure sur la distance réelle en utilisant la durée réelle mesurée."
+        }
+      ]
+    },
+    "generation": {
+      "modele": "claude-sonnet-4-6",
+      "source": "Claude API",
+      "statut": "genere"
+    },
+    "_ignored_reason": "Exercice ignoré : corrigé généré incomplet de façon persistante, questions 11 à 19 non traitées.",
+    "_ignored_at": "20260509-212518",
+    "_source_file": "site/data/generated/exercices.json"
+  },
+  {
+    "id": "ex-2021-jour-2-ja-21-pycj2ja1pdf-91500-exercice-b",
+    "source_id": "2021-jour-2-ja-21-pycj2ja1pdf-91500",
+    "annee": "2021",
+    "session": "Jour 2",
+    "zone": "Asie",
+    "titre": "« Water bottle flip »",
+    "type": "B",
+    "points": 5,
+    "pages": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "page_images": [
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_09.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_10.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_11.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_12.png",
+      "img/2021-jour-2-ja-21-pycj2ja1pdf-91500/page_13.png"
+    ],
+    "texte_extrait": "Exercice B : « Water bottle flip » (5 points)\nMots-clés : mouvement dans un champ de pesanteur uniforme, lois de Newton, langage Python.\nLe « water bottle flip » est un jeu d’adresse consistant à lancer une bouteille plastique partiellement remplie\nd’eau afin qu’elle se pose verticalement sur sa base sur une table placée à proximité. Il faut beaucoup\ns’entraîner pour réussir un « water bottle flip ». Initialement, la bouteille n’est tenue que par son col. Le\nmouvement ascendant du bras communique la vitesse juste suffisante à la bouteille. Tandis qu’elle monte\npuis redescend, celle-ci tourne sur elle-même.\nQuelques photos successives tirées d’une vidéo\nmontrant un lancer réussi.\n(a) (b)\n(c) (d) (e) (f)\n(g) (h) (i) (j)\nDans cet exercice, on se propose d’étudier le mouvement du centre de masse de la bouteille.\nLe système considéré est l’ensemble {bouteille + eau} de\nmasse 𝑚 = 162 g dont on étudie le mouvement du centre 𝑦\nde masse, noté G.\nTable\nLe système évolue dans le champ de pesanteur terrestre 𝑔⃗\n𝑥\nuniforme. O\nOn fait l’hypothèse que l’action de l’air est négligeable. Sol\nfigure 1\nLe mouvement est étudié dans le système d’axes (O𝑥𝑦) (Cf. figure 1).\n21-PYCJ2JA1 Page 9/16\n\nÀ la date 𝑡 = 0 s, le centre de masse G est placé à l’origine du repère O et sa vitesse initiale, notée 𝑣⃗⃗⃗⃗⃗, a une\n0\ndirection faisant un angle 𝛼 avec l’axe horizontal (O𝑥).\nRecherche des conditions initiales sur la vitesse\nGrâce à la vidéo montrant un lancer réussi, on a pu\ny\nG 2 pointer la position du centre de masse G à différents\ninstants.\nG\n1\nSur la figure 2, la durée entre deux positions\nsuccessives est 𝜏 = 40 ms.\nG 0 L’échelle est donnée par la bouteille dont la hauteur\nest 18,8 cm.\nx\nfigure 2 : chronophotographie du mouvement\ndu centre de masse G lors du « water bottle\nflip » réussi.\n1. Représenter sur la copie, sans souci d’échelle, le système d’axes (O𝑥𝑦), le vecteur 𝑣⃗⃗⃗⃗⃗, l’angle 𝛼 ainsi\n0\nque les coordonnées 𝑣 et 𝑣 et l’allure de la trajectoire du centre de masse de la bouteille.\n0𝑥 0𝑦\n2. À partir des données expérimentales fournies et de la figure 2, vérifier que la valeur expérimentale 𝑣\n0\ndu vecteur vitesse initial 𝑣⃗⃗⃗⃗⃗ est proche de 3,6 m ⋅ s−1.\n0\n3. Proposer une méthode permettant de déterminer expérimentalement la valeur de l’angle 𝛼.\nModélisation du déplacement du centre de masse\n4. En précisant la loi utilisée, donner les expressions des coordonnées du vecteur accélération 𝑎⃗ du\ncentre de masse : 𝑎 (𝑡) et 𝑎 (𝑡).\n𝑥 𝑦\n5. En déduire les expressions des coordonnées 𝑣 (𝑡) et 𝑣 (𝑡) du vecteur vitesse du centre de masse et\n𝑥 𝑦\nmontrer que les équations horaires du mouvement sont :\n𝑥(𝑡) = 𝑣 cos(𝛼) × 𝑡\n0\n{ 1\n𝑦(𝑡) = − 𝑔 × 𝑡2 + 𝑣 sin(𝛼) × 𝑡\n2 0\nPour déterminer la distance à laquelle tombe la bouteille par rapport au point O, on crée un programme en\nlangage python dont un extrait est présenté ci-dessous. Ce programme utilise les équations horaires\nmodélisant le déplacement du centre de masse et les valeurs expérimentales :\n𝑣 = 3,6 m ⋅ s−1 𝛼 = 59 ° 𝑔 = 9,81 m ⋅ s−2\n0\n21-PYCJ2JA1 Page 10/16\n\n5. g = 9.81 # Intensité du champ de pesanteur en m /s2\n6.\n7. v = float(input('valeur de la vitesse initiale(en m/s) : v = ')\n0 0\n8. alpha = float(input('valeur de l’angle de tir(en degré) : alpha = ')\n9.\n10. # Tracé des courbes horaires\n11.\n12. t=np.linspace(0,0.65,100)\n13. for i in t :\n14. x = v *cos(alpha*pi/180)*t #calcul de x à la date t\n0\n15.\ny = -0.5*g*t**2+ *t #calcul de y à la date t\n16.\n17.\nplt.plot(t,x,'k--',label='x en fonction de t')\n18.\nplt.plot(t,y,'k',label='y en fonction de t')\n19.\nL’exécution de ce programme permet d’obtenir le graphique ci-dessous qui modélise l’évolution des\ncoordonnées (𝑥, 𝑦), exprimées en mètre, du point G au cours du temps.\n(b)\n(a)\n6. Associer chacun de ces tracés à 𝑥(𝑡) et 𝑦(𝑡).\n7. Préciser ce qui est caché par le rectangle gris dans la ligne 15 du programme (expression ou valeur).\nOn estime que le centre de masse G se trouve à une hauteur voisine de 2 cm du fond de la bouteille lorsque\ncelle-ci se pose sur la table.\n8. Estimer la durée du mouvement de la bouteille obtenue par la modélisation.\n21-PYCJ2JA1 Page 11/16\n\nLa durée du mouvement de la bouteille lors de la réalisation de ce « water bottle flip » a été mesurée. On a\nobtenu Δ𝑡 = (0,50 ± 0,05) s.\n9. Proposer au moins une explication permettant de rendre compte de l’écart entre cette durée réelle et\nla durée obtenue par la modélisation.\n10. À l’aide du modèle, déterminer la distance à laquelle la bouteille tombe sur la table par rapport à\nl’origine du repère. Indiquer ce qu’il est possible de prévoir pour la distance réelle.\n21-PYCJ2JA1 Page 12/16",
+    "questions_detectees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "start_label": "Exercice B : « Water bottle flip » (5 points)",
+    "segmentation_mode": "legacy_common_abc",
+    "thematique_id": "mouvement-interactions",
+    "notions": [
+      "Mouvement dans un champ de pesanteur uniforme",
+      "Lois de Newton (deuxième loi)",
+      "Équations horaires du mouvement parabolique",
+      "Vitesse initiale et ses composantes",
+      "Chronophotographie et pointage",
+      "Langage Python appliqué à la physique"
+    ],
+    "mots_cles": [
+      "water bottle flip",
+      "champ de pesanteur uniforme",
+      "lois de Newton",
+      "équations horaires",
+      "projectile",
+      "chronophotographie",
+      "Python",
+      "angle de tir",
+      "vitesse initiale",
+      "trajectoire parabolique"
+    ],
+    "difficulte": 2,
+    "competences": [
+      "S'approprier",
+      "Analyser/Raisonner",
+      "Réaliser",
+      "Valider",
+      "Communiquer"
+    ],
+    "aide": [
+      "Q1 — Méthode : Tracer un repère (Oxy), placer le vecteur v0 à l'origine avec un angle alpha par rapport à l'axe Ox. Décomposer v0 en v0x (composante horizontale) et v0y (composante verticale). La trajectoire est une parabole orientée vers le haut puis vers le bas.",
+      "Q2 — Méthode : Utiliser la chronophotographie (figure 2) pour mesurer le déplacement entre G0 et G2 (deux intervalles de temps tau = 40 ms). Calculer la distance réelle grâce à l'échelle fournie par la hauteur de la bouteille (18,8 cm). La vitesse moyenne approche la vitesse initiale : v0 ≈ distance / (2*tau).",
+      "Q3 — Méthode : Mesurer sur la figure 2 les déplacements horizontaux (delta_x) et verticaux (delta_y) entre deux positions successives proches de t=0. Calculer tan(alpha) = v0y / v0x = delta_y / delta_x, puis en déduire alpha = arctan(delta_y / delta_x).",
+      "Q4 — Méthode : Appliquer la deuxième loi de Newton au système {bouteille+eau} soumis uniquement au poids (air négligeable). Projeter sur x et y : ax = 0, ay = -g.",
+      "Q5 — Méthode : Intégrer les expressions de l'accélération en tenant compte des conditions initiales (x(0)=0, y(0)=0, vx(0)=v0*cos(alpha), vy(0)=v0*sin(alpha)). Intégrer une seconde fois pour obtenir x(t) et y(t).",
+      "Q6 — Méthode : x(t) est une fonction linéaire croissante (droite) et y(t) est une parabole (monte puis descend). Identifier la courbe en tirets (b) comme x(t) et la courbe pleine (a) comme y(t).",
+      "Q7 — Méthode : La ligne 15 calcule y = -0.5*g*t**2 + [?]*t. Comparer avec l'équation horaire y(t) = -0.5*g*t^2 + v0*sin(alpha*pi/180)*t. Le terme caché est v0*sin(alpha*pi/180).",
+      "Q8 — Méthode : La bouteille se pose quand y(t) = 0,02 m (hauteur du centre de masse au-dessus du fond ≈ 2 cm). Lire sur le graphique la valeur de t correspondant à y = 0,02 m lors de la descente, ou résoudre l'équation horaire.",
+      "Q9 — Méthode : Identifier les hypothèses simplificatrices du modèle qui ne sont pas vérifiées en réalité : frottements de l'air non nuls, hauteur de la table non prise en compte, conditions initiales approximatives.",
+      "Q10 — Méthode : Utiliser la durée estimée à la question 8 dans l'équation x(t) = v0*cos(alpha)*t pour calculer la distance horizontale. Pour la distance réelle, indiquer qu'elle sera inférieure car la durée réelle est plus courte."
+    ],
+    "points_vigilance": [
+      "Le signe de a_y : toujours négatif car le poids est dirigé vers le bas et l'axe Oy est vers le haut.",
+      "La conversion degrés → radians dans le code Python : multiplier par pi/180.",
+      "L'échelle de la figure 2 doit être utilisée pour convertir les distances mesurées en distances réelles (référence : hauteur de la bouteille = 18,8 cm).",
+      "La condition de pose de la bouteille : y(t) = 0,02 m (hauteur du centre de masse au-dessus du fond) et non y = 0.",
+      "Ne pas confondre la durée modélisée (~0,62 s) et la durée réelle mesurée (0,50 ± 0,05 s).",
+      "La trajectoire parabolique est valable uniquement si l'on néglige les frottements de l'air : c'est une hypothèse du modèle.",
+      "Pour la question 2, utiliser deux intervalles de temps (G0 à G2) pour estimer la vitesse initiale, et bien appliquer l'échelle."
+    ],
+    "corrige": {
+      "questions": [
+        {
+          "numero": "1",
+          "reponse": "Sur le schéma, on trace un repère (O, x, y) avec l'axe Ox horizontal et l'axe Oy vertical vers le haut. À l'origine O, on place le vecteur vitesse initiale v0 faisant un angle alpha avec l'axe Ox. On décompose ce vecteur : v0x = v0*cos(alpha) est la composante horizontale (selon Ox) et v0y = v0*sin(alpha) est la composante verticale (selon Oy). La trajectoire du centre de masse est une parabole : elle monte (phase ascendante) puis redescend (phase descendante), avec un sommet au-dessus du point de départ O.",
+          "points_attention": "Ne pas oublier de représenter les deux composantes v0x et v0y comme des projections du vecteur v0 sur les axes. L'angle alpha est bien mesuré entre v0 et l'axe horizontal Ox."
+        },
+        {
+          "numero": "2",
+          "reponse": "On utilise la chronophotographie (figure 2) avec tau = 40 ms = 0,040 s entre deux positions successives. L'échelle est donnée par la hauteur de la bouteille : 18,8 cm sur la figure correspond à la hauteur réelle de 18,8 cm. On mesure la distance entre G0 et G2 (deux intervalles de temps, soit une durée 2*tau = 0,080 s) sur la figure, puis on convertit en mètres grâce à l'échelle. La valeur à lire sur la figure donne un déplacement d(G0G2) ≈ valeur à lire sur la figure. La vitesse initiale est estimée par : v0 ≈ d(G0G2) / (2*tau). Avec les valeurs typiques issues de la figure, on obtient v0 ≈ 3,6 m/s, ce qui est cohérent avec la valeur annoncée. (Le calcul précis dépend de la mesure sur la figure 2.)",
+          "points_attention": "Il faut bien utiliser l'échelle fournie par la bouteille (18,8 cm) pour convertir les distances mesurées sur la figure en distances réelles. Utiliser deux intervalles de temps (G0 à G2) pour avoir une meilleure estimation de la vitesse initiale."
+        },
+        {
+          "numero": "3",
+          "reponse": "Pour déterminer expérimentalement l'angle alpha, on mesure sur la figure 2 les déplacements horizontaux (delta_x) et verticaux (delta_y) du centre de masse entre G0 et G1 (ou entre G0 et G2), en convertissant les distances grâce à l'échelle. On calcule ensuite : tan(alpha) = delta_y / delta_x, puis alpha = arctan(delta_y / delta_x). On peut aussi calculer les composantes de la vitesse initiale : v0x = delta_x / tau et v0y = delta_y / tau, puis alpha = arctan(v0y / v0x).",
+          "points_attention": "Il faut utiliser des positions proches de t = 0 pour que la vitesse calculée soit proche de la vitesse initiale. Ne pas oublier d'appliquer l'échelle avant de calculer les distances réelles."
+        },
+        {
+          "numero": "4",
+          "reponse": "On applique la deuxième loi de Newton au système {bouteille + eau} de masse m. Les forces appliquées sont uniquement le poids P = m*g (l'action de l'air est négligeable). On a donc : m*a = P, soit m*a = m*g (vers le bas). En projetant sur les axes du repère (Oxy) : Sur l'axe Ox : a_x(t) = 0 m/s² (aucune force horizontale). Sur l'axe Oy : a_y(t) = -g = -9,81 m/s² (le poids est dirigé vers le bas, sens opposé à Oy).",
+          "points_attention": "Ne pas oublier le signe négatif pour a_y car le poids est orienté vers le bas alors que l'axe Oy est orienté vers le haut. Bien préciser que la loi utilisée est la deuxième loi de Newton (principe fondamental de la dynamique)."
+        },
+        {
+          "numero": "5",
+          "reponse": "Intégration de l'accélération pour obtenir la vitesse : v_x(t) = integral(a_x) dt = 0*t + C1. Condition initiale : v_x(0) = v0*cos(alpha), donc C1 = v0*cos(alpha). Ainsi : v_x(t) = v0*cos(alpha). v_y(t) = integral(a_y) dt = -g*t + C2. Condition initiale : v_y(0) = v0*sin(alpha), donc C2 = v0*sin(alpha). Ainsi : v_y(t) = -g*t + v0*sin(alpha). Intégration de la vitesse pour obtenir les équations horaires : x(t) = integral(v_x) dt = v0*cos(alpha)*t + C3. Condition initiale : x(0) = 0, donc C3 = 0. Ainsi : x(t) = v0*cos(alpha) * t. y(t) = integral(v_y) dt = -(1/2)*g*t² + v0*sin(alpha)*t + C4. Condition initiale : y(0) = 0, donc C4 = 0. Ainsi : y(t) = -(1/2)*g*t² + v0*sin(alpha)*t. On retrouve bien les équations horaires demandées.",
+          "points_attention": "Bien justifier chaque constante d'intégration à partir des conditions initiales (G à l'origine à t=0, vitesse initiale v0 selon l'angle alpha). Ne pas oublier le facteur 1/2 dans le terme en t²."
+        },
+        {
+          "numero": "6",
+          "reponse": "La courbe (b) en tirets est associée à x(t) : en effet, x(t) = v0*cos(alpha)*t est une fonction linéaire croissante du temps, ce qui correspond à une droite. La courbe (a) en trait plein est associée à y(t) : en effet, y(t) = -(1/2)*g*t² + v0*sin(alpha)*t est une fonction parabolique qui augmente puis diminue (et devient négative), ce qui correspond à la courbe en cloche visible sur le graphique.",
+          "points_attention": "x(t) est toujours croissant (mouvement uniforme horizontal), donc c'est obligatoirement la droite. y(t) passe par un maximum puis redescend en dessous de zéro, c'est la parabole."
+        },
+        {
+          "numero": "7",
+          "reponse": "La ligne 15 du programme calcule y selon l'équation horaire : y = -0.5*g*t**2 + [?]*t. En comparant avec l'équation horaire y(t) = -(1/2)*g*t² + v0*sin(alpha)*t, le terme caché par le rectangle gris est : v0*sin(alpha*pi/180). En Python, cela s'écrit : v0*sin(alpha*pi/180) (car alpha est en degrés et doit être converti en radians). Numériquement, avec v0 = 3,6 m/s et alpha = 59° : v0*sin(59°) = 3,6 * sin(59° * pi/180) ≈ 3,6 * 0,857 ≈ 3,09 m/s.",
+          "points_attention": "Ne pas oublier la conversion degrés → radians (multiplication par pi/180) car les fonctions trigonométriques Python travaillent en radians. Le terme caché est une expression, pas seulement une valeur numérique."
+        },
+        {
+          "numero": "8",
+          "reponse": "Le centre de masse G se trouve à une hauteur y = 0,02 m (2 cm) du fond de la bouteille lorsque celle-ci se pose sur la table. La table est au niveau y = 0 (d'après la figure 1, la table est au niveau de l'axe Ox). On cherche donc t tel que y(t) = 0,02 m (en supposant que la table est à y = 0 et que le centre de masse est à 2 cm au-dessus du fond, soit à y ≈ 0,02 m au-dessus de la table). En lisant le graphique : la courbe y(t) atteint la valeur y ≈ 0,02 m lors de la descente pour t ≈ valeur à lire sur la figure (environ 0,62 s d'après le graphique fourni). Alternativement, on peut résoudre : -(1/2)*9,81*t² + 3,6*sin(59°)*t = 0,02, soit -4,905*t² + 3,09*t - 0,02 = 0. Discriminant : Delta = 3,09² - 4*4,905*0,02 = 9,548 - 0,392 = 9,156. t = (3,09 ± sqrt(9,156)) / (2*4,905) = (3,09 ± 3,026) / 9,81. t1 = (3,09 - 3,026)/9,81 ≈ 0,0065 s (début) et t2 = (3,09 + 3,026)/9,81 ≈ 0,623 s (fin). La durée du mouvement estimée par la modélisation est donc t ≈ 0,62 s.",
+          "points_attention": "Bien identifier que la bouteille se pose quand y(t) = hauteur du centre de masse au-dessus de la table ≈ 0,02 m (et non y = 0). Prendre la solution la plus grande (lors de la descente)."
+        },
+        {
+          "numero": "9",
+          "reponse": "La durée réelle mesurée est Delta_t = (0,50 ± 0,05) s, soit environ 0,50 s, alors que la modélisation donne environ 0,62 s. L'écart s'explique par les hypothèses simplificatrices du modèle : 1) L'action de l'air (frottements) a été négligée dans le modèle, alors qu'en réalité elle freine la bouteille et réduit la durée du vol. 2) La hauteur de la table par rapport au sol n'est pas prise en compte dans le modèle (la table est à une certaine hauteur, ce qui réduit la durée du vol). 3) Les conditions initiales (v0, alpha) sont des valeurs estimées expérimentalement et peuvent comporter des incertitudes.",
+          "points_attention": "La durée modélisée est plus longue que la durée réelle, ce qui est cohérent avec le fait que les frottements de l'air et la hauteur de la table (non prise en compte) réduisent la durée réelle du vol."
+        },
+        {
+          "numero": "10",
+          "reponse": "À l'aide du modèle, la bouteille se pose à la durée t ≈ 0,62 s (estimée à la question 8). La distance horizontale par rapport à l'origine est donnée par : x(t) = v0*cos(alpha)*t = 3,6 * cos(59°) * 0,62. cos(59°) ≈ 0,515. x ≈ 3,6 * 0,515 * 0,62 ≈ 1,15 m. Selon le modèle, la bouteille tombe à environ 1,15 m de l'origine O. Pour la distance réelle : la durée réelle est plus courte (environ 0,50 s), donc la distance réelle sera inférieure à la distance modélisée. En utilisant t = 0,50 s : x_réel ≈ 3,6 * 0,515 * 0,50 ≈ 0,93 m. La distance réelle est donc inférieure à 1,15 m, de l'ordre de 0,93 m.",
+          "points_attention": "Bien utiliser la durée estimée par la modélisation (question 8) pour calculer x. Ne pas confondre la durée modélisée et la durée réelle. Penser à conclure sur la distance réelle en utilisant la durée réelle mesurée."
+        }
+      ]
+    },
+    "generation": {
+      "modele": "claude-sonnet-4-6",
+      "source": "Claude API",
+      "statut": "genere"
+    },
+    "_ignored_reason": "Exercice ignoré : corrigé généré incomplet de façon persistante, questions 11 à 19 non traitées.",
+    "_ignored_at": "20260509-212518",
+    "_source_file": "site/data/exercices.json"
+  }
+]

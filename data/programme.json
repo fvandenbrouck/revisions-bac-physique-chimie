@@ -1,0 +1,96 @@
+{
+  "source": {
+    "pdf_path": "/Users/francoisvandenbrouck/Documents/FV/perso/bac/PC/revisions/site/programme/Terminale PC.pdf",
+    "pdf_name": "Terminale PC.pdf",
+    "extracted_at": "2026-05-09 12:57:25",
+    "pages_count": 22,
+    "note": "Texte extrait automatiquement. La structuration fine est réalisée par 00b_structure_programme_officiel.py."
+  },
+  "thematiques": [
+    {
+      "id": "constitution-matiere",
+      "titre": "Constitution et transformations de la matière",
+      "icone": "⚗️",
+      "description": "Analyse chimique, transformations acide-base, cinétique, radioactivité, équilibres, piles, électrolyse et synthèse organique.",
+      "programme_officiel": {
+        "section_id": "constitution-matiere",
+        "pages": [
+          21
+        ],
+        "source": "Terminale PC.pdf",
+        "statut": "texte brut extrait — structuration à produire avec 00b_structure_programme_officiel.py"
+      }
+    },
+    {
+      "id": "mouvement-interactions",
+      "titre": "Mouvement et interactions",
+      "icone": "🛰️",
+      "description": "Cinématique vectorielle, deuxième loi de Newton, champs uniformes, gravitation, satellites, Kepler et dynamique des fluides.",
+      "programme_officiel": {
+        "section_id": "mouvement-interactions",
+        "pages": [
+          21,
+          22
+        ],
+        "source": "Terminale PC.pdf",
+        "statut": "texte brut extrait — structuration à produire avec 00b_structure_programme_officiel.py"
+      }
+    },
+    {
+      "id": "energie-conversions",
+      "titre": "L’énergie : conversions et transferts",
+      "icone": "🔥",
+      "description": "Gaz parfait, premier principe de la thermodynamique, transferts thermiques, bilan Terre-atmosphère et loi de Newton thermique.",
+      "programme_officiel": {
+        "section_id": "energie-conversions",
+        "pages": [
+          1
+        ],
+        "source": "Terminale PC.pdf",
+        "statut": "texte brut extrait — structuration à produire avec 00b_structure_programme_officiel.py"
+      }
+    },
+    {
+      "id": "ondes-signaux",
+      "titre": "Ondes et signaux",
+      "icone": "🌊",
+      "description": "Phénomènes ondulatoires, optique, photons, effet photoélectrique et dynamique du circuit RC.",
+      "programme_officiel": {
+        "section_id": "ondes-signaux",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "source": "Terminale PC.pdf",
+        "statut": "texte brut extrait — structuration à produire avec 00b_structure_programme_officiel.py"
+      }
+    }
+  ],
+  "transversal": {
+    "mesure_incertitudes": {
+      "section_id": "mesure-incertitudes",
+      "pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  }
+}
