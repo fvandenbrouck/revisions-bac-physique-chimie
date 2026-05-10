@@ -1,76 +1,450 @@
 {
   "constitution-matiere": [
     {
-      "question": "À l'équivalence d'un titrage 1:1, quelle relation est correcte ?",
+      "question": "Selon la théorie de Brönsted, qu'est-ce qu'un acide ?",
       "options": [
-        "c_A/V_A=c_B/V_E",
-        "c_A V_A=c_B V_E",
-        "c_A c_B=V_A V_E",
-        "V_A=V_E toujours"
+        "Une espèce capable de céder un ion H+ à une autre espèce",
+        "Une espèce capable de capter un ion H+ provenant d'une autre espèce",
+        "Une espèce qui libère des ions OH- en solution aqueuse",
+        "Une espèce qui accepte un doublet d'électrons"
       ],
-      "correct": 1,
-      "explanation": "L'égalité porte sur les quantités de matière, donc sur c×V si les coefficients sont 1:1."
+      "correct": 0,
+      "explanation": "Selon Brönsted, un acide est un donneur de proton H+. La base est l'accepteur de proton. Les définitions d'Arrhenius (OH-) et de Lewis (doublet) sont différentes."
     },
     {
-      "question": "Quel indice IR permet d'écarter un acide carboxylique ?",
+      "question": "Qu'est-ce qu'un intermédiaire réactionnel dans un mécanisme réactionnel ?",
       "options": [
-        "Une bande C=O",
-        "Une bande C-H",
-        "L'absence de large bande O-H 2500-3200 cm⁻¹",
-        "Une bande vers 3000 cm⁻¹"
+        "Une espèce formée lors d'un acte élémentaire et consommée lors d'un acte ultérieur, absente du bilan",
+        "Une espèce présente dans l'équation bilan de la réaction",
+        "Une espèce qui augmente la vitesse de réaction sans être consommée",
+        "Une espèce qui apparaît uniquement dans l'état final du système"
       ],
-      "correct": 2,
-      "explanation": "L'acide carboxylique possède une large bande O-H caractéristique."
+      "correct": 0,
+      "explanation": "L'intermédiaire réactionnel est formé puis consommé dans le mécanisme : il n'apparaît pas dans l'équation bilan. Le catalyseur, lui, n'est pas consommé au bilan global."
+    },
+    {
+      "question": "Quelle est la relation correcte pour la loi de Beer-Lambert ?",
+      "options": [
+        "A = ε · l · c",
+        "A = ε · c / l",
+        "A = ε · l² · c",
+        "A = l · c / ε"
+      ],
+      "correct": 0,
+      "explanation": "La loi de Beer-Lambert s'écrit A = ε·l·c, où ε est le coefficient d'absorption molaire (L·mol⁻¹·cm⁻¹), l la longueur du trajet optique (cm) et c la concentration (mol·L⁻¹). Inverser ou modifier les exposants conduit à une relation non homogène."
+    },
+    {
+      "question": "Quelle est la relation correcte entre le temps de demi-vie t₁/₂ et la constante radioactive λ ?",
+      "options": [
+        "t₁/₂ = ln(2) / λ",
+        "t₁/₂ = λ / ln(2)",
+        "t₁/₂ = ln(2) · λ",
+        "t₁/₂ = 1 / λ"
+      ],
+      "correct": 0,
+      "explanation": "On obtient t₁/₂ = ln(2)/λ en résolvant N₀/2 = N₀·e^(-λt). Confondre t₁/₂ = 1/λ (qui est la constante de temps τ, pas le temps de demi-vie) est une erreur classique."
+    },
+    {
+      "question": "Quelle est la loi de vitesse correcte pour une réaction d'ordre 1 par rapport au réactif A, et l'expression du temps de demi-réaction associé ?",
+      "options": [
+        "v = k·[A] et t₁/₂ = ln(2)/k",
+        "v = k·[A]² et t₁/₂ = 1/(k·[A]₀)",
+        "v = k·[A] et t₁/₂ = 1/k",
+        "v = k et t₁/₂ = [A]₀/(2k)"
+      ],
+      "correct": 0,
+      "explanation": "Pour une cinétique d'ordre 1 : v = k·[A], [A](t) = [A]₀·e^(-kt) et t₁/₂ = ln(2)/k. Confondre t₁/₂ = 1/k (constante de temps) ou utiliser [A]² (ordre 2) sont des erreurs fréquentes."
+    },
+    {
+      "question": "Lors d'une radioactivité β⁻, que se passe-t-il pour le noyau père ?",
+      "options": [
+        "Le nombre de masse A est inchangé et le numéro atomique Z augmente de 1",
+        "Le nombre de masse A diminue de 4 et le numéro atomique Z diminue de 2",
+        "Le nombre de masse A est inchangé et le numéro atomique Z diminue de 1",
+        "Le nombre de masse A et le numéro atomique Z sont tous deux inchangés"
+      ],
+      "correct": 0,
+      "explanation": "En radioactivité β⁻, un neutron se transforme en proton avec émission d'un électron : A reste constant, Z augmente de 1. La radioactivité α diminue A de 4 et Z de 2 ; β⁺ diminue Z de 1 ; γ ne modifie ni A ni Z."
+    },
+    {
+      "question": "Un système chimique est tel que Qr,i < K(T) à l'état initial. Dans quel sens évolue-t-il spontanément ?",
+      "options": [
+        "Dans le sens direct (formation des produits)",
+        "Dans le sens indirect (formation des réactifs)",
+        "Le système est déjà à l'équilibre, il n'évolue pas",
+        "On ne peut pas conclure sans connaître les concentrations initiales"
+      ],
+      "correct": 0,
+      "explanation": "Lorsque Qr,i < K(T), le système évolue dans le sens direct pour augmenter Qr jusqu'à atteindre K(T). Si Qr,i > K(T), il évolue dans le sens indirect."
+    },
+    {
+      "question": "Dans une pile électrochimique, à quelle électrode a lieu l'oxydation et quelle est sa polarité ?",
+      "options": [
+        "À l'anode, qui est le pôle négatif",
+        "À la cathode, qui est le pôle négatif",
+        "À l'anode, qui est le pôle positif",
+        "À la cathode, qui est le pôle positif"
+      ],
+      "correct": 0,
+      "explanation": "Dans une pile, l'oxydation a lieu à l'anode (pôle négatif) et la réduction à la cathode (pôle positif). Les électrons circulent de l'anode vers la cathode dans le circuit extérieur."
+    },
+    {
+      "question": "Une solution d'acide acétique (CH₃COOH) a un pH de 3,0 à 25 °C. Quelle est la concentration en ions oxonium [H₃O⁺] dans cette solution ?",
+      "options": [
+        "1,0 × 10⁻³ mol·L⁻¹",
+        "3,0 × 10⁻¹ mol·L⁻¹",
+        "1,0 × 10³ mol·L⁻¹",
+        "3,0 mol·L⁻¹"
+      ],
+      "correct": 0,
+      "explanation": "La relation pH = -log([H₃O⁺]/c°) donne [H₃O⁺] = c°·10^(-pH) = 1·10^(-3,0) = 1,0 × 10⁻³ mol·L⁻¹. Confondre pH = log([H₃O⁺]) (sans le signe moins) ou inverser la formule sont des erreurs classiques."
+    },
+    {
+      "question": "Lors d'une électrolyse, un courant de 2,0 A est maintenu pendant 965 s. Le nombre d'électrons échangés par mole de produit formé est nₑ = 2. Quelle est la quantité de matière transformée ? (F = 96 500 C·mol⁻¹)",
+      "options": [
+        "1,0 × 10⁻² mol",
+        "2,0 × 10⁻² mol",
+        "5,0 × 10⁻³ mol",
+        "1,0 × 10⁻¹ mol"
+      ],
+      "correct": 0,
+      "explanation": "Q = I·t = 2,0 × 965 = 1930 C. n = Q/(nₑ·F) = 1930/(2 × 96 500) = 1,0 × 10⁻² mol. Oublier de diviser par nₑ donnerait 2,0 × 10⁻² mol, erreur fréquente."
     }
   ],
   "mouvement-interactions": [
     {
-      "question": "Dans un mouvement circulaire uniforme, l'accélération est surtout…",
+      "question": "Dans le repère de Frenet, que représente la composante tangentielle de l'accélération ?",
       "options": [
-        "tangentielle",
-        "nulle",
-        "normale vers le centre",
-        "verticale vers le haut"
+        "La variation de la norme de la vitesse",
+        "La variation de la direction de la vitesse",
+        "La vitesse divisée par le rayon de courbure",
+        "La dérivée du vecteur position par rapport au temps"
       ],
-      "correct": 2,
-      "explanation": "La vitesse change de direction ; l'accélération est centripète."
+      "correct": 0,
+      "explanation": "La composante tangentielle a_T = dv/dt traduit la variation de la norme de la vitesse. La composante normale a_N = v²/R traduit, elle, la variation de la direction."
+    },
+    {
+      "question": "Dans quel référentiel la deuxième loi de Newton s'applique-t-elle sous la forme ΣF_ext = m·a_G ?",
+      "options": [
+        "Dans tout référentiel en mouvement",
+        "Dans un référentiel galiléen uniquement",
+        "Dans un référentiel en rotation uniforme",
+        "Dans le référentiel du centre de masse uniquement"
+      ],
+      "correct": 1,
+      "explanation": "La deuxième loi de Newton ΣF_ext = m·a_G n'est valable que dans un référentiel galiléen, c'est-à-dire un référentiel dans lequel la première loi de Newton est vérifiée."
+    },
+    {
+      "question": "Quelle est l'expression correcte de l'accélération centripète pour un mouvement circulaire uniforme de rayon R et de vitesse v ?",
+      "options": [
+        "a_N = v²/R",
+        "a_N = v/R",
+        "a_N = v²/R²",
+        "a_N = R/v²"
+      ],
+      "correct": 0,
+      "explanation": "L'accélération centripète est a_N = v²/R. L'erreur classique est d'oublier le carré sur v (a_N = v/R) ou d'inverser numérateur et dénominateur."
+    },
+    {
+      "question": "Quelle est l'expression correcte de la troisième loi de Kepler pour une orbite circulaire de rayon R et de période T autour d'un corps central de masse M ?",
+      "options": [
+        "T²/R³ = 4π²/(GM)",
+        "T³/R² = 4π²/(GM)",
+        "T²/R² = 4π²/(GM)",
+        "T/R³ = 4π²/(GM)"
+      ],
+      "correct": 0,
+      "explanation": "La troisième loi de Kepler s'écrit T²/R³ = 4π²/(GM). L'erreur fréquente est d'écrire T³/R² (inversion des exposants) ou d'oublier le carré sur T."
+    },
+    {
+      "question": "Quelle est l'expression correcte de l'énergie cinétique d'un objet de masse m se déplaçant à la vitesse v ?",
+      "options": [
+        "E_c = (1/2)mv²",
+        "E_c = mv²",
+        "E_c = (1/2)mv",
+        "E_c = mv"
+      ],
+      "correct": 0,
+      "explanation": "L'énergie cinétique est E_c = (1/2)mv². L'erreur classique est d'oublier le facteur 1/2 ou le carré sur v."
+    },
+    {
+      "question": "Un projectile est lancé horizontalement depuis une hauteur h sans frottements. Quelle est la nature de sa trajectoire ?",
+      "options": [
+        "Parabolique",
+        "Circulaire",
+        "Rectiligne",
+        "Elliptique"
+      ],
+      "correct": 0,
+      "explanation": "Dans un champ de pesanteur uniforme et sans frottements, la trajectoire d'un projectile est une parabole, résultant du mouvement uniforme horizontal et du mouvement uniformément accéléré vertical."
+    },
+    {
+      "question": "Un satellite est en orbite circulaire uniforme autour de la Terre. Que peut-on affirmer sur son accélération ?",
+      "options": [
+        "Elle est dirigée vers le centre de la Terre et non nulle",
+        "Elle est nulle car la vitesse est constante en norme",
+        "Elle est tangente à l'orbite",
+        "Elle est dirigée vers l'extérieur de l'orbite"
+      ],
+      "correct": 0,
+      "explanation": "Pour un mouvement circulaire uniforme, la norme de la vitesse est constante donc a_T = 0, mais l'accélération centripète a_N = v²/R est non nulle et dirigée vers le centre, c'est-à-dire vers la Terre."
+    },
+    {
+      "question": "Un fluide incompressible s'écoule dans un tuyau dont la section passe de S1 = 4 cm² à S2 = 1 cm². Si la vitesse en S1 est v1 = 2 m/s, quelle est la vitesse v2 en S2 ?",
+      "options": [
+        "8 m/s",
+        "0,5 m/s",
+        "2 m/s",
+        "4 m/s"
+      ],
+      "correct": 0,
+      "explanation": "La conservation du débit donne S1·v1 = S2·v2, soit v2 = S1·v1/S2 = (4×2)/1 = 8 m/s. La section est 4 fois plus petite, donc la vitesse est 4 fois plus grande."
+    },
+    {
+      "question": "Un objet de masse m = 2 kg est lâché sans vitesse initiale depuis une hauteur z = 5 m. En appliquant la conservation de l'énergie mécanique (g = 10 m/s²), quelle est sa vitesse au sol ?",
+      "options": [
+        "10 m/s",
+        "5 m/s",
+        "50 m/s",
+        "100 m/s"
+      ],
+      "correct": 0,
+      "explanation": "La conservation de l'énergie mécanique donne mgz = (1/2)mv², soit v = √(2gz) = √(2×10×5) = √100 = 10 m/s. La masse disparaît du calcul."
+    },
+    {
+      "question": "Un élève affirme que, pour un satellite géostationnaire, R désigne l'altitude au-dessus de la surface de la Terre. Cette affirmation est-elle correcte ?",
+      "options": [
+        "Non, R est la distance entre le satellite et le centre de la Terre",
+        "Oui, R est bien l'altitude au-dessus de la surface",
+        "Oui, car le rayon terrestre est négligeable devant l'altitude",
+        "Non, R est le rayon de la Terre uniquement"
+      ],
+      "correct": 0,
+      "explanation": "C'est une erreur fréquente : dans la troisième loi de Kepler, R est le rayon de l'orbite, c'est-à-dire la distance entre le satellite et le centre de la Terre. L'altitude h vérifie R = R_Terre + h."
     }
   ],
   "energie-conversions": [
     {
-      "question": "Si le système cède de l'énergie thermique au milieu extérieur, avec l'énergie reçue comptée positive, Q est…",
+      "question": "Quelle grandeur microscopique est directement reliée à la température thermodynamique d'un gaz parfait ?",
       "options": [
-        "positif",
-        "nul",
-        "négatif",
-        "toujours égal à P"
+        "L'énergie cinétique moyenne d'agitation thermique des molécules",
+        "La masse volumique du gaz",
+        "La fréquence des chocs entre molécules uniquement",
+        "L'énergie potentielle d'interaction entre les molécules"
+      ],
+      "correct": 0,
+      "explanation": "La température thermodynamique T est une mesure macroscopique de l'agitation thermique microscopique : elle est proportionnelle à l'énergie cinétique moyenne des molécules."
+    },
+    {
+      "question": "Parmi les situations suivantes, laquelle correspond à une limite du modèle du gaz parfait ?",
+      "options": [
+        "Un gaz diatomique à pression atmosphérique et 300 K",
+        "De la vapeur d'eau à haute pression proche de la liquéfaction",
+        "De l'hélium à pression modérée et température ambiante",
+        "De l'air à 1 atm et 20 °C"
+      ],
+      "correct": 1,
+      "explanation": "Le modèle du gaz parfait n'est plus valide à haute pression ou proche de la liquéfaction, car les interactions entre molécules et leur volume propre deviennent significatifs."
+    },
+    {
+      "question": "Quelle est l'expression correcte du flux thermique à travers une paroi de résistance thermique Rth soumise à un écart de température ΔT ?",
+      "options": [
+        "Φ = ΔT / Rth",
+        "Φ = Rth / ΔT",
+        "Φ = ΔT × Rth",
+        "Φ = ΔT² / Rth"
+      ],
+      "correct": 0,
+      "explanation": "La relation correcte est Φ = ΔT / Rth. Inverser numérateur et dénominateur (Rth/ΔT) est une erreur classique : plus Rth est grande, plus le flux est faible, ce que seule la forme Φ = ΔT/Rth traduit correctement."
+    },
+    {
+      "question": "Quelle est l'expression correcte du temps caractéristique thermique τ d'un système incompressible de masse m, de capacité thermique massique c, de surface d'échange S et de coefficient de transfert thermique h ?",
+      "options": [
+        "τ = hS / (mc)",
+        "τ = mc / (hS)",
+        "τ = mc / (hS²)",
+        "τ = m / (hSc)"
+      ],
+      "correct": 1,
+      "explanation": "Le temps caractéristique est τ = mc/(hS). Inverser numérateur et dénominateur (hS/mc) est l'erreur la plus fréquente : τ doit augmenter avec la capacité thermique mc et diminuer quand les échanges hS sont plus intenses."
+    },
+    {
+      "question": "Quelle est l'expression correcte de la loi de Stefan-Boltzmann donnant la puissance rayonnée par un corps noir de surface S à la température thermodynamique T ?",
+      "options": [
+        "P = σ · S · T²",
+        "P = σ · S · T³",
+        "P = σ · S · T⁴",
+        "P = σ · S² · T⁴"
       ],
       "correct": 2,
-      "explanation": "Une énergie perdue par le système est négative dans cette convention."
+      "explanation": "La loi de Stefan-Boltzmann est P = σ·S·T⁴. Les distracteurs avec T² ou T³ correspondent à des puissances fausses ; confondre S et S² est une erreur d'homogénéité."
+    },
+    {
+      "question": "Un objet chaud est placé dans une pièce plus froide. Dans quel sens se produit spontanément le transfert thermique ?",
+      "options": [
+        "De l'objet chaud vers la pièce froide",
+        "De la pièce froide vers l'objet chaud",
+        "Dans les deux sens simultanément avec un bilan nul",
+        "Il n'y a pas de transfert thermique si l'objet ne touche pas les murs"
+      ],
+      "correct": 0,
+      "explanation": "Le transfert thermique se produit spontanément du corps le plus chaud vers le corps le plus froid, conformément au deuxième principe de la thermodynamique."
+    },
+    {
+      "question": "Un mur est composé de deux couches en série de résistances thermiques Rth1 = 0,4 K·W⁻¹ et Rth2 = 0,6 K·W⁻¹. L'écart de température entre les deux faces extérieures est ΔT = 20 K. Quel est le flux thermique traversant le mur ?",
+      "options": [
+        "20 W",
+        "50 W",
+        "33 W",
+        "8 W"
+      ],
+      "correct": 0,
+      "explanation": "Pour des parois en série, Rth_tot = 0,4 + 0,6 = 1,0 K·W⁻¹. Puis Φ = ΔT / Rth_tot = 20 / 1,0 = 20 W."
+    },
+    {
+      "question": "Un bloc d'aluminium de masse m = 0,5 kg et de capacité thermique massique c = 900 J·kg⁻¹·K⁻¹ reçoit un transfert thermique Q = 4 500 J sans travail mécanique. De combien sa température augmente-t-elle ?",
+      "options": [
+        "5 K",
+        "10 K",
+        "2,25 K",
+        "9 000 K"
+      ],
+      "correct": 1,
+      "explanation": "Pour un système incompressible sans travail : ΔU = Q = m·c·ΔT, donc ΔT = Q/(m·c) = 4 500 / (0,5 × 900) = 10 K."
+    },
+    {
+      "question": "Quel mode de transfert thermique peut se propager dans le vide, sans support matériel ?",
+      "options": [
+        "La conduction",
+        "La convection naturelle",
+        "Le rayonnement",
+        "La convection forcée"
+      ],
+      "correct": 2,
+      "explanation": "Le rayonnement thermique est le seul mode de transfert qui ne nécessite pas de support matériel : il se propage sous forme d'ondes électromagnétiques, y compris dans le vide."
+    },
+    {
+      "question": "Un élève écrit pour un système incompressible au contact d'un thermostat : τ = hS/(mc). Quelle est l'erreur commise ?",
+      "options": [
+        "Il a oublié un carré sur S",
+        "Il a inversé le numérateur et le dénominateur",
+        "Il a confondu τ avec la demi-vie",
+        "Il a utilisé la capacité thermique totale au lieu de la capacité massique"
+      ],
+      "correct": 1,
+      "explanation": "La formule correcte est τ = mc/(hS). L'élève a inversé numérateur et dénominateur : avec hS au numérateur, τ augmenterait quand les échanges sont plus intenses, ce qui est physiquement absurde."
     }
   ],
   "ondes-signaux": [
     {
-      "question": "Pour une charge de condensateur initialement déchargé, u_C(τ) vaut environ…",
+      "question": "Quelle est la condition sur la différence de marche δ pour obtenir des interférences destructives entre deux sources ponctuelles en phase ?",
       "options": [
-        "37 % de E",
-        "50 % de E",
-        "63 % de E",
-        "100 % de E"
+        "δ = (k + 1/2) λ, avec k entier",
+        "δ = k λ, avec k entier",
+        "δ = k λ / 2, avec k entier",
+        "δ = (2k + 1) λ, avec k entier"
       ],
-      "correct": 2,
-      "explanation": "u_C(τ)=E(1-e^{-1})≈0,632E."
+      "correct": 0,
+      "explanation": "Les interférences destructives se produisent quand δ est un multiple demi-entier de λ, soit δ = (k + 1/2)λ. La condition δ = kλ correspond aux interférences constructives."
     },
     {
-      "question": "En diffraction par un fil, si le diamètre du fil diminue, la largeur L de la tache centrale…",
+      "question": "Dans une lunette astronomique afocale, que signifie la condition afocale ?",
       "options": [
-        "diminue",
-        "augmente",
-        "reste constante",
-        "devient nulle"
+        "Le foyer image de l'objectif coïncide avec le foyer objet de l'oculaire",
+        "Les deux lentilles ont la même distance focale",
+        "L'objet observé est placé au foyer de l'objectif",
+        "L'image finale est formée à la distance focale de l'oculaire"
       ],
-      "correct": 1,
-      "explanation": "L=2λD/a : L est inversement proportionnelle à a."
+      "correct": 0,
+      "explanation": "La condition afocale impose que F'_obj ≡ F_oc : le foyer image de l'objectif coïncide avec le foyer objet de l'oculaire, ce qui permet d'obtenir une image finale à l'infini."
+    },
+    {
+      "question": "Quelle est la formule correcte de l'interfrange i dans un dispositif de trous d'Young, avec λ la longueur d'onde, D la distance fentes-écran et a la distance entre les deux fentes ?",
+      "options": [
+        "i = λ D / a",
+        "i = λ a / D",
+        "i = λ D² / a",
+        "i = a D / λ"
+      ],
+      "correct": 0,
+      "explanation": "L'interfrange est i = λD/a. Inverser a et D (option B) ou introduire un carré (option C) sont des erreurs classiques. L'option D n'est pas homogène à une longueur d'onde."
+    },
+    {
+      "question": "Quelle est la relation correcte entre l'intensité i traversant un condensateur de capacité C et la tension u_C à ses bornes ?",
+      "options": [
+        "i = C · (du_C / dt)",
+        "u_C = C · (di / dt)",
+        "i = (1/C) · u_C",
+        "i = C · u_C"
+      ],
+      "correct": 0,
+      "explanation": "La relation fondamentale du condensateur est i = C·(du_C/dt). Confondre u et i dans la dérivée (option B) est une erreur fréquente. Les options C et D ne font pas intervenir de dérivée et sont incorrectes."
+    },
+    {
+      "question": "Quelle est la formule correcte du grossissement G d'une lunette afocale en fonction des distances focales image de l'objectif f'_obj et de l'oculaire f'_oc ?",
+      "options": [
+        "G = - f'_obj / f'_oc",
+        "G = - f'_oc / f'_obj",
+        "G = f'_obj + f'_oc",
+        "G = f'_obj × f'_oc"
+      ],
+      "correct": 0,
+      "explanation": "Le grossissement est G = -f'_obj / f'_oc. Inverser le rapport (option B) est l'erreur la plus fréquente. Les options C et D ne sont pas des rapports d'angles et sont sans signification physique ici."
+    },
+    {
+      "question": "Un son a une intensité I = 10⁻⁶ W·m⁻². Quel est son niveau d'intensité sonore L, sachant que I₀ = 10⁻¹² W·m⁻² ?",
+      "options": [
+        "60 dB",
+        "6 dB",
+        "10⁶ dB",
+        "120 dB"
+      ],
+      "correct": 0,
+      "explanation": "L = 10 log(I/I₀) = 10 log(10⁻⁶ / 10⁻¹²) = 10 log(10⁶) = 10 × 6 = 60 dB. Oublier le facteur 10 donne 6 dB (option B), erreur classique."
+    },
+    {
+      "question": "Un condensateur de capacité C = 100 µF est chargé dans un circuit RC série avec R = 10 kΩ. Quelle est la valeur du temps caractéristique τ ?",
+      "options": [
+        "1 s",
+        "10 ms",
+        "100 s",
+        "0,1 ms"
+      ],
+      "correct": 0,
+      "explanation": "τ = R × C = 10 × 10³ Ω × 100 × 10⁻⁶ F = 1 s. Il faut bien convertir les unités : R en ohms et C en farads avant de multiplier."
+    },
+    {
+      "question": "Lors de l'effet Doppler, une source sonore se rapproche d'un observateur fixe. Que perçoit l'observateur ?",
+      "options": [
+        "Une fréquence plus élevée que la fréquence émise",
+        "Une fréquence plus basse que la fréquence émise",
+        "La même fréquence que la fréquence émise",
+        "Une fréquence qui dépend uniquement de l'intensité sonore"
+      ],
+      "correct": 0,
+      "explanation": "Quand la source se rapproche, les fronts d'onde sont comprimés : l'observateur perçoit une fréquence plus élevée (f_reçue > f_émise). L'éloignement produit l'effet inverse."
+    },
+    {
+      "question": "Un photon de fréquence f = 6,0 × 10¹⁴ Hz frappe un métal dont le travail d'extraction est W_e = 2,0 × 10⁻¹⁹ J. Quelle est l'énergie cinétique maximale des électrons émis ? (h = 6,63 × 10⁻³⁴ J·s)",
+      "options": [
+        "1,98 × 10⁻¹⁹ J",
+        "3,98 × 10⁻¹⁹ J",
+        "2,0 × 10⁻¹⁹ J",
+        "Aucun électron n'est émis"
+      ],
+      "correct": 0,
+      "explanation": "E_photon = h·f = 6,63 × 10⁻³⁴ × 6,0 × 10¹⁴ ≈ 3,98 × 10⁻¹⁹ J. E_c,max = E_photon - W_e = 3,98 × 10⁻¹⁹ - 2,0 × 10⁻¹⁹ ≈ 1,98 × 10⁻¹⁹ J. L'option B oublie de soustraire W_e."
+    },
+    {
+      "question": "Un élève affirme que doubler l'intensité sonore d'une source augmente le niveau sonore de 6 dB. Cette affirmation est-elle correcte ?",
+      "options": [
+        "Non, doubler l'intensité augmente le niveau de seulement 3 dB environ",
+        "Oui, car log(2) = 0,6 et 10 × 0,6 = 6 dB",
+        "Non, doubler l'intensité augmente le niveau de 10 dB",
+        "Oui, car le niveau est proportionnel à l'intensité"
+      ],
+      "correct": 0,
+      "explanation": "ΔL = 10 log(2I/I) = 10 log(2) ≈ 10 × 0,301 ≈ 3 dB. L'erreur fréquente consiste à confondre log(2) ≈ 0,3 avec 0,6, ou à croire que doubler l'intensité double le niveau en dB."
     }
   ]
 }
