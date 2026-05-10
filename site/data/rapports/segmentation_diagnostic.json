@@ -1,0 +1,1415 @@
+[
+  {
+    "source_id": "2021-jour-1-g1-21-pycj1g1pdf-91416",
+    "page_count": 15,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A : LES SUPERCONDENSATEURS (5 POINTS)",
+      "EXERCICE B : DETERMINATION DE LA MASSE DE LA LUNE (5 POINTS)",
+      "EXERCICE C : LA CONGELATION DE L’EAU (5 POINTS)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A : LES SUPERCONDENSATEURS (5 POINTS)",
+      "EXERCICE B : DETERMINATION DE LA MASSE DE LA LUNE (5 POINTS)",
+      "EXERCICE C : LA CONGELATION DE L’EAU (5 POINTS)"
+    ]
+  },
+  {
+    "source_id": "2021-jour-1-ja-21-pycj1ja1pdf-91497",
+    "page_count": 17,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A : TRAITEMENT ANTI-ACARIEN (5 points)",
+      "EXERCICE B : SYNTHÈSE D’UN BIOCARBURANT (5 points)",
+      "EXERCICE C : L’EAU OXYGÉNÉE D’UNE SOLUTION HYDROALCOOLIQUE (5 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A : TRAITEMENT ANTI-ACARIEN (5 points)",
+      "EXERCICE B : SYNTHÈSE D’UN BIOCARBURANT (5 points)",
+      "EXERCICE C : L’EAU OXYGÉNÉE D’UNE SOLUTION HYDROALCOOLIQUE (5 points)"
+    ]
+  },
+  {
+    "source_id": "2021-jour-1-me-21-pycj1me3pdf-91257",
+    "page_count": 16,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A- PUISSANCE RAYONNÉE PAR LA LUNE",
+      "EXERCICE B- AU PLUS PRÈS DU SOLEIL ET DE SA COURONNE",
+      "EXERCICE C- CESTA PUNTA"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A- PUISSANCE RAYONNÉE PAR LA LUNE",
+      "EXERCICE B- AU PLUS PRÈS DU SOLEIL ET DE SA COURONNE",
+      "EXERCICE C- CESTA PUNTA"
+    ]
+  },
+  {
+    "source_id": "2021-jour-1-me-21-pycj1mepdf-91110",
+    "page_count": 10,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - SYNTHÈSE DE CANNIZZARO",
+      "EXERCICE B - DEGRÉ D’HYDRATATION DU CHLORURE DE MAGNÉSIUM",
+      "EXERCICE C - LE POMELO"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - SYNTHÈSE DE CANNIZZARO",
+      "EXERCICE B - DEGRÉ D’HYDRATATION DU CHLORURE DE MAGNÉSIUM",
+      "EXERCICE C - LE POMELO"
+    ]
+  },
+  {
+    "source_id": "2021-jour-2-g1-21-pycj2g1pdf-91419",
+    "page_count": 17,
+    "candidates": 5,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A : EVOLUTION DU SUCRE DANS UNE BOISSON GAZEUSE (5 points)",
+      "EXERCICE B : SYNTHÈSE D’UN ARÔME ALIMENTAIRE (5 points)",
+      "EXERCICE C : « L’AMMONIAQUE », UN PRODUIT MÉNAGER COURANT (5 points)",
+      "EXERCICE I : APPRENTISSAGE DU SAUT EN PARACHUTE"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A : EVOLUTION DU SUCRE DANS UNE BOISSON GAZEUSE (5 points)",
+      "EXERCICE B : SYNTHÈSE D’UN ARÔME ALIMENTAIRE (5 points)",
+      "EXERCICE C : « L’AMMONIAQUE », UN PRODUIT MÉNAGER COURANT (5 points)"
+    ]
+  },
+  {
+    "source_id": "2021-jour-2-ja-21-pycj2ja1pdf-91500",
+    "page_count": 18,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "Exercice A : Cave à vin (5 points)",
+      "Exercice B : « Water bottle flip » (5 points)",
+      "Exercice C : une lunette d’amateur pour voir des étoiles doubles (5 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "Exercice A : Cave à vin (5 points)",
+      "Exercice B : « Water bottle flip » (5 points)",
+      "Exercice C : une lunette d’amateur pour voir des étoiles doubles (5 points)"
+    ]
+  },
+  {
+    "source_id": "2021-jour-2-me-21-pycj2me3pdf-91260",
+    "page_count": 15,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - L’ENCRE ET SON EFFACEUR",
+      "EXERCICE B - ÉTUDE D’UNE PILE AU LABORATOIRE",
+      "EXERCICE C - SYNTHÈSE DE L’ACIDE CAPRYLIQUE PAR SONOCHIMIE"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - L’ENCRE ET SON EFFACEUR",
+      "EXERCICE B - ÉTUDE D’UNE PILE AU LABORATOIRE",
+      "EXERCICE C - SYNTHÈSE DE L’ACIDE CAPRYLIQUE PAR SONOCHIMIE"
+    ]
+  },
+  {
+    "source_id": "2021-jour-2-me-21-pycj2mepdf-91113",
+    "page_count": 14,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - SAUT À L’ÉLASTIQUE",
+      "EXERCICE B - MESURES D’ÉPAISSEUR",
+      "EXERCICE C - ÉTUDE D’UN FILM DE SAVON"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - SAUT À L’ÉLASTIQUE",
+      "EXERCICE B - MESURES D’ÉPAISSEUR",
+      "EXERCICE C - ÉTUDE D’UN FILM DE SAVON"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-as-22-pycj1as1pdf-97194",
+    "page_count": 19,
+    "candidates": 8,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A. OBSERVATION DE LA LUNE DEPUIS LA TERRE",
+      "EXERCICE B. DÉFIBRILLATEUR CARDIAQUE IMPLANTABLE",
+      "EXERCICE C. ATTERRISSAGE DU PREMIER ÉTAGE D’UNE FUSÉE",
+      "Exercice 1, partie A, question 7. Tableau d’avancement",
+      "Exercice 1, partie B, question 5. Titrage par suivi conductimétrique d’une solution diluée d’acide",
+      "Exercice A, question 1.3. Positions de la Lune et du point P",
+      "Exercice A, question 2.3. Schéma d’une lunette afocale"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A. OBSERVATION DE LA LUNE DEPUIS LA TERRE",
+      "EXERCICE B. DÉFIBRILLATEUR CARDIAQUE IMPLANTABLE",
+      "EXERCICE C. ATTERRISSAGE DU PREMIER ÉTAGE D’UNE FUSÉE"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-me-22-pycj1me3pdf-97053",
+    "page_count": 14,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "Exercice commun à tous les candidats (10 points)",
+      "EXERCICE A - OBSERVER LES ANNEAUX DE SATURNE (5 points)",
+      "EXERCICE B - VITESSE DE LA STATION SPATIALE INTERNATIONALE (5 points)",
+      "EXERCICE C – CONTRÔLE DE LA LARGEUR D’UN FIL DE SUTURE (5 points)"
+    ],
+    "selected_labels": [
+      "Exercice commun à tous les candidats (10 points)",
+      "EXERCICE A - OBSERVER LES ANNEAUX DE SATURNE (5 points)",
+      "EXERCICE B - VITESSE DE LA STATION SPATIALE INTERNATIONALE (5 points)",
+      "EXERCICE C – CONTRÔLE DE LA LARGEUR D’UN FIL DE SUTURE (5 points)"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-nc-22-pycj1nc1pdf-96747",
+    "page_count": 19,
+    "candidates": 6,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 - Commun à tous les candidats (10 points)",
+      "EXERCICE A - Étude de l’acide benzoïque et du benzoate de sodium",
+      "EXERCICE B : Qualité des eaux souterraines sur le littoral",
+      "EXERCICE C : La pile au méthanol",
+      "EXERCICE A : Étude de l’acide benzoïque et du benzoate de sodium",
+      "EXERCICE C : La pile au méthanol"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - Commun à tous les candidats (10 points)",
+      "EXERCICE A - Étude de l’acide benzoïque et du benzoate de sodium",
+      "EXERCICE B : Qualité des eaux souterraines sur le littoral",
+      "EXERCICE C : La pile au méthanol"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-nc-22-pycj1nc1pdf-97374",
+    "page_count": 19,
+    "candidates": 6,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 - Commun à tous les candidats (10 points)",
+      "EXERCICE A - Étude de l’acide benzoïque et du benzoate de sodium",
+      "EXERCICE B : Qualité des eaux souterraines sur le littoral",
+      "EXERCICE C : La pile au méthanol",
+      "EXERCICE A : Étude de l’acide benzoïque et du benzoate de sodium",
+      "EXERCICE C : La pile au méthanol"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - Commun à tous les candidats (10 points)",
+      "EXERCICE A - Étude de l’acide benzoïque et du benzoate de sodium",
+      "EXERCICE B : Qualité des eaux souterraines sur le littoral",
+      "EXERCICE C : La pile au méthanol"
+    ]
+  },
+  {
+    "source_id": "2022-jour-2-as-22-pycj2as1pdf-97197",
+    "page_count": 13,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A. LE PLA OU ACIDE POLYLACTIQUE",
+      "EXERCICE B. BESOINS EN MAGNÉSIUM",
+      "EXERCICE C. LA BATTERIE AU LITHIUM – FER – PHOSPHATE D’UNE AUTOMOBILE"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A. LE PLA OU ACIDE POLYLACTIQUE",
+      "EXERCICE B. BESOINS EN MAGNÉSIUM",
+      "EXERCICE C. LA BATTERIE AU LITHIUM – FER – PHOSPHATE D’UNE AUTOMOBILE"
+    ]
+  },
+  {
+    "source_id": "2022-jour-2-me-22-pycj2me3pdf-97089",
+    "page_count": 16,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "Exercice commun à tous les candidats (10 points)",
+      "EXERCICE A - SYNTHÈSE D’UN CONSERVATEUR (5 points)",
+      "EXERCICE B. NETTOYAGE DES PLAQUES DE CUISSON (5 points)",
+      "EXERCICE C – ÉTUDE DE COLORANTS DANS UNE BOISSON (5 points)"
+    ],
+    "selected_labels": [
+      "Exercice commun à tous les candidats (10 points)",
+      "EXERCICE A - SYNTHÈSE D’UN CONSERVATEUR (5 points)",
+      "EXERCICE B. NETTOYAGE DES PLAQUES DE CUISSON (5 points)",
+      "EXERCICE C – ÉTUDE DE COLORANTS DANS UNE BOISSON (5 points)"
+    ]
+  },
+  {
+    "source_id": "2022-jour-2-nc-22-pycj2nc1pdf-96822",
+    "page_count": 17,
+    "candidates": 6,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 - Commun à tous les candidats (10 points)",
+      "EXERCICE A - Solarisation d’une piscine hors sol",
+      "EXERCICE B – Modélisation d’un service au tennis",
+      "EXERCICE C – Anatomie d’un condensateur",
+      "EXERCICE 1 – Synthèse du polycarbonate de bisphénol A",
+      "EXERCICE C - Anatomie d’un condensateur"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - Commun à tous les candidats (10 points)",
+      "EXERCICE A - Solarisation d’une piscine hors sol",
+      "EXERCICE B – Modélisation d’un service au tennis",
+      "EXERCICE C – Anatomie d’un condensateur"
+    ]
+  },
+  {
+    "source_id": "2022-jour-2-nc-22-pycj2nc1pdf-97407",
+    "page_count": 17,
+    "candidates": 6,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 - Commun à tous les candidats (10 points)",
+      "EXERCICE A - Solarisation d’une piscine hors sol",
+      "EXERCICE B – Modélisation d’un service au tennis",
+      "EXERCICE C – Anatomie d’un condensateur",
+      "EXERCICE 1 – Synthèse du polycarbonate de bisphénol A",
+      "EXERCICE C - Anatomie d’un condensateur"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - Commun à tous les candidats (10 points)",
+      "EXERCICE A - Solarisation d’une piscine hors sol",
+      "EXERCICE B – Modélisation d’un service au tennis",
+      "EXERCICE C – Anatomie d’un condensateur"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-g1-22pycj1g11pdf-100110",
+    "page_count": 16,
+    "candidates": 5,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - LA SPIRULINE (5 points)",
+      "EXERCICE B - SYNTHESE D’UN ARÔME D’ORANGE (5 points)",
+      "EXERCICE C – DEGRADATION D’UN PRODUIT DE CONTRASTE (5 points)",
+      "Exercice I - Partie A"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - LA SPIRULINE (5 points)",
+      "EXERCICE B - SYNTHESE D’UN ARÔME D’ORANGE (5 points)",
+      "EXERCICE C – DEGRADATION D’UN PRODUIT DE CONTRASTE (5 points)"
+    ]
+  },
+  {
+    "source_id": "2022-jour-2-g1-22pycj2g11pdf-100113",
+    "page_count": 16,
+    "candidates": 6,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE 1 - L’ACIDE FORMIQUE",
+      "EXERCICE A – DÉTERMINATION DU DIAMETRE DE JUPITER (5 points)",
+      "EXERCICE B – MESURE DE LA MASSE DE JUPITER ET DU SOLEIL (5 points)",
+      "EXERCICE C – Capacité thermique massique du cuivre (5 points)",
+      "Exercice 1"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A – DÉTERMINATION DU DIAMETRE DE JUPITER (5 points)",
+      "EXERCICE B – MESURE DE LA MASSE DE JUPITER ET DU SOLEIL (5 points)",
+      "EXERCICE C – Capacité thermique massique du cuivre (5 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-1-lr-23-pycj1lr1pdf-105864",
+    "page_count": 11,
+    "candidates": 4,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE I - L’EAU DE BOISSON DES POULES (9 points)",
+      "EXERCICE II - LE « TWEENER-LOB » OU LE COUP ENTRE LES JAMBES (5 points)",
+      "EXERCICE III - EXTRACTION DU GAZ DE SCHISTE PAR ÉLECTRO-FRACTURATION (6 points)",
+      "EXERCICE III : Charge du condensateur équivalent"
+    ],
+    "selected_labels": [
+      "EXERCICE I - L’EAU DE BOISSON DES POULES (9 points)",
+      "EXERCICE II - LE « TWEENER-LOB » OU LE COUP ENTRE LES JAMBES (5 points)",
+      "EXERCICE III - EXTRACTION DU GAZ DE SCHISTE PAR ÉLECTRO-FRACTURATION (6 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-1-nc-23-pycj1nc1-sujetpdf-105252",
+    "page_count": 15,
+    "candidates": 5,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE I - UN POLYMÈRE BIODÉGRADABLE, LE PLA (9 points)",
+      "EXERCICE II - L’OBSERVATION DE SATURNE (5 points)",
+      "EXERCICE III - CAPTEUR D’ARROSAGE CAPACITIF (6 points)",
+      "EXERCICE I",
+      "EXERCICE II"
+    ],
+    "selected_labels": [
+      "EXERCICE I - UN POLYMÈRE BIODÉGRADABLE, LE PLA (9 points)",
+      "EXERCICE II - L’OBSERVATION DE SATURNE (5 points)",
+      "EXERCICE III - CAPTEUR D’ARROSAGE CAPACITIF (6 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-2-an-23-pycj2an1pdf-105903",
+    "page_count": 12,
+    "candidates": 14,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : BICYCLE MOTO CROSS (11 POINTS)",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : OPTIMISATION DE LA SYNTHÈSE DE L’ÉTHANOATE DE BENZYLE (5 POINTS)",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : FABRICATION DE LA BIÈRE (4 POINTS)",
+      "Exercice 3",
+      "Exercice 3"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2023-jour-2-lr-23-pycj2lr1pdf-105867",
+    "page_count": 14,
+    "candidates": 4,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE I - MOUVEMENT D’UNE GOUTTE D’ENCRE DANS UNE",
+      "EXERCICE II – L’ACIDE BUTYRIQUE (5 points)",
+      "EXERCICE III : ANALYSE D’UN SOL (4 points)",
+      "EXERCICE 1 – Question B.1.2"
+    ],
+    "selected_labels": [
+      "EXERCICE I - MOUVEMENT D’UNE GOUTTE D’ENCRE DANS UNE",
+      "EXERCICE II – L’ACIDE BUTYRIQUE (5 points)",
+      "EXERCICE III : ANALYSE D’UN SOL (4 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-2-nc-23-pycj2nc1-sujetpdf-105255",
+    "page_count": 10,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE I – LE MIEL ET LES ABEILLES (9 points)",
+      "EXERCICE II - FÊTE DE LA MUSIQUE (5 points)",
+      "EXERCICE III - TIR À L’ARC À LA PERCHE VERTICALE (6 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE I – LE MIEL ET LES ABEILLES (9 points)",
+      "EXERCICE II - FÊTE DE LA MUSIQUE (5 points)",
+      "EXERCICE III - TIR À L’ARC À LA PERCHE VERTICALE (6 points)"
+    ]
+  },
+  {
+    "source_id": "2024-jour-1-an-24-pycj1an1v1pdf-106644",
+    "page_count": 12,
+    "candidates": 13,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : observation d’un volcan par interférométrie satellitaire radar",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : des batteries à flux redox organiques (5 points)",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : le gallate de propyle (4 points)",
+      "Exercice 3",
+      "EXERCICE 3 : le gallate de propyle"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2024-jour-1-g1-24-pycj1g11v1pdf-106425-1",
+    "page_count": 12,
+    "candidates": 14,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : certification d’un vin (9 points)",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : utilisation d’un laser comme instrument de mesure (6 points)",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : L’homme canon (5 points)",
+      "Exercice 3"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2024-jour-1-ja-24-pycj1ja1v1pdf-106725",
+    "page_count": 14,
+    "candidates": 4,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 – Ne jamais mélanger eau de Javel et acide",
+      "Exercice 2 – Observation distante (6 points)",
+      "Exercice 3 – Au bonheur des hippocampes (5 points)",
+      "Exercice 2 – Schéma de la lunette afocale"
+    ],
+    "selected_labels": [
+      "Exercice 1 – Ne jamais mélanger eau de Javel et acide",
+      "Exercice 2 – Observation distante (6 points)",
+      "Exercice 3 – Au bonheur des hippocampes (5 points)"
+    ]
+  },
+  {
+    "source_id": "2024-jour-1-me-24-pycj1me1v1-0pdf-106227-1",
+    "page_count": 14,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 - Vers le bleu de thymol (9 points)",
+      "Exercice 2 - Observation d’un avion en vol (5 points)",
+      "Exercice 3 - Accéléromètre d’un mobile multifonction (6 points)"
+    ],
+    "selected_labels": [
+      "Exercice 1 - Vers le bleu de thymol (9 points)",
+      "Exercice 2 - Observation d’un avion en vol (5 points)",
+      "Exercice 3 - Accéléromètre d’un mobile multifonction (6 points)"
+    ]
+  },
+  {
+    "source_id": "2024-jour-1-me-24-pycj1me3pdf-110643",
+    "page_count": 14,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 - L’acide citrique comme produit ménager (9 points)",
+      "Exercice 2 - La découverte de Neptune (5 points)",
+      "Exercice 3 - Étude d’une bouteille isotherme (6 points)"
+    ],
+    "selected_labels": [
+      "Exercice 1 - L’acide citrique comme produit ménager (9 points)",
+      "Exercice 2 - La découverte de Neptune (5 points)",
+      "Exercice 3 - Étude d’une bouteille isotherme (6 points)"
+    ]
+  },
+  {
+    "source_id": "2024-jour-1-po-24-pycj1po1v1pdf-106518-1",
+    "page_count": 20,
+    "candidates": 4,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 - COLORATION CAPILLAIRE (9 POINTS)",
+      "EXERCICE 2 - LA PROTONTHÉRAPIE SAUVE LA VUE (5 POINTS)",
+      "EXERCICE 3 – UNE JEUNE ASTRONOME (6 POINTS)",
+      "EXERCICE 3 - UNE JEUNE ASTRONOME."
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - COLORATION CAPILLAIRE (9 POINTS)",
+      "EXERCICE 2 - LA PROTONTHÉRAPIE SAUVE LA VUE (5 POINTS)",
+      "EXERCICE 3 – UNE JEUNE ASTRONOME (6 POINTS)"
+    ]
+  },
+  {
+    "source_id": "2024-jour-2-an-24-pycj2an1v1pdf-106671",
+    "page_count": 16,
+    "candidates": 16,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : points de règlement au tennis de table (11 points)",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : une batterie comestible (5 points)",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : acidité totale du vin (4 points)",
+      "Exercice 3",
+      "Exercice 3",
+      "EXERCICE 2 : Une batterie comestible"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2024-jour-2-g1-24-pycj2g11v1pdf-106464",
+    "page_count": 10,
+    "candidates": 12,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : l’ammoniac : un futur carburant pour les transports maritimes",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : à la découverte des lunes glacées de Jupiter (6 points)",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : couverture de survie ou couverture en laine ? (5 points)",
+      "Exercice 3",
+      "Exercice 3"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2024-jour-2-ja-24-pycj2ja1v1pdf-106728",
+    "page_count": 13,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 – Tissage d’une voile de bateau (11 points)",
+      "Exercice 2 – Contrôle d’un médicament (5 points)",
+      "Exercice 3 – Santé alimentaire – ne pas abuser des nitrites"
+    ],
+    "selected_labels": [
+      "Exercice 1 – Tissage d’une voile de bateau (11 points)",
+      "Exercice 2 – Contrôle d’un médicament (5 points)",
+      "Exercice 3 – Santé alimentaire – ne pas abuser des nitrites"
+    ]
+  },
+  {
+    "source_id": "2024-jour-2-me-24-pycj2me1v1-0pdf-106263-1",
+    "page_count": 12,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 - Autour du basket-ball (11 points)",
+      "Exercice 2 - Un champignon parfumé (4 points)",
+      "Exercice 3 - Batterie Lithium - Soufre (5 points)"
+    ],
+    "selected_labels": [
+      "Exercice 1 - Autour du basket-ball (11 points)",
+      "Exercice 2 - Un champignon parfumé (4 points)",
+      "Exercice 3 - Batterie Lithium - Soufre (5 points)"
+    ]
+  },
+  {
+    "source_id": "2024-jour-2-me-24-pycj2me3pdf-110646",
+    "page_count": 12,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 - Vol en montgolfière (11 points)",
+      "Exercice 2 - Traitement contre le varroa (4 points)",
+      "Exercice 3 - Suivi cinétique d’une décoloration (5 points)"
+    ],
+    "selected_labels": [
+      "Exercice 1 - Vol en montgolfière (11 points)",
+      "Exercice 2 - Traitement contre le varroa (4 points)",
+      "Exercice 3 - Suivi cinétique d’une décoloration (5 points)"
+    ]
+  },
+  {
+    "source_id": "2024-jour-2-po-24-pycj2po1v1pdf-106551-1",
+    "page_count": 12,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 - SUIVI CINÉTIQUE PAR CONDUCTIMÉTRIE DE L’HYDROLYSE",
+      "EXERCICE 2 - LA MASSE DE LA TERRE (6 POINTS)",
+      "EXERCICE 3 - ÉTUDE DE LA CALÉFACTION (5 POINTS)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - SUIVI CINÉTIQUE PAR CONDUCTIMÉTRIE DE L’HYDROLYSE",
+      "EXERCICE 2 - LA MASSE DE LA TERRE (6 POINTS)",
+      "EXERCICE 3 - ÉTUDE DE LA CALÉFACTION (5 POINTS)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-1-an-25-pycj1an1v1pdf-113058",
+    "page_count": 16,
+    "candidates": 15,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : ÉTUDE D’UN VERNIS À ONGLES (9 POINTS)",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : PHYSIQUE ET RACCORDEMENTS ROUTIERS (5 POINTS)",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : TRAITEMENT DES EAUX D’UN BASSIN D’ORAGE (6 POINTS)",
+      "Exercice 3",
+      "Exercice 3"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2025-jour-1-g1-25-pycj1g11v1-123764",
+    "page_count": 13,
+    "candidates": 15,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : AUTOUR DU GÉRANIUM ROSAT (9 POINTS)",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : RADAR PÉDAGOGIQUE ÉQUIPÉ D’UN PANNEAU SOLAIRE (6 POINTS)",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : LA FACE CACHÉE DE LA LUNE (5 POINTS)",
+      "Exercice 3",
+      "Exercice 3"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2025-jour-1-ja-25-pycj1ja1v1pdf-113127",
+    "page_count": 11,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 – Installation sanitaire (11 points)",
+      "Exercice 2 – Pollution ammoniacale (5 points)",
+      "Exercice 3 – Arôme de poire (4 points)"
+    ],
+    "selected_labels": [
+      "Exercice 1 – Installation sanitaire (11 points)",
+      "Exercice 2 – Pollution ammoniacale (5 points)",
+      "Exercice 3 – Arôme de poire (4 points)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-1-me-25-pycj1me1v1pdf-112653",
+    "page_count": 12,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 - Un emballage intelligent au rayon poissonnerie (9 points)",
+      "Exercice 2 - Datation d’une roche (6 points)",
+      "Exercice 3 - Viscosimètre à chute de bille (5 points)"
+    ],
+    "selected_labels": [
+      "Exercice 1 - Un emballage intelligent au rayon poissonnerie (9 points)",
+      "Exercice 2 - Datation d’une roche (6 points)",
+      "Exercice 3 - Viscosimètre à chute de bille (5 points)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-1-me-25-pycj1me3v2pdf-120459",
+    "page_count": 12,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 - La physique au service du vigneron (11 points)",
+      "Exercice 2 - Étude d’une lessive « multi-usages » (4 points)",
+      "Exercice 3 - Traitement de surface d’une pièce de jeu d’échecs (5 points)"
+    ],
+    "selected_labels": [
+      "Exercice 1 - La physique au service du vigneron (11 points)",
+      "Exercice 2 - Étude d’une lessive « multi-usages » (4 points)",
+      "Exercice 3 - Traitement de surface d’une pièce de jeu d’échecs (5 points)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-1-nc-25-pycj1nc1-sujetv1-123719",
+    "page_count": 12,
+    "candidates": 4,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 – DE L’ASPIRINE POUR FAVORISER L’ÉCOULEMENT SANGUIN (9 points)",
+      "EXERCICE 2 – DES ÉCOULEMENTS SANGUINS (5 points)",
+      "EXERCICE 3 – MÉTIS, UN SATELLITE EN SURSIS ? (6 points)",
+      "EXERCICE 1 – DE L’ASPIRINE POUR FAVORISER L’ÉCOULEMENT SANGUIN"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 – DE L’ASPIRINE POUR FAVORISER L’ÉCOULEMENT SANGUIN (9 points)",
+      "EXERCICE 2 – DES ÉCOULEMENTS SANGUINS (5 points)",
+      "EXERCICE 3 – MÉTIS, UN SATELLITE EN SURSIS ? (6 points)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-1-po-25-pycj1po1v1pdf-112986",
+    "page_count": 12,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 - AUTOUR DE LA GLACE (9 POINTS)",
+      "EXERCICE 2 - LE MÖLKKY (6 POINTS)",
+      "EXERCICE 3 - PERFORMANCES DES BOLOMÈTRES DE PLANCK (5 POINTS)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - AUTOUR DE LA GLACE (9 POINTS)",
+      "EXERCICE 2 - LE MÖLKKY (6 POINTS)",
+      "EXERCICE 3 - PERFORMANCES DES BOLOMÈTRES DE PLANCK (5 POINTS)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-2-g1-25-pycj2g11v1-123761",
+    "page_count": 15,
+    "candidates": 17,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : FABRICATION ET AROMATISATION D'UN YAOURT MAISON (9 POINTS)",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : LE TROMBONE DE KOENIG (5 POINTS)",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : LA VISCOSITÉ DU GLYCÉROL (6 POINTS)",
+      "Exercice 3",
+      "Exercice 3",
+      "Exercice 3"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2025-jour-2-ja-25-pycj2ja1v1pdf-113130",
+    "page_count": 10,
+    "candidates": 5,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 – Batteries au lithium (9 points)",
+      "Exercice 2 – Slam dunk au golf (6 points)",
+      "Exercice 3 – Paiement sans contact (5 points)",
+      "Exercice 1 – Schéma simplifié d’une pile lithium - ion",
+      "Exercice 3 – Évolution de la tension u aux bornes du condensateur en fonction du"
+    ],
+    "selected_labels": [
+      "Exercice 1 – Batteries au lithium (9 points)",
+      "Exercice 2 – Slam dunk au golf (6 points)",
+      "Exercice 3 – Paiement sans contact (5 points)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-2-me-25-pycj2me1v2pdf-112656",
+    "page_count": 16,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 - Mesure de l’épaisseur d’un film alimentaire (11 points)",
+      "Exercice 2 - Eau de Quinton (4 points)",
+      "Exercice 3 - Un parfum de rose (5 points)"
+    ],
+    "selected_labels": [
+      "Exercice 1 - Mesure de l’épaisseur d’un film alimentaire (11 points)",
+      "Exercice 2 - Eau de Quinton (4 points)",
+      "Exercice 3 - Un parfum de rose (5 points)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-2-me-25-pycj2me3v1pdf-120462",
+    "page_count": 14,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1 - Les pluies acides (9 points)",
+      "Exercice 2 - La couleur des scarabées (5 points)",
+      "Exercice 3 - Le réfrigérateur (6 points)"
+    ],
+    "selected_labels": [
+      "Exercice 1 - Les pluies acides (9 points)",
+      "Exercice 2 - La couleur des scarabées (5 points)",
+      "Exercice 3 - Le réfrigérateur (6 points)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-2-nc-25-pycj2nc1-sujetv1-123716",
+    "page_count": 12,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE I – SYNTHÈSE D’UN ÉDULCORANT : L’ASPARTAME (9 points)",
+      "EXERCICE II – LA PHYSIQUE S’INVITE SUR UN TERRAIN DE RUGBY (6 points)",
+      "EXERCICE III – INSTALLATION D’UN PANNEAU ROUTIER (5 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE I – SYNTHÈSE D’UN ÉDULCORANT : L’ASPARTAME (9 points)",
+      "EXERCICE II – LA PHYSIQUE S’INVITE SUR UN TERRAIN DE RUGBY (6 points)",
+      "EXERCICE III – INSTALLATION D’UN PANNEAU ROUTIER (5 points)"
+    ]
+  },
+  {
+    "source_id": "2025-jour-2-po-25-pycj2po1v1pdf-112989",
+    "page_count": 11,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 - EXPLORATION DU CIEL PROFOND PAR LE TÉLESCOPE JAMES",
+      "EXERCICE 2 - ÉTUDE D’UN PRODUIT MÉNAGER « FAIT MAISON » (5 POINTS)",
+      "EXERCICE 3 - ÉTUDE D’UN SOIN CAPILLAIRE (4 POINTS)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - EXPLORATION DU CIEL PROFOND PAR LE TÉLESCOPE JAMES",
+      "EXERCICE 2 - ÉTUDE D’UN PRODUIT MÉNAGER « FAIT MAISON » (5 POINTS)",
+      "EXERCICE 3 - ÉTUDE D’UN SOIN CAPILLAIRE (4 POINTS)"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-me-baccalaur-g-n-ral-2022-physique-chimie-1142450pdf-96402",
+    "page_count": 14,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE I commun à tous les candidats (10 points)",
+      "Exercice A - LA PHYSIQUE DU JONGLAGE (5 points)",
+      "Exercice B - REFROIDISSEMENT D’UN FER À CHEVAL (5 points)",
+      "Exercice C – DÉFIBRILLATEUR CARDIAQUE (5 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE I commun à tous les candidats (10 points)",
+      "Exercice A - LA PHYSIQUE DU JONGLAGE (5 points)",
+      "Exercice B - REFROIDISSEMENT D’UN FER À CHEVAL (5 points)",
+      "Exercice C – DÉFIBRILLATEUR CARDIAQUE (5 points)"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-lr-baccalaur-g-n-ral-2022-physique-chimie-mayotte-santorin",
+    "page_count": 15,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A. OBSERVATION D’UN SATELLITE",
+      "EXERCICE B. UNE TABLE DE TENNIS DE TABLE CONNECTÉE",
+      "EXERCICE C. RAFRAÎCHIR UNE BOISSON"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A. OBSERVATION D’UN SATELLITE",
+      "EXERCICE B. UNE TABLE DE TENNIS DE TABLE CONNECTÉE",
+      "EXERCICE C. RAFRAÎCHIR UNE BOISSON"
+    ]
+  },
+  {
+    "source_id": "2022-jour-2-lr-baccalaur-g-n-ral-2022-physique-chimie-mayotte-santorin",
+    "page_count": 18,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A. ARÔME DE VANILLE",
+      "EXERCICE B. SYNTHÈSE DU 2-MÉTHYLPROPAN-2-OL",
+      "EXERCICE C. DÉFIBRILLATEUR CARDIAQUE IMPLANTABLE"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A. ARÔME DE VANILLE",
+      "EXERCICE B. SYNTHÈSE DU 2-MÉTHYLPROPAN-2-OL",
+      "EXERCICE C. DÉFIBRILLATEUR CARDIAQUE IMPLANTABLE"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-po-baccalaur-g-n-ral-2022-physique-chimie-pf-1-114761pdf-9",
+    "page_count": 18,
+    "candidates": 5,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - UN TRACTEUR GRAVITATIONNEL POUR DÉVIER UN",
+      "EXERCICE B - ÉCLIPSE SOLAIRE DU 10 JUIN 2021 (5 points).",
+      "EXERCICE C - ACOUSTIQUE D’UNE SALLE (5 points).",
+      "EXERCICE B - ÉCLIPSE SOLAIRE DU 10 JUIN 2021"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - UN TRACTEUR GRAVITATIONNEL POUR DÉVIER UN",
+      "EXERCICE B - ÉCLIPSE SOLAIRE DU 10 JUIN 2021 (5 points).",
+      "EXERCICE C - ACOUSTIQUE D’UNE SALLE (5 points)."
+    ]
+  },
+  {
+    "source_id": "2022-jour-2-po-baccalaur-g-n-ral-2022-physique-chimie-pf-2-114764pdf-9",
+    "page_count": 15,
+    "candidates": 4,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - UN CAPTEUR CAPACITIF (5 points).",
+      "EXERCICE B - LA PLANÈTE MERCURE (5 points).",
+      "EXERCICE C - NOS OREILLES ON Y TIENT !"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - UN CAPTEUR CAPACITIF (5 points).",
+      "EXERCICE B - LA PLANÈTE MERCURE (5 points).",
+      "EXERCICE C - NOS OREILLES ON Y TIENT !"
+    ]
+  },
+  {
+    "source_id": "2022-jour-2-me-baccalaur-g-n-ral-2022-physique-chimie-preuve-du-12-mai",
+    "page_count": 18,
+    "candidates": 5,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE I commun à tous les candidats (10 points)",
+      "Exercice A - L’ARÔME DE VANILLE (5 points)",
+      "Exercice B - ENCRE ET EFFACEUR (5 points)",
+      "Exercice C – DES PILES HISTORIQUES (5 points)",
+      "Exercice C - DES PILES HISTORIQUES"
+    ],
+    "selected_labels": [
+      "EXERCICE I commun à tous les candidats (10 points)",
+      "Exercice A - L’ARÔME DE VANILLE (5 points)",
+      "Exercice B - ENCRE ET EFFACEUR (5 points)",
+      "Exercice C – DES PILES HISTORIQUES (5 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-1-g1-baccalaur-g-n-ral-2023-physique-chimie-133583pdf-98865",
+    "page_count": 14,
+    "candidates": 4,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 - CONTROLE DE LA QUALITE D’UN BIBERON (9 points)",
+      "EXERCICE 2 - À LA RECHERCHE D’UNE AUTRE TERRE (6 points)",
+      "EXERCICE 3 – FOUR À CÉRAMIQUE (5 points)",
+      "EXERCICE 2"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - CONTROLE DE LA QUALITE D’UN BIBERON (9 points)",
+      "EXERCICE 2 - À LA RECHERCHE D’UNE AUTRE TERRE (6 points)",
+      "EXERCICE 3 – FOUR À CÉRAMIQUE (5 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-2-g1-baccalaur-g-n-ral-2023-physique-chimie-133628pdf-98892",
+    "page_count": 12,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 - PLONGEON DE HAUT VOL (11 points)",
+      "EXERCICE 2 – L’ÉRYTHROSINE, COLORANT ALIMENTAIRE (4,5 points)",
+      "EXERCICE 3 - L'ACÉTANILIDE, MÉDICAMENT ANTIPYRÉTIQUE (4,5 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - PLONGEON DE HAUT VOL (11 points)",
+      "EXERCICE 2 – L’ÉRYTHROSINE, COLORANT ALIMENTAIRE (4,5 points)",
+      "EXERCICE 3 - L'ACÉTANILIDE, MÉDICAMENT ANTIPYRÉTIQUE (4,5 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-1-po-baccalaur-g-n-ral-2023-physique-chimie-133667pdf-98766",
+    "page_count": 12,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 – UN CHIMISTE QUI MÉRITE D’ÊTRE CONNU : KARL FRIEDRICH",
+      "EXERCICE 2 – DOROTHY CROWFOOT, FEMME DE SCIENCES (6 points).",
+      "EXERCICE 3 – POMPE À CHALEUR ET HABITATION (5 points)."
+    ],
+    "selected_labels": [
+      "EXERCICE 1 – UN CHIMISTE QUI MÉRITE D’ÊTRE CONNU : KARL FRIEDRICH",
+      "EXERCICE 2 – DOROTHY CROWFOOT, FEMME DE SCIENCES (6 points).",
+      "EXERCICE 3 – POMPE À CHALEUR ET HABITATION (5 points)."
+    ]
+  },
+  {
+    "source_id": "2023-jour-2-po-baccalaur-g-n-ral-2023-physique-chimie-133697pdf-98817",
+    "page_count": 11,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 – AUTOUR DE LA BIOSYNTHÈSE DE LA MÉLANINE (9 points)",
+      "EXERCICE 2 – MICROPHONE ÉLECTROSTATIQUE (5 points)",
+      "EXERCICE 3 : PRINCIPE DE L’ACCÉLÉRATEUR DE VAN DE GRAAFF (6 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 – AUTOUR DE LA BIOSYNTHÈSE DE LA MÉLANINE (9 points)",
+      "EXERCICE 2 – MICROPHONE ÉLECTROSTATIQUE (5 points)",
+      "EXERCICE 3 : PRINCIPE DE L’ACCÉLÉRATEUR DE VAN DE GRAAFF (6 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-1-me-baccalaur-g-n-ral-2023-physique-chimie-1338350pdf-98583",
+    "page_count": 14,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 - À LA DÉCOUVERTE DE SATURNE (11 points)",
+      "EXERCICE 2 - SYNTHÈSE DE L’ARÔME DE BANANE (5 points)",
+      "EXERCICE 3 - UNE FORMULATION DE L’ASPIRINE (4 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - À LA DÉCOUVERTE DE SATURNE (11 points)",
+      "EXERCICE 2 - SYNTHÈSE DE L’ARÔME DE BANANE (5 points)",
+      "EXERCICE 3 - UNE FORMULATION DE L’ASPIRINE (4 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-2-me-baccalaur-g-n-ral-2023-physique-chimie-133958pdf-98739",
+    "page_count": 9,
+    "candidates": 3,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "EXERCICE 1 - ÉTUDE DE LA VITAMINE C CONTENUE DANS LES KIWIS (9 points)",
+      "EXERCICE 2 - PROTECTION DES CRAPAUDS (5 points)",
+      "EXERCICE 3 - MODÉLISATION D’UN DÉTECTEUR CAPACITIF D’HUMIDITÉ (6 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 - ÉTUDE DE LA VITAMINE C CONTENUE DANS LES KIWIS (9 points)",
+      "EXERCICE 2 - PROTECTION DES CRAPAUDS (5 points)",
+      "EXERCICE 3 - MODÉLISATION D’UN DÉTECTEUR CAPACITIF D’HUMIDITÉ (6 points)"
+    ]
+  },
+  {
+    "source_id": "2023-jour-1-li-baccalaur-g-n-ral-2023-physique-chimie-134015pdf-98943",
+    "page_count": 14,
+    "candidates": 15,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : UN « JET DE 7 MÈTRES » AU HANDBALL (11 POINTS)",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : UN ASSOUPLISSANT « FAIT MAISON » (5 POINTS)",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : STOCKAGE DANGEREUX DU PEROXYDE D’HYDROGÈNE (4 POINTS)",
+      "Exercice 3",
+      "Exercice 3",
+      "EXERCICE 3 – Partie B"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2023-jour-2-li-baccalaur-g-n-ral-2023-physique-chimie-134057pdf-98982",
+    "page_count": 12,
+    "candidates": 14,
+    "selected": 3,
+    "mode": "numbered",
+    "candidate_labels": [
+      "Exercice 1",
+      "EXERCICE 1 : COMPRENDRE LES NUAGES (11 POINTS)",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 1",
+      "Exercice 2",
+      "EXERCICE 2 : SYNTHÈSE ET RECYCLAGE DU PET EN VANILLINE (5 POINTS)",
+      "Exercice 2",
+      "Exercice 2",
+      "Exercice 3",
+      "EXERCICE 3 : PRÉPARATION DU CHLORURE DE TERTIOBUTYLE (4 POINTS)",
+      "Exercice 3",
+      "Exercice 3"
+    ],
+    "selected_labels": [
+      "Exercice 1",
+      "Exercice 2",
+      "Exercice 3"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-ja-bg-asiephys-chimjour-1sujet-22pycj1ja1pdf-96795",
+    "page_count": 18,
+    "candidates": 5,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - FORMULE 1 : FREINAGE EN LIGNE DROITE (5 points)",
+      "EXERCICE B - OBSERVATION DE LA DIVISION DE CASSINI (5 points)",
+      "EXERCICE C - L’EXPERIENCE DES TROUS D’YOUNG (5 points)",
+      "Exercice 1"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A - FORMULE 1 : FREINAGE EN LIGNE DROITE (5 points)",
+      "EXERCICE B - OBSERVATION DE LA DIVISION DE CASSINI (5 points)",
+      "EXERCICE C - L’EXPERIENCE DES TROUS D’YOUNG (5 points)"
+    ]
+  },
+  {
+    "source_id": "2022-jour-2-ja-bg-asiephys-chimjour-2sujet-22pycj2ja1pdf-96843",
+    "page_count": 14,
+    "candidates": 5,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE 1 - TELEMETRE A ULTRASONS",
+      "EXERCICE A – L’ACIDE FORMIQUE POUR STOCKER LE DIHYDROGENE ? (5 points)",
+      "EXERCICE B – SAVON DE MARSEILLE (5 points)",
+      "EXERCICE C – DISSOLUTION D’UNE COQUILLE D’ŒUF (5 points)"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats (10 points)",
+      "EXERCICE A – L’ACIDE FORMIQUE POUR STOCKER LE DIHYDROGENE ? (5 points)",
+      "EXERCICE B – SAVON DE MARSEILLE (5 points)",
+      "EXERCICE C – DISSOLUTION D’UNE COQUILLE D’ŒUF (5 points)"
+    ]
+  },
+  {
+    "source_id": "2021-jour-1-po-physique-chimie-baccalaureat-generalj1-21-pycj1po1pdf-9",
+    "page_count": 19,
+    "candidates": 7,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "EXERCICE 1 commun à tous les candidats",
+      "exercice C",
+      "EXERCICE A",
+      "EXERCICE B",
+      "EXERCICE C - La « Grande Lunette » de Meudon (5 points)",
+      "EXERCICE B - L’installation de l’Homme sur la Lune",
+      "EXERCICE C - La « Grande Lunette » de Meudon"
+    ],
+    "selected_labels": [
+      "EXERCICE 1 commun à tous les candidats",
+      "exercice C",
+      "EXERCICE A",
+      "EXERCICE B"
+    ]
+  },
+  {
+    "source_id": "2021-jour-1-an-pycj1an1pdf-91464",
+    "page_count": 15,
+    "candidates": 18,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "Exercice 1 (obligatoire)",
+      "EXERCICE 1 COMMUN À TOUS LES CANDIDATS",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice A (au choix)",
+      "EXERCICE A. L’ACIDE LACTIQUE ET LE LACTATE D’ÉTHYLE (5 POINTS)",
+      "Exercice A (au choix)",
+      "Exercice A (au choix)",
+      "Exercice B (au choix)",
+      "EXERCICE B. UN APPORT DE MAGNÉSIUM (5 POINTS)",
+      "Exercice B (au choix)",
+      "Exercice B (au choix)",
+      "Exercice C (au choix)",
+      "EXERCICE C. DÉCAPAGE D’UNE PIÈCE EN ALUMINIUM (5 POINTS)",
+      "Exercice C (au choix)"
+    ],
+    "selected_labels": [
+      "Exercice 1 (obligatoire)",
+      "Exercice A (au choix)",
+      "Exercice B (au choix)",
+      "Exercice C (au choix)"
+    ]
+  },
+  {
+    "source_id": "2021-jour-2-an-pycj2an1pdf-91467",
+    "page_count": 16,
+    "candidates": 19,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "Exercice 1 (obligatoire)",
+      "EXERCICE 1 COMMUN À TOUS LES CANDIDATS",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice A (au choix)",
+      "EXERCICE A. PROTECTION DES FONDATIONS EN ACIER DES ÉOLIENNES EN MER (5 POINTS)",
+      "Exercice A (au choix)",
+      "Exercice A (au choix)",
+      "Exercice B (au choix)",
+      "EXERCICE B. ADDITIF ALIMENTAIRE POUR LES AGNEAUX (5 POINTS)",
+      "Exercice B (au choix)",
+      "Exercice B (au choix)",
+      "Exercice B (au choix)",
+      "Exercice C (au choix)",
+      "EXERCICE C. ANALYSE D’UN PIGMENT À BASE D’OXYDE DE FER (5 POINTS)",
+      "Exercice C (au choix)",
+      "Exercice C (au choix)"
+    ],
+    "selected_labels": [
+      "Exercice 1 (obligatoire)",
+      "Exercice A (au choix)",
+      "Exercice B (au choix)",
+      "Exercice C (au choix)"
+    ]
+  },
+  {
+    "source_id": "2022-jour-1-an-sujet-22-pycj1an1-ann-et-rempl-pdf-96885",
+    "page_count": 23,
+    "candidates": 24,
+    "selected": 4,
+    "mode": "legacy_common_abc",
+    "candidate_labels": [
+      "Exercice 1 (obligatoire)",
+      "EXERCICE 1 COMMUN A TOUS LES CANDIDATS",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice 1 (obligatoire)",
+      "Exercice A (au choix)",
+      "EXERCICE A : L’EPAISSEUR DU MATELAS DU SAUT A LA PERCHE (5 POINTS)",
+      "Exercice A (au choix)",
+      "Exercice A (au choix)",
+      "Exercice A (au choix)",
+      "Exercice A (au choix)",
+      "Exercice B (au choix)",
+      "EXERCICE B : DES SUPERCONDENSATEURS POUR RECHARGER UN BUS ELECTRIQUE (5 POINTS)",
+      "Exercice B (au choix)",
+      "Exercice B (au choix)",
+      "Exercice C (au choix)",
+      "EXERCICE C. UNE EXOPLANETE : 51PEG_b (5 POINTS)",
+      "Exercice C (au choix)",
+      "Exercice C (au choix)",
+      "Exercice 1 – Question A.1",
+      "Exercice 1 – Question D.4",
+      "Exercice B – Question A.4",
+      "Exercice C – Question B.2"
+    ],
+    "selected_labels": [
+      "Exercice 1 (obligatoire)",
+      "Exercice A (au choix)",
+      "Exercice B (au choix)",
+      "Exercice C (au choix)"
+    ]
+  }
+]

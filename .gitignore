@@ -1,0 +1,38 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# macOS / éditeurs
+.DS_Store
+.vscode/
+.idea/
+
+# Journaux et caches pipeline
+site/data/raw/
+site/data/intermediate/
+site/data/generated/
+site/data/rapports/*.log
+
+# Sauvegardes automatiques
+*.bak
+*.backup
+
+# Backups HTML
+site/index.before_*.html
+
+# Rapports temporaires / diagnostics
+site/data/rapports/latex_normalization_*.json
+site/data/rapports/pages_a_identifier/
+site/data/rapports/diagnostic_segmentation.csv
+
+# Sauvegardes de données
+site/data/exercices.before_repair.json

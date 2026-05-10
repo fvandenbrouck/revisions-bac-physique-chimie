@@ -1,0 +1,1401 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Révision Bac Physique-Chimie</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+:root{--bg:#f7f8fb;--panel:#fff;--panel2:#f1f5f9;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--accent:#2563eb;--accent2:#1d4ed8;--ok:#16a34a;--warn:#d97706;--danger:#dc2626;--shadow:0 16px 50px rgba(15,23,42,.12);--radius:18px}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
+button,input,select{font:inherit}.app{min-height:100%;display:grid;grid-template-columns:310px minmax(0,1fr)}
+.sidebar{background:linear-gradient(180deg,#0f172a,#172554);color:#fff;padding:22px 18px;position:sticky;top:0;height:100vh;overflow:auto}.brand{display:flex;gap:12px;align-items:center;margin-bottom:22px}.brand .logo{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:rgba(255,255,255,.1);font-size:22px}.brand h1{font-size:19px;line-height:1.15;margin:0}.brand p{font-size:12px;margin:3px 0 0;color:#cbd5e1}.side-section{margin:22px 0 10px;font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:#93c5fd;font-weight:700}.theme-row{width:100%;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#fff;border-radius:14px;padding:12px;margin:8px 0;text-align:left;cursor:pointer;transition:.15s}.theme-row:hover,.theme-row.active{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3)}.theme-main{display:flex;gap:10px;align-items:center}.theme-ico{font-size:20px}.theme-title{font-weight:750;font-size:13.5px;line-height:1.25}.theme-progress{height:6px;background:rgba(255,255,255,.18);border-radius:999px;overflow:hidden;margin-top:10px}.theme-progress span{display:block;height:100%;background:#60a5fa;border-radius:999px}.side-btn{width:100%;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:#fff;border-radius:12px;padding:10px 12px;cursor:pointer;text-align:left;margin:6px 0}.side-btn.active{background:#fff;color:#172554}.global-progress{margin-top:20px;padding:14px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.08)}.global-progress strong{display:block;font-size:13px;margin-bottom:8px}.bar{height:8px;border-radius:999px;background:rgba(255,255,255,.18);overflow:hidden}.bar span{display:block;height:100%;background:#22c55e}.small{font-size:12px;color:#cbd5e1;margin-top:8px}
+.main{min-width:0;padding:24px 28px 84px}.top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:20px}.top h2{font-size:28px;margin:0 0 5px}.top p{margin:0;color:var(--muted)}.status{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.pill{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:12px;color:var(--muted);box-shadow:0 3px 14px rgba(15,23,42,.04)}
+.tabs{display:flex;gap:8px;margin:18px 0}.tab{border:1px solid var(--line);background:var(--panel);padding:10px 14px;border-radius:999px;cursor:pointer;color:var(--muted);font-weight:700}.tab.active{background:var(--accent);border-color:var(--accent);color:#fff}.filters{display:grid;grid-template-columns:minmax(220px,1fr) 160px 160px 160px;gap:10px;margin:15px 0 22px}.filters input,.filters select{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:11px 12px;color:var(--text);outline:none}.filters input:focus,.filters select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:0 4px 22px rgba(15,23,42,.05);cursor:pointer;transition:.15s;display:flex;flex-direction:column;min-height:230px}.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#bfdbfe}.card-top{display:flex;justify-content:space-between;gap:8px;margin-bottom:10px}.badge{font-size:11px;border-radius:999px;padding:5px 8px;background:var(--panel2);color:var(--muted);font-weight:700}.card h3{font-size:17px;margin:4px 0 8px;line-height:1.25}.card p{font-size:13px;color:var(--muted);line-height:1.45;margin:0 0 12px}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.tag{font-size:11px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 7px;color:#475569}.actions{display:flex;gap:8px;margin-top:14px}.actions button{border:0;border-radius:10px;padding:8px 9px;cursor:pointer;font-size:12px;font-weight:750}.btn-light{background:var(--panel2);color:#334155}.btn-primary{background:var(--accent);color:#fff}.btn-ok{background:#dcfce7;color:#166534}.btn-ok.done{background:var(--ok);color:#fff}.empty{background:var(--panel);border:1px dashed var(--line);border-radius:18px;padding:40px;text-align:center;color:var(--muted)}
+.course{display:grid;gap:16px}.section-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:0 4px 22px rgba(15,23,42,.05)}.section-card h3{margin:0 0 10px;font-size:20px}.def-grid,.formula-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.mini-card{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff}.mini-card strong{display:block;margin-bottom:5px}.formula{font-size:18px;margin:8px 0;color:#0f172a}.advice{border-left:4px solid var(--accent);padding:9px 12px;background:#eff6ff;border-radius:10px;margin:8px 0;color:#1e3a8a}.mermaid-wrap{overflow:auto;background:#f8fafc;border:1px solid var(--line);border-radius:14px;padding:14px}.quiz-card{max-width:850px}.methodology{display:grid;gap:16px}.method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.method-item{border:1px solid var(--line);border-radius:14px;background:#fff;padding:14px}.method-item h4{margin:0 0 8px;font-size:16px}.method-item p{margin:0 0 8px;line-height:1.55;color:#334155}.method-step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:12px;align-items:start;border:1px solid var(--line);border-radius:14px;background:#fff;padding:14px;margin:10px 0}.step-num{width:36px;height:36px;border-radius:999px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:850}.method-list{margin:8px 0 0;padding-left:20px;color:#334155;line-height:1.55}.method-kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800;margin-bottom:8px}.competence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.theme-method-title{display:flex;gap:8px;align-items:center;margin:0 0 12px}.q-option{width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px;margin:8px 0;cursor:pointer}.q-option.good{border-color:#22c55e;background:#dcfce7}.q-option.bad{border-color:#ef4444;background:#fee2e2}.q-expl{display:none;margin-top:12px;background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:12px}.q-expl.show{display:block}.hide{display:none!important}
+.overlay{position:fixed;inset:0;background:rgba(15,23,42,.68);display:none;align-items:center;justify-content:center;padding:18px;z-index:50}.overlay.open{display:flex}.modal{width:min(1180px,96vw);height:min(900px,94vh);background:var(--panel);border-radius:24px;box-shadow:var(--shadow);display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;overflow:hidden}.modal-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px}.modal-title{font-size:20px;font-weight:850}.modal-meta{font-size:13px;color:var(--muted);margin-top:4px}.close{border:0;background:var(--panel2);border-radius:12px;width:40px;height:40px;cursor:pointer}.modal-tabs{display:flex;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);overflow:auto}.modal-tab{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 12px;cursor:pointer;white-space:nowrap;color:var(--muted);font-weight:750}.modal-tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}.modal-body{min-height:0;overflow:auto;background:#f8fafc}.pane{display:none;height:100%}.pane.active{display:block}.pane-pad{padding:18px}.modal-foot{border-top:1px solid var(--line);padding:12px 16px;display:flex;justify-content:flex-end;gap:10px}.modal-foot button{border:0;border-radius:12px;padding:10px 14px;cursor:pointer;font-weight:800}.btn-secondary{background:var(--panel2);color:#334155}.viewer{height:100%;display:grid;grid-template-rows:auto minmax(0,1fr);background:#334155}.viewer-toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:#fff;border-bottom:1px solid var(--line);padding:10px 14px}.viewer-toolbar button,.viewer-toolbar select,.viewer-toolbar a{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;text-decoration:none;color:#334155;cursor:pointer;font-size:13px}.viewer-toolbar button:disabled{opacity:.35;cursor:not-allowed}.viewer-toolbar strong{font-size:13px}.image-stage{overflow:auto;text-align:center;padding:18px;background:#475569}.page-img{display:block;margin:0 auto 18px;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.28);border-radius:4px;max-width:none;transform-origin:top center}.page-error{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;color:var(--muted)}.notion-cloud{display:flex;gap:8px;flex-wrap:wrap}.notion-cloud .tag{font-size:13px}.textblock{white-space:normal;line-height:1.62;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.textblock p{margin:0 0 12px}.textblock br+br{display:block;content:"";margin:10px 0}.source-note{font-size:12px;color:var(--muted);margin-top:12px}
+@media(max-width:900px){.app{grid-template-columns:1fr}.sidebar{position:relative;height:auto}.filters{grid-template-columns:1fr}.main{padding:18px}.top{display:block}.status{justify-content:flex-start;margin-top:12px}.modal{height:96vh;width:98vw}.viewer-toolbar{font-size:12px}.page-img{width:100%!important;height:auto!important;transform:none!important}.image-stage{padding:8px}}
+
+/* Correctif lisibilité cartes mentales Mermaid */
+.mermaid-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+  background: #ffffff !important;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.mermaid-wrap .mermaid {
+  min-width: 1100px;
+  width: max-content;
+  max-width: none !important;
+}
+
+.mermaid-wrap svg {
+  min-width: 1100px !important;
+  max-width: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.mermaid-wrap foreignObject,
+.mermaid-wrap .nodeLabel {
+  font-size: 15px !important;
+  line-height: 1.25 !important;
+}
+
+
+/* Cartes mentales HTML lisibles */
+.mindmap-html {
+  display: grid;
+  gap: 18px;
+}
+
+.mind-root {
+  display: inline-block;
+  justify-self: start;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 850;
+  border-radius: 999px;
+  padding: 10px 16px;
+  box-shadow: 0 6px 20px rgba(37,99,235,.18);
+}
+
+.mind-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.mind-branch {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 18px rgba(15,23,42,.05);
+}
+
+.mind-branch h4 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  color: #0f172a;
+}
+
+.mind-branch ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.mind-branch li {
+  margin: 6px 0;
+}
+
+.mind-branch li span {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 2px 5px;
+}
+
+</style>
+</head>
+<body>
+<script id="embedded-data" type="application/json">{
+  "programme": {
+    "thematiques": [
+      {
+        "id": "constitution-matiere",
+        "titre": "Constitution et transformations de la matière",
+        "icone": "⚗️",
+        "couleur": "#2563eb",
+        "sous_themes": [
+          {
+            "id": "acide-base",
+            "titre": "Acides, bases, titrages",
+            "notions": [
+              "pH",
+              "pKa",
+              "Ka",
+              "couple acide-base",
+              "taux d'avancement",
+              "titrage pH-métrique",
+              "titrage conductimétrique",
+              "équivalence"
+            ]
+          },
+          {
+            "id": "synthese-organique",
+            "titre": "Synthèse organique",
+            "notions": [
+              "estérification",
+              "rendement",
+              "catalyseur",
+              "chauffage à reflux",
+              "distillation fractionnée",
+              "spectroscopie IR"
+            ]
+          },
+          {
+            "id": "oxydoreduction",
+            "titre": "Oxydoréduction",
+            "notions": [
+              "oxydant",
+              "réducteur",
+              "pile",
+              "demi-équation",
+              "électrons"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mouvement-interactions",
+        "titre": "Mouvement et interactions",
+        "icone": "🚀",
+        "couleur": "#7c3aed",
+        "sous_themes": [
+          {
+            "id": "newton",
+            "titre": "Lois de Newton",
+            "notions": [
+              "référentiel galiléen",
+              "deuxième loi de Newton",
+              "chute libre",
+              "équations horaires",
+              "champ de pesanteur"
+            ]
+          },
+          {
+            "id": "gravitation",
+            "titre": "Gravitation et satellites",
+            "notions": [
+              "gravitation universelle",
+              "mouvement circulaire",
+              "satellite",
+              "vitesse orbitale",
+              "champ gravitationnel"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "energie-conversions",
+        "titre": "L'énergie : conversions et transferts",
+        "icone": "⚡",
+        "couleur": "#d97706",
+        "sous_themes": [
+          {
+            "id": "thermodynamique",
+            "titre": "Thermodynamique",
+            "notions": [
+              "premier principe",
+              "énergie interne",
+              "transfert thermique",
+              "flux thermique",
+              "loi de Newton de refroidissement",
+              "changement d'état"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ondes-signaux",
+        "titre": "Ondes et signaux",
+        "icone": "〰️",
+        "couleur": "#059669",
+        "sous_themes": [
+          {
+            "id": "optique",
+            "titre": "Optique et diffraction",
+            "notions": [
+              "lunette astronomique",
+              "lentille mince",
+              "grossissement",
+              "système afocal",
+              "diffraction",
+              "petits angles"
+            ]
+          },
+          {
+            "id": "circuit-rc",
+            "titre": "Circuit RC",
+            "notions": [
+              "condensateur",
+              "capacité",
+              "charge",
+              "constante de temps",
+              "équation différentielle",
+              "incertitude"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exercices": [
+    {
+      "id": "ex-2021-j1-1",
+      "annee": 2021,
+      "session": "Jour 1",
+      "numero": "1 commun",
+      "points": 10,
+      "difficulte": 2,
+      "titre": "Préparation d'une bière brune aromatisée",
+      "thematique_id": "constitution-matiere",
+      "notions": [
+        "Estérification",
+        "Rendement",
+        "Chauffage à reflux",
+        "Catalyseur",
+        "Spectroscopie IR",
+        "Titrage conductimétrique",
+        "Précipitation"
+      ],
+      "mots_cles": [
+        "ester",
+        "acide hexanoïque",
+        "éthanol",
+        "chlorure",
+        "nitrate d'argent",
+        "conductivité",
+        "eau de brassage"
+      ],
+      "source": {
+        "pdf": "pdf/2021-j1.pdf",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "images": [
+          "img/2021-j1/page_02.png",
+          "img/2021-j1/page_03.png",
+          "img/2021-j1/page_04.png",
+          "img/2021-j1/page_05.png",
+          "img/2021-j1/page_06.png",
+          "img/2021-j1/page_07.png"
+        ]
+      },
+      "enonce_court": "Synthèse d'un ester utilisé comme arôme, optimisation du rendement, identification IR, puis dosage conductimétrique des ions chlorure d'une eau de brassage.",
+      "aide": [
+        "Repérer la fonction ester : la partie acyle donne le nom en -oate, la chaîne portée par l'oxygène donne le groupe alkyle.",
+        "Pour les quantités de matière initiales : convertir les volumes en cm³, utiliser m=ρV puis n=m/M.",
+        "Pour le rendement : le réactif limitant fixe la quantité théorique d'ester ; comparer avec la masse isolée.",
+        "Pour les courbes cinétiques : la pente initiale indique la vitesse ; la valeur finale de la concentration en acide renseigne le rendement.",
+        "En IR, chercher d'abord la bande O-H large : alcool ou acide ; un ester présente une bande C=O nette mais pas de bande O-H.",
+        "Pour le titrage conductimétrique : à l'équivalence, n(Ag⁺ ajouté)=n(Cl⁻ initial). Convertir ensuite en concentration massique en mg·L⁻¹."
+      ],
+      "corrige": "Q1. L'ester est l'hexanoate d'éthyle. La chaîne acyle comporte 6 carbones au total, et la partie alcool est un groupe éthyle.\n\nQ2. Acide carboxylique A : acide hexanoïque, CH3-(CH2)4-COOH. Alcool B : éthanol, CH3-CH2-OH.\n\nQ3. Le chauffage à reflux accélère la transformation en élevant la température, tout en évitant les pertes de matière : les vapeurs sont condensées et retombent dans le ballon.\n\nQ4. Un catalyseur augmente la vitesse d'une transformation sans être consommé dans le bilan chimique.\n\nQ5. n(acide)=ρV/M = 0,930×43,0/116,2 = 0,344 mol. n(alcool)=0,789×20,0/46,1 = 0,342 mol. Les quantités sont pratiquement égales : les réactifs sont introduits dans les proportions stœchiométriques. La quantité théorique d'ester vaut donc environ 0,342 mol. m_th(E)=0,342×144,2=49,3 g. Rendement η=33,1/49,3=0,671, soit 67 %.\n\nQ6. La réaction la plus lente correspond à la courbe dont la concentration en acide diminue le moins vite : courbe A, synthèse 1 à 50 °C avec volumes stœchiométriques.\n\nQ7. Le rendement est amélioré quand la concentration finale en acide est la plus faible : courbe C. Elle correspond à la synthèse 2, où l'alcool est introduit en excès, ce qui déplace l'équilibre vers l'ester.\n\nQ8. L'ester correspond au spectre 2 : on observe une bande C=O forte vers 1700-1740 cm⁻¹, sans large bande O-H. Le spectre 1 est celui de l'alcool ; le spectre 3 est celui de l'acide carboxylique.\n\nQ9. n0(Cl⁻)=V1C1=2,0×10⁻³×5,00×10⁻²=1,00×10⁻⁴ mol. n0(Ag⁺)=V2C2=2,0×10⁻³×4,25×10⁻²=8,5×10⁻⁵ mol. L'avancement ne peut pas dépasser 8,5×10⁻⁵ mol : la solution physique est donc x_eq=8,5×10⁻⁵ mol.\n\nQ10. Le précipité apparaît immédiatement : la transformation est rapide. La constante K=6,4×10⁹ est très grande et l'avancement atteint pratiquement l'avancement maximal : elle est quasi totale. La réaction convient donc comme support de titrage.\n\nQ11. Dispositif attendu : burette graduée contenant AgNO3 au-dessus d'un bécher contenant l'eau à doser, agitateur magnétique, cellule conductimétrique reliée au conductimètre.\n\nQ12. Avant l'équivalence, les ions Cl⁻ sont consommés et remplacés par des ions NO3⁻, de conductivité molaire légèrement plus faible ; la conductivité baisse légèrement. Après l'équivalence, Ag⁺ et NO3⁻ sont ajoutés en excès : la conductivité augmente nettement.\n\nQ13. Lecture graphique : V_E ≈ 13 à 15 mL. Avec C3=1,00×10⁻² mol·L⁻¹ et V1=100,0 mL, c(Cl⁻)=C3 V_E/V1 ≈ (1,3 à 1,5)×10⁻³ mol·L⁻¹. Concentration massique ≈ c×M(Cl) ≈ 46 à 53 mg·L⁻¹. Cette valeur est inférieure à l'intervalle 100-200 mg·L⁻¹ : l'eau analysée ne convient pas pour cette bière brune."
+    },
+    {
+      "id": "ex-2021-j1-A",
+      "annee": 2021,
+      "session": "Jour 1",
+      "numero": "A",
+      "points": 5,
+      "difficulte": 3,
+      "titre": "Les supercondensateurs",
+      "thematique_id": "ondes-signaux",
+      "notions": [
+        "Condensateur",
+        "Circuit RC",
+        "Constante de temps",
+        "Charge exponentielle",
+        "Capacité",
+        "Incertitude-type"
+      ],
+      "mots_cles": [
+        "supercondensateur",
+        "RC",
+        "charge",
+        "tau",
+        "400 F",
+        "incertitude"
+      ],
+      "source": {
+        "pdf": "pdf/2021-j1.pdf",
+        "pages": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "images": [
+          "img/2021-j1/page_08.png",
+          "img/2021-j1/page_09.png",
+          "img/2021-j1/page_10.png",
+          "img/2021-j1/page_11.png"
+        ]
+      },
+      "enonce_court": "Étude d'un supercondensateur dans un circuit RC, détermination expérimentale de sa capacité et comparaison avec la valeur constructeur.",
+      "aide": [
+        "La relation C=εS/d permet de justifier qualitativement les très grandes surfaces et le faible écartement.",
+        "Écrire la loi des mailles : E = u_R + u_C, puis remplacer u_R par R i et i par C du_C/dt.",
+        "À t=τ, la tension de charge vaut environ 63 % de E.",
+        "L'incertitude sur C se propage à partir de C=τ/R."
+      ],
+      "corrige": "Q1. Une capacité de 400 F est gigantesque par rapport aux condensateurs courants du lycée ou de l'électronique, souvent de l'ordre du µF à quelques mF.\n\nQ2. D'après C=εS/d, une grande capacité impose une grande surface d'armatures S, un faible écartement d et un isolant adapté. Cela justifie les expressions du texte.\n\nQ3. i(t)=dq/dt. Comme q(t)=C u_C(t), on a i(t)=C du_C/dt.\n\nQ4. Loi des mailles : E=u_R+u_C=Ri+u_C. En remplaçant i par C du_C/dt : RC du_C/dt + u_C = E, soit du_C/dt + (1/RC)u_C = E/(RC). Donc τ=RC.\n\nQ5. u_C(t)=A e^{-t/τ}+E. Avec u_C(0)=0, on obtient A=-E. Donc u_C(t)=E(1-e^{-t/τ}).\n\nQ6. À t=τ, u_C=0,632E=0,632×2,5=1,58 V. La lecture de la courbe donne τ≈800 s. Donc C1=τ/R≈800/2,0=400 F.\n\nQ7. La série donne τ̄2=814,2827 s et u(τ̄2)=1,175 s. Écriture raisonnable : τ̄2=(814,3 ± 1,2) s, ou à un chiffre significatif sur l'incertitude : (814 ± 1) s.\n\nQ8. C2=τ̄2/R=814,2827/2,0=407,1 F. u(C2)=407,1×sqrt((0,1/2,0)^2+(1,175/814,2827)^2)=20,4 F. Résultat : C2=(407 ± 20) F.\n\nQ9. |C2-Cref|/u(C2)=|407-400|/20≈0,35. Cette valeur est inférieure à 2 : la mesure est compatible avec la valeur constructeur de 400 F."
+    },
+    {
+      "id": "ex-2021-j1-B",
+      "annee": 2021,
+      "session": "Jour 1",
+      "numero": "B",
+      "points": 5,
+      "difficulte": 2,
+      "titre": "Détermination de la masse de la Lune",
+      "thematique_id": "mouvement-interactions",
+      "notions": [
+        "Gravitation universelle",
+        "Champ de pesanteur",
+        "Deuxième loi de Newton",
+        "Chute libre",
+        "Modélisation parabolique"
+      ],
+      "mots_cles": [
+        "Lune",
+        "marteau",
+        "Galilée",
+        "accélération",
+        "masse lunaire"
+      ],
+      "source": {
+        "pdf": "pdf/2021-j1.pdf",
+        "pages": [
+          12,
+          13
+        ],
+        "images": [
+          "img/2021-j1/page_12.png",
+          "img/2021-j1/page_13.png"
+        ]
+      },
+      "enonce_court": "Exploitation du mouvement de chute d'un marteau sur la Lune pour retrouver la masse lunaire à partir de la modélisation y(t)=At²+Bt+C.",
+      "aide": [
+        "La force gravitationnelle est attractive : elle est dirigée vers le centre de la Lune.",
+        "Associer le champ de pesanteur à la force par unité de masse.",
+        "Comparer y(t)=At²+Bt+C à l'équation horaire d'un mouvement uniformément accéléré."
+      ],
+      "corrige": "Q1. La force exercée par la Lune sur le marteau est attractive : F_Lune/marteau = -G M_L m / R_L² · u, où u est orienté du centre de la Lune vers la surface.\n\nQ2. Le champ de pesanteur est la force gravitationnelle par unité de masse : g_L = F/m = -G M_L/R_L² · u.\n\nQ3. Sur la Lune, on néglige les frottements : le poids est la seule force. D'après la deuxième loi de Newton, m a = m g_L, donc a=g_L.\n\nProblème. La modélisation donne y(t)=A t²+B t+C avec A=-0,865 m·s⁻². Or, pour un mouvement uniformément accéléré, y(t)=1/2 a_y t²+v0 t+y0. Donc a_y=2A=-1,73 m·s⁻².\n\nEn valeur absolue, g_L=1,73 m·s⁻². Comme g_L=G M_L/R_L², alors M_L=g_L R_L²/G.\n\nM_L = 1,73×(1,74×10⁶)² / (6,67×10⁻¹¹) ≈ 7,85×10²² kg.\n\nLa valeur de référence est 7,34×10²² kg. L'écart relatif est d'environ 7 %. Il peut venir du pointage vidéo, de la modélisation, de la lecture des positions ou de l'approximation d'un champ uniforme."
+    },
+    {
+      "id": "ex-2021-j1-C",
+      "annee": 2021,
+      "session": "Jour 1",
+      "numero": "C",
+      "points": 5,
+      "difficulte": 3,
+      "titre": "La congélation de l'eau",
+      "thematique_id": "energie-conversions",
+      "notions": [
+        "Premier principe",
+        "Transfert thermique",
+        "Flux thermique",
+        "Loi de Newton de refroidissement",
+        "Équation différentielle"
+      ],
+      "mots_cles": [
+        "congélation",
+        "thermodynamique",
+        "flux",
+        "refroidissement",
+        "congélateur"
+      ],
+      "source": {
+        "pdf": "pdf/2021-j1.pdf",
+        "pages": [
+          14,
+          15
+        ],
+        "images": [
+          "img/2021-j1/page_14.png",
+          "img/2021-j1/page_15.png"
+        ]
+      },
+      "enonce_court": "Estimation de la durée de refroidissement d'eau dans un congélateur avec deux modèles : puissance constante puis loi de Newton de refroidissement.",
+      "aide": [
+        "Le système étudié est l'eau ; une énergie cédée par le système est comptée négativement.",
+        "Pour le refroidissement : ΔU=m c ΔT et, sans travail, Q=ΔU.",
+        "Dans le modèle de Newton : m c dT/dt = -hS(T-T_th).",
+        "Pour atteindre 0 °C, résoudre T(t)=0 dans l'expression fournie."
+      ],
+      "corrige": "Q1. L'eau est plus chaude que l'air du congélateur : elle cède de l'énergie à l'air. Avec la convention de l'énoncé, Q<0.\n\nQ2. La solidification libère de l'énergie vers le milieu extérieur : c'est une transformation exothermique pour le système eau.\n\nQ3. Pendant le refroidissement, ΔU=m c_eau ΔT = m c_eau (T_s-T_a).\n\nQ4. Avec T_s=0 °C : Q_r=0,150×4185×(0-23,0)=-1,44×10⁴ J=-14,4 kJ.\n\nQ5. Si la puissance prélevée est 40 W, Δt=|Q_r|/P=14400/40=360 s, soit environ 6 min.\n\nQ6. Au début, le flux vaut environ -38 W, proche de 40 W ; à la fin, il ne vaut plus que -17 W. Le second modèle montre que la puissance effectivement échangée diminue avec l'écart de température : l'hypothèse d'une puissance constante est trop grossière.\n\nQ7. Pour une durée très petite Δt pendant laquelle Φ est supposé constant : Q=Φ Δt.\n\nQ8. Premier principe : dU=δQ, donc m c_eau dT = -hS(T-T_th) dt. Ainsi dT/dt = -r(T-T_th), avec r=hS/(m c_eau). Numériquement r=0,92/(0,150×4185)=1,47×10⁻³ s⁻¹.\n\nQ9. On pose T(t)=0 : 0=(23-(-18))e^{-rt}-18, donc e^{-rt}=18/41. Ainsi t=ln(41/18)/r ≈ 5,6×10² s, soit 9 à 10 min. C'est plus long que les 6 min du premier modèle, ce qui confirme que le flux variable ralentit le refroidissement."
+    },
+    {
+      "id": "ex-2022-j1-1",
+      "annee": 2022,
+      "session": "Jour 1",
+      "numero": "1 commun",
+      "points": 10,
+      "difficulte": 3,
+      "titre": "L'acide méthanoïque",
+      "thematique_id": "constitution-matiere",
+      "notions": [
+        "Acide faible",
+        "Titrage pH-métrique",
+        "Constante d'acidité",
+        "Taux d'avancement",
+        "Estérification",
+        "Spectroscopie IR",
+        "Rendement"
+      ],
+      "mots_cles": [
+        "acide formique",
+        "méthanoate",
+        "pH",
+        "Ka",
+        "éthanol",
+        "méthanoate d'éthyle",
+        "distillation"
+      ],
+      "source": {
+        "pdf": "pdf/2022-j1.pdf",
+        "pages": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "images": [
+          "img/2022-j1/page_02.png",
+          "img/2022-j1/page_03.png",
+          "img/2022-j1/page_04.png",
+          "img/2022-j1/page_05.png"
+        ]
+      },
+      "enonce_court": "Étude acido-basique de l'acide méthanoïque, détermination de Ka, puis synthèse du méthanoate d'éthyle et optimisation du rendement.",
+      "aide": [
+        "Pour le titrage, écrire la réaction entre l'acide méthanoïque et les ions hydroxyde.",
+        "À l'équivalence : n(acide initial dans le prélèvement)=n(HO⁻ versé).",
+        "À demi-équivalence d'un acide faible, pH≈pKa.",
+        "Pour le taux d'avancement, poser [H3O⁺]=τ_f c_A et [HCOOH]=c_A(1-τ_f).",
+        "Pour la synthèse, comparer les quantités initiales d'acide et d'éthanol puis la quantité d'acide restante.",
+        "Un ester n'a pas de bande O-H acide large en IR ; la distillation peut déplacer l'équilibre en retirant un produit."
+      ],
+      "corrige": "Q1. HCOOH(aq)+HO⁻(aq) → HCOO⁻(aq)+H2O(l).\n\nQ2. Lecture de la courbe : V_E≈11,0 mL. Donc c_S V = c_B V_E, d'où c_S = 0,20×11,0/25,0 = 8,8×10⁻² mol·L⁻¹.\n\nQ3. Dans la fiole de 250 mL : n=0,088×0,250=2,20×10⁻² mol. Masse d'acide pur : m=nM=2,20×10⁻²×46,0=1,01 g. La masse de 1,0 mL de produit commercial vaut ρV=d×ρ_eau×V=1,19 g. Titre massique : 1,01/1,19=0,85, soit 85 %. Le produit est conforme à l'indication minimale, à la précision de la lecture près.\n\nQ4. HCOOH(aq)+H2O(l) ⇌ HCOO⁻(aq)+H3O⁺(aq).\n\nQ5. À demi-équivalence, [HCOOH]=[HCOO⁻] et pH=pKa. Pour V≈V_E/2≈5,5 mL, on lit pH≈3,7-3,8. Donc pKa≈3,75 et K_A≈10⁻³·⁷⁵≈1,8×10⁻⁴.\n\nQ6. L'écart avec la valeur tabulée peut venir de la lecture graphique, des incertitudes de pH, de la température ou de l'assimilation des concentrations aux activités.\n\nQ7. Pour HCOOH+H2O⇌HCOO⁻+H3O⁺ : Q_r=[HCOO⁻][H3O⁺]/([HCOOH]c°). Dans cette solution, [HCOO⁻]=[H3O⁺] et [HCOOH]=c_A-[H3O⁺]. D'où Q_r=[H3O⁺]²/((c_A-[H3O⁺])c°).\n\nQ8. Avec τ_f=[H3O⁺]/c_A, on a [H3O⁺]=τ_f c_A et [HCOOH]=c_A(1-τ_f). Donc K_A=τ_f² c_A/((1-τ_f)c°).\n\nQ9. Partir de K_A=τ² c_A/((1-τ)c°). On obtient c_A τ² + K_A c° τ - K_A c°=0. Donc dans le programme : A=cA ; B=KA*c0 ; C=-KA*c0.\n\nQ10. La solution physique est τ=0,044, soit 4,4 %. La transformation avec l'eau est très limitée : l'acide méthanoïque est un acide faible dans ces conditions.\n\nQ11. Formule semi-développée : H-C(=O)-O-CH2-CH3. Le groupe caractéristique est -COO- : famille des esters.\n\nQ12. Spectre n°1 : méthanoate d'éthyle, car il présente C=O mais pas la large bande O-H acide. Spectre n°2 : acide méthanoïque, car il présente une large bande O-H entre environ 2500 et 3200 cm⁻¹, en plus de C=O.\n\nQ13. Le reflux permet de chauffer pour accélérer la réaction sans perdre de réactifs ou de produits volatils.\n\nQ14. n(éthanol)=11,5/46,1=0,249 mol ; n(acide)=11,5/46,0=0,250 mol. Les quantités sont pratiquement stœchiométriques. Il reste 0,13 mol d'acide, donc environ 0,250-0,130=0,120 mol ont réagi. Le rendement vaut 0,120/0,249≈0,48, soit 48 %.\n\nQ15. La voie 2 augmente le rendement en introduisant l'éthanol en excès. La voie 3 l'améliore davantage par distillation fractionnée : le méthanoate d'éthyle, dont la température d'ébullition est 54 °C, est retiré au fur et à mesure, ce qui déplace l'équilibre vers les produits. La voie 3 est donc la plus efficace."
+    },
+    {
+      "id": "ex-2022-j1-A",
+      "annee": 2022,
+      "session": "Jour 1",
+      "numero": "A",
+      "points": 5,
+      "difficulte": 2,
+      "titre": "Observer les anneaux de Saturne",
+      "thematique_id": "ondes-signaux",
+      "notions": [
+        "Lunette astronomique",
+        "Système afocal",
+        "Grossissement",
+        "Lentilles minces",
+        "Petits angles",
+        "Pouvoir séparateur"
+      ],
+      "mots_cles": [
+        "Saturne",
+        "anneaux",
+        "oculaire",
+        "objectif",
+        "grossissement",
+        "division de Cassini"
+      ],
+      "source": {
+        "pdf": "pdf/2022-j1.pdf",
+        "pages": [
+          6,
+          7,
+          13
+        ],
+        "images": [
+          "img/2022-j1/page_06.png",
+          "img/2022-j1/page_07.png",
+          "img/2022-j1/page_13.png"
+        ]
+      },
+      "enonce_court": "Modélisation d'une lunette astronomique afocale et estimation du niveau d'observation des anneaux de Saturne.",
+      "aide": [
+        "Dans une lunette, l'objectif est la lentille qui reçoit la lumière de l'objet lointain ; l'oculaire est du côté de l'œil.",
+        "Un système afocal transforme des rayons incidents parallèles en rayons émergents parallèles.",
+        "Utiliser l'approximation des petits angles : angle ≈ taille/distance.",
+        "Comparer l'angle apparent grossi Gθ au pouvoir séparateur de l'œil ε."
+      ],
+      "corrige": "Q1. L1 est l'objectif ; L2 est l'oculaire.\n\nQ2. La lunette est afocale car le foyer image de l'objectif F'1 coïncide avec le foyer objet de l'oculaire F2. Un objet à l'infini donne donc une image finale à l'infini.\n\nQ3. Construction attendue : l'objectif forme une image intermédiaire dans son plan focal image. L'oculaire reçoit les rayons issus de cette image intermédiaire et les fait ressortir parallèles, sous l'angle θ'.\n\nQ4. Le grossissement est G=|θ'/θ|.\n\nQ5. Avec les petits angles, θ≈A'B'/f'1 et θ'≈A'B'/f'2. Donc G=|θ'/θ|=f'1/f'2.\n\nQ6. f'2=f'1/G=700/78≈9,0 mm.\n\nQ7. À l'œil nu, l'angle correspondant au rayon de Saturne vaut environ R_S/D=5,8×10⁴/(1,4×10⁹)=4,1×10⁻⁵ rad, et même le diamètre apparent reste inférieur à ε=2,9×10⁻⁴ rad. Saturne apparaît donc comme un astre ponctuel ou quasi ponctuel ; les anneaux ne sont pas visibles. Niveau 1.\n\nQ8. Pour distinguer les anneaux du disque, on peut estimer l'angle de l'écart interne : θ≈d_min/D=1,4×10⁴/(1,4×10⁹)=1,0×10⁻⁵ rad. Avec G=78 : Gθ≈7,8×10⁻⁴ rad, supérieur à ε : les anneaux deviennent visibles. Pour la division de Cassini : θ≈d_cas/D=4,8×10³/(1,4×10⁹)=3,4×10⁻⁶ rad ; Gθ≈2,7×10⁻⁴ rad, légèrement inférieur à ε. On atteint donc le niveau 3 : anneaux visibles, mais division de Cassini non résolue."
+    },
+    {
+      "id": "ex-2022-j1-B",
+      "annee": 2022,
+      "session": "Jour 1",
+      "numero": "B",
+      "points": 5,
+      "difficulte": 2,
+      "titre": "Vitesse de la Station spatiale internationale",
+      "thematique_id": "mouvement-interactions",
+      "notions": [
+        "Satellite",
+        "Gravitation",
+        "Repère de Frenet",
+        "Mouvement circulaire uniforme",
+        "Chronophotographie",
+        "Ordres de grandeur"
+      ],
+      "mots_cles": [
+        "ISS",
+        "Terre",
+        "Soleil",
+        "vitesse orbitale",
+        "chronophotographie",
+        "NASA"
+      ],
+      "source": {
+        "pdf": "pdf/2022-j1.pdf",
+        "pages": [
+          8,
+          9
+        ],
+        "images": [
+          "img/2022-j1/page_08.png",
+          "img/2022-j1/page_09.png"
+        ]
+      },
+      "enonce_court": "Détermination de la vitesse de l'ISS par la mécanique orbitale puis par exploitation d'une chronophotographie du transit devant le Soleil.",
+      "aide": [
+        "Pour un mouvement circulaire, l'accélération est centripète : a_N=v²/R.",
+        "La force gravitationnelle fournit cette accélération normale.",
+        "Pour la chronophotographie, mesurer S0S5 en fraction du diamètre solaire puis utiliser Thalès pour revenir à M0M5.",
+        "La durée totale entre M0 et M5 vaut 5 intervalles de 0,11 s."
+      ],
+      "corrige": "Q1. Schéma attendu : Terre de centre T, ISS à la distance R=R_T+h ; vecteur u_N dirigé vers T, vecteur u_T tangent à l'orbite ; force gravitationnelle dirigée vers le centre de la Terre.\n\nQ2. Dans le repère de Frenet : F_Terre/ISS = G M_T m/R² · u_N si u_N est orienté vers le centre de la Terre.\n\nQ3. Deuxième loi de Newton : G M_T m/R² = m v²/R. Après simplification par m et par un facteur R : v=sqrt(GM_T/R).\n\nQ4. R=R_T+h=(6371+419) km=6,790×10⁶ m. v=sqrt(6,67×10⁻¹¹×5,97×10²⁴ / 6,790×10⁶)=7,66×10³ m·s⁻¹, soit 7,7 km·s⁻¹.\n\nQ5. Une exploitation graphique raisonnable consiste à mesurer S0S5 en fraction du diamètre solaire. On trouve typiquement S0S5≈1,0 à 1,1 diamètre solaire selon la lecture. Par Thalès : M0M5/S0S5≈h/d_TS, donc M0M5≈(1,0 à 1,1)×1,39×10⁶×419/(153×10⁶) km ≈ 3,8 à 4,2 km. La durée est 5×0,11=0,55 s. La vitesse estimée vaut donc environ 7 à 8 km·s⁻¹, compatible avec la valeur mécanique. Les écarts viennent de la lecture de l'image, de la projection, de l'approximation d'un mouvement rectiligne uniforme et de la géométrie réelle de l'observation."
+    },
+    {
+      "id": "ex-2022-j1-C",
+      "annee": 2022,
+      "session": "Jour 1",
+      "numero": "C",
+      "points": 5,
+      "difficulte": 2,
+      "titre": "Contrôle de la largeur d'un fil de suture",
+      "thematique_id": "ondes-signaux",
+      "notions": [
+        "Diffraction",
+        "Laser",
+        "Petits angles",
+        "Modélisation linéaire",
+        "Incertitude",
+        "Compatibilité"
+      ],
+      "mots_cles": [
+        "fil de suture",
+        "diffraction",
+        "largeur de tache centrale",
+        "laser",
+        "USP 5/0"
+      ],
+      "source": {
+        "pdf": "pdf/2022-j1.pdf",
+        "pages": [
+          10,
+          11
+        ],
+        "images": [
+          "img/2022-j1/page_10.png",
+          "img/2022-j1/page_11.png"
+        ]
+      },
+      "enonce_court": "Utilisation de la diffraction d'un laser pour estimer le diamètre d'un fil de suture et vérifier sa conformité à la nomenclature USP.",
+      "aide": [
+        "Pour une diffraction par un fil, l'angle caractéristique varie comme λ/a : un fil plus fin diffracte davantage.",
+        "La tache centrale s'étend de -θ à +θ : L/2 est associé à un angle θ.",
+        "Exploiter le modèle L=1,6×10⁻⁶/a pour déduire a à partir de la largeur mesurée L.",
+        "Comparer l'intervalle expérimental à la plage USP 5/0 : 0,100 à 0,149 mm."
+      ],
+      "corrige": "Q1. L'angle de diffraction augmente quand le diamètre a diminue ; il est inversement proportionnel à a.\n\nQ2. Sur la figure, tan(θ)≈θ et θ≈(L/2)/D = L/(2D).\n\nQ3. Pour un fil, θ≈λ/a. Donc L/(2D)=λ/a, d'où L=2λD/a.\n\nQ4. L'expression montre que L est proportionnelle à 1/a. La représentation de L en fonction de 1/a doit donc être une droite passant près de l'origine, ce qui est cohérent avec la figure 3.\n\nQ5. La pente du graphe vaut environ 1,6×10⁻⁶ m² : on obtient donc L=1,6×10⁻⁶×1/a, avec L et a en mètres.\n\nQ6. Sur la photographie, on estime L≈1,2 à 1,4 cm. Avec a=1,6×10⁻⁶/L, cela donne a≈(1,1 à 1,3)×10⁻⁴ m, soit environ 0,12 mm.\n\nQ7. Pour a≈0,12 mm et L≈0,013 m, u(a)=a×u(L)/L≈0,12×0,001/0,013≈0,009 mm. Le résultat peut s'écrire environ a=(0,12±0,01) mm. La plage USP 5/0 est 0,100 à 0,149 mm : la mesure est compatible avec l'indication de l'étiquette."
+    }
+  ],
+  "cours": {
+    "constitution-matiere": {
+      "synthese": "Cette thématique demande de relier des observations expérimentales à des modèles chimiques : avancement, titrage, équilibre, rendement, spectroscopie. Le piège classique est de traiter les calculs sans écrire clairement la réaction support et les relations stœchiométriques.",
+      "definitions": [
+        {
+          "terme": "Équivalence",
+          "definition": "État du titrage où les réactifs titrant et titré ont été introduits dans les proportions stœchiométriques."
+        },
+        {
+          "terme": "Rendement",
+          "definition": "Rapport entre la quantité de produit réellement obtenue et la quantité théorique maximale."
+        },
+        {
+          "terme": "Catalyseur",
+          "definition": "Espèce qui augmente la vitesse d'une transformation sans être consommée dans le bilan."
+        }
+      ],
+      "formules": [
+        {
+          "nom": "Quantité de matière par masse",
+          "formule": "n=\\frac{m}{M}",
+          "variables": "n en mol ; m en g ; M en g·mol^{-1}",
+          "conditions": "Utiliser des unités cohérentes."
+        },
+        {
+          "nom": "Titrage 1:1",
+          "formule": "c_A V_A = c_B V_E",
+          "variables": "V_E : volume équivalent",
+          "conditions": "Valable seulement si les coefficients stœchiométriques sont 1:1."
+        },
+        {
+          "nom": "Constante d'acidité",
+          "formule": "K_A=\\frac{[A^-][H_3O^+]}{[AH]c^\\circ}",
+          "variables": "couple AH/A^-",
+          "conditions": "Solution aqueuse, activités assimilées aux concentrations."
+        }
+      ],
+      "carte_mentale_mermaid": "graph TD\nA[Transformation chimique] --> B[Réaction support]\nB --> C[Tableau d'avancement]\nC --> D[Titrage et équivalence]\nC --> E[Rendement]\nA --> F[Équilibre]\nF --> G[Ka, pKa, taux final]\nA --> H[Identification]\nH --> I[Spectroscopie IR]",
+      "conseils_bac": [
+        "Écrire l'équation avant tout calcul.",
+        "Identifier le réactif limitant, puis seulement calculer un rendement.",
+        "En titrage, toujours relier l'équivalence aux coefficients stœchiométriques."
+      ]
+    },
+    "mouvement-interactions": {
+      "synthese": "Les exercices de mécanique évaluent surtout la capacité à passer d'un modèle physique à une équation exploitable. Il faut choisir le référentiel, faire le bilan des forces, appliquer la deuxième loi de Newton, puis projeter correctement.",
+      "definitions": [
+        {
+          "terme": "Référentiel galiléen",
+          "definition": "Référentiel dans lequel le principe d'inertie est vérifié, à l'approximation du problème."
+        },
+        {
+          "terme": "Champ de pesanteur",
+          "definition": "Force de pesanteur par unité de masse : P=m g."
+        },
+        {
+          "terme": "Mouvement circulaire uniforme",
+          "definition": "Mouvement à vitesse constante en norme, mais avec une accélération normale v²/R."
+        }
+      ],
+      "formules": [
+        {
+          "nom": "Deuxième loi de Newton",
+          "formule": "\\sum \\vec F = m\\vec a",
+          "variables": "m : masse ; a : accélération",
+          "conditions": "Référentiel galiléen."
+        },
+        {
+          "nom": "Gravitation universelle",
+          "formule": "F=G\\frac{Mm}{r^2}",
+          "variables": "r : distance entre centres",
+          "conditions": "Masses assimilées à des points ou symétrie sphérique."
+        },
+        {
+          "nom": "Vitesse orbitale circulaire",
+          "formule": "v=\\sqrt{\\frac{GM}{R}}",
+          "variables": "R : rayon orbital",
+          "conditions": "Satellite soumis principalement à la gravitation."
+        }
+      ],
+      "carte_mentale_mermaid": "graph TD\nA[Mécanique] --> B[Référentiel]\nB --> C[Bilan des forces]\nC --> D[Deuxième loi de Newton]\nD --> E[Projection]\nE --> F[Équations horaires]\nD --> G[Satellites]\nG --> H[v=sqrt(GM/R)]",
+      "conseils_bac": [
+        "Ne commence pas par les formules : commence par le modèle et le bilan des forces.",
+        "Attention aux signes dans les équations horaires.",
+        "Pour un satellite, la force est radiale et l'accélération est centripète."
+      ]
+    },
+    "energie-conversions": {
+      "synthese": "Cette thématique relie énergie, température, transfert thermique et puissance. Le signe des échanges est souvent décisif : il faut toujours préciser le système étudié et la convention adoptée.",
+      "definitions": [
+        {
+          "terme": "Flux thermique",
+          "definition": "Puissance thermique échangée, exprimée en watt."
+        },
+        {
+          "terme": "Premier principe",
+          "definition": "Variation d'énergie interne égale à l'énergie reçue par transfert thermique et travail."
+        },
+        {
+          "terme": "Transformation exothermique",
+          "definition": "Transformation qui libère de l'énergie vers le milieu extérieur."
+        }
+      ],
+      "formules": [
+        {
+          "nom": "Variation d'énergie interne",
+          "formule": "\\Delta U=mc\\Delta T",
+          "variables": "c : capacité thermique massique",
+          "conditions": "Sans changement d'état."
+        },
+        {
+          "nom": "Puissance et énergie",
+          "formule": "E=P\\Delta t",
+          "variables": "P en W ; E en J ; t en s",
+          "conditions": "Puissance constante."
+        },
+        {
+          "nom": "Loi de Newton thermique",
+          "formule": "\\Phi=-hS(T-T_{th})",
+          "variables": "Φ : flux thermique",
+          "conditions": "Convection modélisée, thermostat."
+        }
+      ],
+      "carte_mentale_mermaid": "graph TD\nA[Système étudié] --> B[Convention de signe]\nB --> C[Premier principe]\nC --> D[Q=mcΔT]\nC --> E[Changement d'état]\nC --> F[Flux thermique]\nF --> G[Puissance constante]\nF --> H[Loi de Newton]",
+      "conseils_bac": [
+        "Toujours annoncer le système étudié.",
+        "Contrôler le signe de Q : énergie reçue ou cédée ?",
+        "Ne confonds pas énergie en joule et puissance en watt."
+      ]
+    },
+    "ondes-signaux": {
+      "synthese": "Les sujets mêlent souvent un modèle ondulatoire ou optique avec une exploitation graphique. Les relations de petits angles et les équations différentielles de circuits RC sont très fréquentes.",
+      "definitions": [
+        {
+          "terme": "Système afocal",
+          "definition": "Système optique qui transforme un faisceau parallèle incident en faisceau parallèle émergent."
+        },
+        {
+          "terme": "Diffraction",
+          "definition": "Étalement d'une onde lorsqu'elle rencontre une ouverture ou un obstacle de dimension comparable à sa longueur d'onde."
+        },
+        {
+          "terme": "Constante de temps",
+          "definition": "Durée caractéristique d'évolution d'un dipôle RC, égale à τ=RC."
+        }
+      ],
+      "formules": [
+        {
+          "nom": "Petits angles",
+          "formule": "\\tan\\theta \\simeq \\theta",
+          "variables": "θ en radian",
+          "conditions": "θ très petit devant 1 rad."
+        },
+        {
+          "nom": "Grossissement d'une lunette",
+          "formule": "G=\\frac{f'_1}{f'_2}",
+          "variables": "objectif 1, oculaire 2",
+          "conditions": "Lunette afocale."
+        },
+        {
+          "nom": "Charge d'un condensateur",
+          "formule": "u_C(t)=E(1-e^{-t/RC})",
+          "variables": "τ=RC",
+          "conditions": "Condensateur initialement déchargé."
+        },
+        {
+          "nom": "Diffraction par un fil",
+          "formule": "L=\\frac{2\\lambda D}{a}",
+          "variables": "a : diamètre du fil",
+          "conditions": "Petits angles."
+        }
+      ],
+      "carte_mentale_mermaid": "graph TD\nA[Ondes et signaux] --> B[Optique]\nB --> C[Lunette afocale]\nB --> D[Diffraction]\nD --> E[L=2λD/a]\nA --> F[Électricité]\nF --> G[Circuit RC]\nG --> H[τ=RC]",
+      "conseils_bac": [
+        "Les angles doivent être en radians.",
+        "Pour une diffraction, plus l'objet est petit, plus la tache est large.",
+        "Dans un RC, pense immédiatement à τ=RC et à la valeur 63 %."
+      ]
+    }
+  },
+  "quiz": {
+    "constitution-matiere": [
+      {
+        "question": "À l'équivalence d'un titrage 1:1, quelle relation est correcte ?",
+        "options": [
+          "c_A/V_A=c_B/V_E",
+          "c_A V_A=c_B V_E",
+          "c_A c_B=V_A V_E",
+          "V_A=V_E toujours"
+        ],
+        "correct": 1,
+        "explanation": "L'égalité porte sur les quantités de matière, donc sur c×V si les coefficients sont 1:1."
+      },
+      {
+        "question": "Quel indice IR permet d'écarter un acide carboxylique ?",
+        "options": [
+          "Une bande C=O",
+          "Une bande C-H",
+          "L'absence de large bande O-H 2500-3200 cm⁻¹",
+          "Une bande vers 3000 cm⁻¹"
+        ],
+        "correct": 2,
+        "explanation": "L'acide carboxylique possède une large bande O-H caractéristique."
+      }
+    ],
+    "mouvement-interactions": [
+      {
+        "question": "Dans un mouvement circulaire uniforme, l'accélération est surtout…",
+        "options": [
+          "tangentielle",
+          "nulle",
+          "normale vers le centre",
+          "verticale vers le haut"
+        ],
+        "correct": 2,
+        "explanation": "La vitesse change de direction ; l'accélération est centripète."
+      }
+    ],
+    "energie-conversions": [
+      {
+        "question": "Si le système cède de l'énergie thermique au milieu extérieur, avec l'énergie reçue comptée positive, Q est…",
+        "options": [
+          "positif",
+          "nul",
+          "négatif",
+          "toujours égal à P"
+        ],
+        "correct": 2,
+        "explanation": "Une énergie perdue par le système est négative dans cette convention."
+      }
+    ],
+    "ondes-signaux": [
+      {
+        "question": "Pour une charge de condensateur initialement déchargé, u_C(τ) vaut environ…",
+        "options": [
+          "37 % de E",
+          "50 % de E",
+          "63 % de E",
+          "100 % de E"
+        ],
+        "correct": 2,
+        "explanation": "u_C(τ)=E(1-e^{-1})≈0,632E."
+      },
+      {
+        "question": "En diffraction par un fil, si le diamètre du fil diminue, la largeur L de la tache centrale…",
+        "options": [
+          "diminue",
+          "augmente",
+          "reste constante",
+          "devient nulle"
+        ],
+        "correct": 1,
+        "explanation": "L=2λD/a : L est inversement proportionnelle à a."
+      }
+    ]
+  },
+  "version": "2.0"
+}</script>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">⚛️</div><div><h1>Révision Bac<br>Physique-Chimie</h1><p>Terminale · sujets corrigés</p></div></div>
+    <button class="side-btn active" id="allThemesBtn" data-theme="all">Tous les exercices</button>
+    <div class="side-section">Thématiques</div>
+    <div id="themeList"></div>
+    <div class="side-section">Vues</div>
+    <button class="side-btn active" data-view="exercises">Exercices</button>
+    <button class="side-btn" data-view="courses">Cours</button>
+    <button class="side-btn" data-view="methodology">Méthode bac</button>
+    <button class="side-btn" data-view="quiz">Quiz local</button>
+    <div class="global-progress"><strong>Progression globale</strong><div class="bar"><span id="globalBar" style="width:0%"></span></div><div class="small" id="globalText">0 / 0 maîtrisés</div></div>
+  </aside>
+  <main class="main">
+    <div class="top"><div><h2 id="pageTitle">Exercices</h2><p id="pageSubtitle">Chargement des données…</p></div><div class="status"><span class="pill" id="dataStatus">mode local</span><span class="pill" id="countStatus">0 exercices</span></div></div>
+    <div class="tabs"><button class="tab active" data-view="exercises">Exercices</button><button class="tab" data-view="courses">Cours</button><button class="tab" data-view="methodology">Méthode bac</button><button class="tab" data-view="quiz">Quiz</button></div>
+    <section id="viewExercises">
+      <div class="filters"><input id="search" placeholder="Rechercher : titre, notion, mot-clé…"><select id="yearFilter"><option value="0">Toutes les années</option></select><select id="diffFilter"><option value="0">Toutes difficultés</option><option value="1">Difficulté 1</option><option value="2">Difficulté 2</option><option value="3">Difficulté 3</option></select><select id="themeFilter"><option value="all">Toutes thématiques</option></select></div>
+      <div class="grid" id="exerciseGrid"></div>
+    </section>
+    <section id="viewCourses" class="hide"><div id="courseRoot" class="course"></div></section>
+    <section id="viewMethodology" class="hide"><div id="methodologyRoot" class="methodology"></div></section>
+    <section id="viewQuiz" class="hide"><div id="quizRoot" class="section-card quiz-card"></div></section>
+  </main>
+</div>
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-head"><div><div class="modal-title" id="modalTitle"></div><div class="modal-meta" id="modalMeta"></div></div><button class="close" id="closeBtn">✕</button></div>
+    <div class="modal-tabs"><button class="modal-tab active" data-pane="enonce">📄 Énoncé</button><button class="modal-tab" data-pane="aide">💡 Aide</button><button class="modal-tab" data-pane="corrige">✅ Corrigé</button><button class="modal-tab" data-pane="notions">🏷 Notions</button></div>
+    <div class="modal-body">
+      <div class="pane active" id="pane-enonce"><div class="viewer"><div class="viewer-toolbar"><button id="prevPage">◀ Page</button><strong id="pageInfo">Page</strong><button id="nextPage">Page ▶</button><select id="zoom"><option value="0.75">75 %</option><option value="1" selected>100 %</option><option value="1.25">125 %</option><option value="1.5">150 %</option><option value="2">200 %</option></select><a id="openPdf" href="#" target="_blank" rel="noreferrer">Ouvrir le PDF</a><span class="source-note" id="sourceNote"></span></div><div class="image-stage" id="imageStage"></div></div></div>
+      <div class="pane" id="pane-aide"><div class="pane-pad"><div class="textblock" id="modalHelp"></div></div></div>
+      <div class="pane" id="pane-corrige"><div class="pane-pad"><div class="textblock" id="modalSolution"></div></div></div>
+      <div class="pane" id="pane-notions"><div class="pane-pad"><div class="notion-cloud" id="modalNotions"></div><div class="source-note" id="modalSource"></div></div></div>
+    </div>
+    <div class="modal-foot"><button class="btn-secondary" id="closeFoot">Fermer</button><button class="btn-ok" id="masterBtn">Marquer comme maîtrisé</button></div>
+  </div>
+</div>
+<script>
+const $=sel=>document.querySelector(sel);const $$=sel=>Array.from(document.querySelectorAll(sel));
+let DATA={programme:{thematiques:[]},exercices:[],cours:{},quiz:{},methodologie:{}};let theme='all',view='exercises',search='',year='0',diff='0';let mastered=new Set(JSON.parse(localStorage.getItem('bac_phychi_mastered')||'[]'));let modalEx=null,pageIndex=0,zoom=1;
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function fmt(s){
+  s = String(s ?? '');
+
+  // Protéger les formules avant de transformer les retours ligne en <br>.
+  const math = [];
+  function hold(m){
+    const key = `@@MATH_${math.length}@@`;
+    math.push(m);
+    return key;
+  }
+
+  // Délimiteurs reconnus.
+  s = s
+    .replace(/\$\$[\s\S]*?\$\$/g, hold)
+    .replace(/\$[^$\n]+?\$/g, hold)
+    .replace(/\\\[[\s\S]*?\\\]/g, hold)
+    .replace(/\\\([\s\S]*?\\\)/g, hold);
+
+  // Échappement HTML hors formules.
+  s = esc(s);
+
+  // Markdown minimal hors formules.
+  s = s.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>');
+
+  // Paragraphes hors formules.
+  s = s
+    .replace(/\n\n+/g,'</p><p>')
+    .replace(/\n/g,'<br>');
+
+  s = '<p>' + s + '</p>';
+
+  // Réinjecter les formules sans échappement supplémentaire.
+  math.forEach((m, i) => {
+    s = s.replace(`@@MATH_${i}@@`, m);
+  });
+
+  return s;
+}
+
+function renderMath(root=document.body){
+  setTimeout(()=>{
+    try{
+      if(window.renderMathInElement){
+        renderMathInElement(root,{
+          delimiters:[
+            {left:'$$',right:'$$',display:true},
+            {left:'\\[',right:'\\]',display:true},
+            {left:'$',right:'$',display:false},
+            {left:'\\(',right:'\\)',display:false}
+          ],
+          throwOnError:false,
+          strict:false
+        });
+      }
+    }catch(e){
+      console.warn('KaTeX render error', e);
+    }
+  },30)
+}
+async function loadData(){let from='données embarquées';try{const r=await fetch('data/data.json',{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);DATA=await r.json();from='data/data.json';}catch(e){DATA=JSON.parse($('#embedded-data').textContent);}if(!DATA.methodologie&&!DATA.methodology){try{const m=await fetch('data/methodologie.json',{cache:'no-store'});if(m.ok){DATA.methodologie=await m.json();from += ' + methodologie.json';}}catch(e){}}DATA.programme=DATA.programme||{thematiques:[]};DATA.exercices=DATA.exercices||[];DATA.cours=DATA.cours||{};DATA.quiz=DATA.quiz||{};DATA.methodologie=DATA.methodologie||DATA.methodology||{};$('#dataStatus').textContent=from;init();}
+function init(){if(window.mermaid)try{mermaid.initialize({startOnLoad:false,theme:'default'});}catch(e){};populateFilters();bind();renderSidebar();renderAll();}
+function bind(){$$('#allThemesBtn,[data-theme]').forEach(b=>b.addEventListener('click',()=>setTheme(b.dataset.theme)));$$('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));$('#search').addEventListener('input',e=>{search=e.target.value.toLowerCase();renderExercises();});$('#yearFilter').addEventListener('change',e=>{year=e.target.value;renderExercises();});$('#diffFilter').addEventListener('change',e=>{diff=e.target.value;renderExercises();});$('#themeFilter').addEventListener('change',e=>setTheme(e.target.value));$('#overlay').addEventListener('click',e=>{if(e.target.id==='overlay')closeModal();});$('#closeBtn').onclick=closeModal;$('#closeFoot').onclick=closeModal;$('#prevPage').onclick=()=>navPage(-1);$('#nextPage').onclick=()=>navPage(1);$('#zoom').onchange=e=>{zoom=Number(e.target.value);renderPage();};$('#masterBtn').onclick=()=>{if(modalEx)toggleMaster(modalEx.id,true);};$$('.modal-tab').forEach(b=>b.onclick=()=>showPane(b.dataset.pane));document.addEventListener('keydown',e=>{if(!$('#overlay').classList.contains('open'))return;if(e.key==='Escape')closeModal();if(e.key==='ArrowRight')navPage(1);if(e.key==='ArrowLeft')navPage(-1);});}
+function populateFilters(){const years=[...new Set(DATA.exercices.map(e=>e.annee))].sort();$('#yearFilter').innerHTML='<option value="0">Toutes les années</option>'+years.map(y=>`<option value="${y}">${y}</option>`).join('');$('#themeFilter').innerHTML='<option value="all">Toutes thématiques</option>'+DATA.programme.thematiques.map(t=>`<option value="${t.id}">${esc(t.titre)}</option>`).join('');}
+function themeById(id){return DATA.programme.thematiques.find(t=>t.id===id)||{};}
+function filtered(){return DATA.exercices.filter(e=>{if(theme!=='all'&&e.thematique_id!==theme)return false;if(year!=='0'&&String(e.annee)!==year)return false;if(diff!=='0'&&String(e.difficulte)!==diff)return false;if(search){const hay=[e.titre,e.enonce_court,...(e.notions||[]),...(e.mots_cles||[])].join(' ').toLowerCase();if(!hay.includes(search))return false;}return true;});}
+function renderSidebar(){const root=$('#themeList');root.innerHTML=DATA.programme.thematiques.map(t=>{const exs=DATA.exercices.filter(e=>e.thematique_id===t.id);const done=exs.filter(e=>mastered.has(e.id)).length;const pct=exs.length?Math.round(100*done/exs.length):0;return `<button class="theme-row ${theme===t.id?'active':''}" data-theme="${t.id}"><div class="theme-main"><span class="theme-ico">${t.icone}</span><span class="theme-title">${esc(t.titre)}</span></div><div class="theme-progress"><span style="width:${pct}%"></span></div><div class="small">${done}/${exs.length} maîtrisés</div></button>`}).join('');root.querySelectorAll('[data-theme]').forEach(b=>b.addEventListener('click',()=>setTheme(b.dataset.theme)));$('#allThemesBtn').classList.toggle('active',theme==='all');const total=DATA.exercices.length,done=DATA.exercices.filter(e=>mastered.has(e.id)).length;$('#globalBar').style.width=(total?100*done/total:0)+'%';$('#globalText').textContent=`${done} / ${total} maîtrisés`;$('#countStatus').textContent=`${filtered().length} exercice(s)`;}
+function setTheme(id){theme=id||'all';$('#themeFilter').value=theme;renderAll();}
+function setView(v){view=v;renderAll();}
+function renderAll(){renderSidebar();$$('.tab,[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));$('#viewExercises').classList.toggle('hide',view!=='exercises');$('#viewCourses').classList.toggle('hide',view!=='courses');$('#viewMethodology').classList.toggle('hide',view!=='methodology');$('#viewQuiz').classList.toggle('hide',view!=='quiz');const t=theme==='all'?null:themeById(theme);const titles={exercises:'Exercices',courses:'Cours',methodology:'Méthode bac',quiz:'Quiz'};$('#pageTitle').textContent=titles[view]||'Exercices';$('#pageSubtitle').textContent=view==='methodology'?'Méthodes générales issues du programme et des sujets':(t?`${t.icone} ${t.titre}`:'Toutes les thématiques');if(view==='exercises')renderExercises();if(view==='courses')renderCourses();if(view==='methodology')renderMethodology();if(view==='quiz')renderQuiz();}
+function renderExercises(){const exs=filtered();$('#countStatus').textContent=`${exs.length} exercice(s)`;$('#exerciseGrid').innerHTML=exs.length?exs.map(e=>card(e)).join(''):'<div class="empty">Aucun exercice ne correspond aux filtres.</div>';$('#exerciseGrid').querySelectorAll('.card').forEach(c=>c.addEventListener('click',()=>openEx(c.dataset.id,'enonce')));$('#exerciseGrid').querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',ev=>{ev.stopPropagation();const id=b.closest('.card').dataset.id;if(b.dataset.action==='help')openEx(id,'aide');if(b.dataset.action==='solution')openEx(id,'corrige');if(b.dataset.action==='master')toggleMaster(id,false);}));}
+function card(e){const t=themeById(e.thematique_id);const done=mastered.has(e.id);return `<article class="card" data-id="${e.id}"><div class="card-top"><span class="badge">${e.annee} · ${esc(e.session)}</span><span class="badge">${esc(e.numero)} · ${e.points} pts</span></div><h3>${esc(e.titre)}</h3><p>${esc(e.enonce_court)}</p><div class="tags"><span class="tag">${t.icone||''} ${esc(t.titre||'')}</span><span class="tag">Difficulté ${e.difficulte}/3</span>${(e.notions||[]).slice(0,3).map(n=>`<span class="tag">${esc(n)}</span>`).join('')}</div><div class="actions"><button class="btn-light" data-action="help">Aide</button><button class="btn-primary" data-action="solution">Corrigé</button><button class="btn-ok ${done?'done':''}" data-action="master">${done?'Maîtrisé':'À maîtriser'}</button></div></article>`}
+
+function parseMermaidMindmap(src){
+  src = String(src || '');
+  const labels = {};
+  const children = {};
+  const parents = new Set();
+  const childSet = new Set();
+
+  function labelOf(token){
+    const m = token.match(/^([A-Za-z0-9_]+)\[(.*)\]$/);
+    if(!m) return {id: token.trim(), label: token.trim()};
+    return {id: m[1], label: m[2]};
+  }
+
+  src.split(/\n+/).forEach(line => {
+    line = line.trim();
+    if(!line || line.startsWith('graph ')) return;
+    const parts = line.split(/-->/);
+    if(parts.length !== 2) return;
+
+    const a = labelOf(parts[0].trim());
+    const b = labelOf(parts[1].trim());
+
+    labels[a.id] = a.label;
+    labels[b.id] = b.label;
+
+    if(!children[a.id]) children[a.id] = [];
+    children[a.id].push(b.id);
+
+    parents.add(a.id);
+    childSet.add(b.id);
+  });
+
+  const roots = [...parents].filter(id => !childSet.has(id));
+  const root = roots[0] || [...parents][0] || null;
+
+  return {root, labels, children};
+}
+
+function renderMindmapHtml(course){
+  const src = course.carte_mentale_mermaid || '';
+  if(!src) return '';
+
+  const {root, labels, children} = parseMermaidMindmap(src);
+  if(!root) return '';
+
+  const level1 = children[root] || [];
+
+  function branchHtml(id){
+    const kids = children[id] || [];
+    return `<div class="mind-branch">
+      <h4>${esc(labels[id] || id)}</h4>
+      ${kids.length ? `<ul>${kids.map(k => `<li><span>${esc(labels[k] || k)}</span>${(children[k]||[]).length ? `<ul>${children[k].map(x => `<li><span>${esc(labels[x] || x)}</span></li>`).join('')}</ul>` : ''}</li>`).join('')}</ul>` : ''}
+    </div>`;
+  }
+
+  return `<div class="section-card">
+    <h3>Synthèse structurée</h3>
+    <div class="mindmap-html">
+      <div class="mind-root">${esc(labels[root] || root)}</div>
+      <div class="mind-grid">
+        ${level1.map(branchHtml).join('')}
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderCourses(){const ids=theme==='all'?DATA.programme.thematiques.map(t=>t.id):[theme];$('#courseRoot').innerHTML=ids.map(id=>courseBlock(id)).join('');renderMath($('#courseRoot'));setTimeout(()=>{try{if(window.mermaid)mermaid.run({nodes:$('#courseRoot').querySelectorAll('.mermaid')});}catch(e){}},80);}
+function courseBlock(id){
+  const t = themeById(id), c = DATA.cours[id];
+  if(!c) return `<div class="section-card"><h3>${t.icone} ${esc(t.titre)}</h3><p>Cours non disponible.</p></div>`;
+
+  return `<div class="section-card"><h3>${t.icone} ${esc(t.titre)}</h3><p>${esc(c.synthese)}</p></div>
+  <div class="section-card"><h3>Définitions</h3><div class="def-grid">${(c.definitions||[]).map(d=>`<div class="mini-card"><strong>${esc(d.terme)}</strong>${esc(d.definition)}</div>`).join('')}</div></div>
+  <div class="section-card"><h3>Formules clés</h3><div class="formula-grid">${(c.formules||[]).map(f=>`<div class="mini-card"><strong>${esc(f.nom)}</strong><div class="formula">$${esc(f.formule)}$</div><div class="source-note">${esc(f.variables||'')}</div><div class="source-note">${esc(f.conditions||'')}</div></div>`).join('')}</div></div>
+  ${renderMindmapHtml(c)}
+  <div class="section-card"><h3>Conseils bac</h3>${(c.conseils_bac||[]).map(a=>`<div class="advice">${esc(a)}</div>`).join('')}</div>`;
+}
+
+function renderMethodology(){
+  const m = DATA.methodologie || DATA.methodology || {};
+  const root = $('#methodologyRoot');
+
+  if(!root){
+    console.error('methodologyRoot introuvable');
+    return;
+  }
+
+  if(!m || !Object.keys(m).length){
+    root.innerHTML = '<div class="empty">Aucune méthodologie disponible.</div>';
+    $('#countStatus').textContent = 'Méthode non disponible';
+    return;
+  }
+
+  function list(items){
+    items = Array.isArray(items) ? items : [];
+    if(!items.length) return '';
+    return `<ul class="method-list">${items.map(x => `<li>${esc(String(x))}</li>`).join('')}</ul>`;
+  }
+
+  let html = '';
+
+  html += `<div class="section-card">
+    <h3>Méthode bac</h3>
+    <p>Cette page rassemble les gestes attendus au bac : lire l’énoncé, identifier le modèle, conduire le calcul, valider le résultat et rédiger clairement.</p>
+    <div class="source-note">Source : ${esc(m.source || 'programme officiel et corpus de sujets')}</div>
+  </div>`;
+
+  if(Array.isArray(m.principes_generaux) && m.principes_generaux.length){
+    html += `<div class="section-card"><h3>Principes généraux</h3><div class="method-grid">`;
+    html += m.principes_generaux.map(p => `<div class="method-item">
+      <h4>${esc(p.titre || 'Principe')}</h4>
+      <p>${esc(p.conseil || p.texte || '')}</p>
+      ${p.justification ? `<div class="source-note">${esc(p.justification)}</div>` : ''}
+    </div>`).join('');
+    html += `</div></div>`;
+  }
+
+  if(Array.isArray(m.demarche_resolution) && m.demarche_resolution.length){
+    html += `<div class="section-card"><h3>Démarche de résolution</h3>`;
+    html += m.demarche_resolution.map((e,i) => `<div class="method-step">
+      <div class="step-num">${esc(e.etape || String(i+1))}</div>
+      <div>
+        <h4>${esc(e.titre || 'Étape')}</h4>
+        ${list(e.actions)}
+        ${Array.isArray(e.erreurs_a_eviter) && e.erreurs_a_eviter.length ? `<div class="method-kicker">Erreurs à éviter</div>${list(e.erreurs_a_eviter)}` : ''}
+      </div>
+    </div>`).join('');
+    html += `</div>`;
+  }
+
+  const pc = m.par_competence || {};
+  const labels = {
+    s_approprier:"S’approprier",
+    analyser_raisonner:"Analyser / raisonner",
+    realiser:"Réaliser",
+    valider:"Valider",
+    communiquer:"Communiquer"
+  };
+
+  if(Object.keys(pc).length){
+    html += `<div class="section-card"><h3>Par compétence</h3><div class="competence-grid">`;
+    html += Object.keys(labels).map(k => `<div class="method-item">
+      <h4>${labels[k]}</h4>
+      ${list(pc[k]) || '<p class="source-note">Non renseigné.</p>'}
+    </div>`).join('');
+    html += `</div></div>`;
+  }
+
+  const pt = m.par_theme || {};
+  const themeIds = theme === 'all'
+    ? (DATA.programme.thematiques || []).map(t => t.id)
+    : [theme];
+
+  themeIds.forEach(id => {
+    const rows = Array.isArray(pt[id]) ? pt[id] : [];
+    if(!rows.length) return;
+    const t = themeById(id);
+    html += `<div class="section-card"><h3>${esc((t.icone || '') + ' ' + (t.titre || id))}</h3><div class="method-grid">`;
+    html += rows.map(r => `<div class="method-item">
+      <div class="method-kicker">${esc(r.situation_typique || 'Situation typique')}</div>
+      <p>${esc(r.methode || r.conseil || '')}</p>
+      ${list(r.pieges)}
+      ${Array.isArray(r.bloc_ids_programme) && r.bloc_ids_programme.length ? `<div class="source-note">Blocs programme : ${r.bloc_ids_programme.map(esc).join(', ')}</div>` : ''}
+    </div>`).join('');
+    html += `</div></div>`;
+  });
+
+  if(Array.isArray(m.checklists) && m.checklists.length){
+    html += `<div class="section-card"><h3>Checklists</h3><div class="method-grid">`;
+    html += m.checklists.map(c => `<div class="method-item"><h4>${esc(c.titre || 'Checklist')}</h4>${list(c.items)}</div>`).join('');
+    html += `</div></div>`;
+  }
+
+  const simpleSections = [
+    ['redaction_bac','Rédaction au bac'],
+    ['usage_des_figures_et_donnees','Figures et données'],
+    ['validation_des_resultats','Validation des résultats']
+  ];
+
+  simpleSections.forEach(([key,title]) => {
+    const rows = Array.isArray(m[key]) ? m[key] : [];
+    if(rows.length){
+      html += `<div class="section-card"><h3>${title}</h3>${rows.map(x => `<div class="advice">${esc(String(x))}</div>`).join('')}</div>`;
+    }
+  });
+
+  root.innerHTML = html;
+  $('#countStatus').textContent = 'Méthode bac';
+  renderMath(root);
+}
+
+function renderQuiz(){const ids=theme==='all'?DATA.programme.thematiques.map(t=>t.id):[theme];const qs=ids.flatMap(id=>(DATA.quiz[id]||[]).map(q=>({...q,theme:id})));if(!qs.length){$('#quizRoot').innerHTML='<h3>Quiz local</h3><p>Aucune question disponible pour ce filtre.</p>';return;}let i=0,score=0;function show(){const q=qs[i],t=themeById(q.theme);$('#quizRoot').innerHTML=`<h3>Quiz local — ${t.icone} ${esc(t.titre)}</h3><p>Question ${i+1}/${qs.length} · Score ${score}/${i}</p><h2>${esc(q.question)}</h2>${q.options.map((o,j)=>`<button class="q-option" data-choice="${j}">${esc(o)}</button>`).join('')}<div class="q-expl" id="qExpl"></div>`;$('#quizRoot').querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>{const choice=Number(b.dataset.choice),ok=choice===q.correct;if(ok)score++;$('#quizRoot').querySelectorAll('[data-choice]').forEach(x=>{x.disabled=true;const c=Number(x.dataset.choice);if(c===q.correct)x.classList.add('good');else if(c===choice)x.classList.add('bad');});$('#qExpl').innerHTML=`${ok?'Correct.':'Erreur.'} ${esc(q.explanation||'')}<br><br><button class="tab active" id="nextQ">${i+1<qs.length?'Question suivante':'Recommencer'}</button>`;$('#qExpl').classList.add('show');$('#nextQ').onclick=()=>{i++;if(i>=qs.length){i=0;score=0;}show();};});renderMath($('#quizRoot'));}show();}
+
+
+function latexToReadable(s){
+  s = String(s ?? '');
+
+  // Supprimer les délimiteurs LaTeX isolés ou mal fermés.
+  s = s.replace(/\$\$/g, '');
+  s = s.replace(/\$/g, '');
+
+  // Fractions simples : \frac{a}{b} -> (a)/(b)
+  s = s.replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, '($1)/($2)');
+
+  // \text{...} -> ...
+  s = s.replace(/\\text\{([^{}]*)\}/g, '$1');
+
+  // Commandes fréquentes.
+  const repl = [
+    [/\\times/g, '×'],
+    [/\\cdot/g, '·'],
+    [/\\Delta/g, 'Δ'],
+    [/\\delta/g, 'δ'],
+    [/\\tau/g, 'τ'],
+    [/\\lambda/g, 'λ'],
+    [/\\theta/g, 'θ'],
+    [/\\rho/g, 'ρ'],
+    [/\\eta/g, 'η'],
+    [/\\varepsilon/g, 'ε'],
+    [/\\approx/g, '≈'],
+    [/\\leq/g, '≤'],
+    [/\\geq/g, '≥'],
+    [/\\rightarrow/g, '→'],
+    [/\\to/g, '→'],
+    [/\\infty/g, '∞'],
+  ];
+  repl.forEach(([a,b]) => s = s.replace(a,b));
+
+  // Exposants usuels : ^{...} -> ^...
+  s = s.replace(/\^\{([^{}]+)\}/g, '^$1');
+  s = s.replace(/_\{([^{}]+)\}/g, '_$1');
+
+  // Corriger quelques artefacts fréquents.
+  s = s.replace(/\\Deltat/g, 'Δt');
+  s = s.replace(/\\DeltaT/g, 'ΔT');
+  s = s.replace(/T_air/g, 'T_air');
+  s = s.replace(/Tair/g, 'T_air');
+
+  // Retirer les antislashs résiduels devant lettres.
+  s = s.replace(/\\([A-Za-z]+)/g, '$1');
+
+  // Espaces typographiques minimaux autour des signes.
+  s = s.replace(/\s*=\s*/g, ' = ');
+  s = s.replace(/\s*×\s*/g, ' × ');
+  s = s.replace(/\s*·\s*/g, ' · ');
+  s = s.replace(/\s*≈\s*/g, ' ≈ ');
+  s = s.replace(/\s*→\s*/g, ' → ');
+
+  return s;
+}
+
+function fmtCorrige(s){
+  // Ne jamais convertir le LaTeX ici.
+  // fmt() protège les formules déjà délimitées puis KaTeX les rend.
+  return fmt(s);
+}
+
+function renderCorrige(ex){
+  const c = ex.corrige;
+  if(!c) return '<p>Corrigé non disponible.</p>';
+
+  if(typeof c === 'string'){
+    return fmt(c);
+  }
+
+  if(c.questions && Array.isArray(c.questions)){
+    return c.questions.map(q => {
+      const numero = q.numero || '';
+      const reponse = q.reponse || '';
+      const attention = q.points_attention || q.vigilance || '';
+      return `<div class="corrige-question">
+        <h4>Question ${esc(numero)}</h4>
+        <div>${fmtCorrige(reponse)}</div>
+        ${attention ? `<p class="source-note"><strong>Point d’attention :</strong> ${esc(attention)}</p>` : ''}
+      </div>`;
+    }).join('');
+  }
+
+  return '<p>Corrigé disponible, mais format non reconnu.</p>';
+}
+
+function exerciseImages(ex){
+  if(ex.page_images && ex.page_images.length) return ex.page_images;
+  if(ex.source && ex.source.images && ex.source.images.length) return ex.source.images;
+  if(ex.image_page) return [ex.image_page];
+  return [];
+}
+
+function exercisePages(ex){
+  if(ex.pages && ex.pages.length) return ex.pages;
+  if(ex.source && ex.source.pages && ex.source.pages.length) return ex.source.pages;
+  return [];
+}
+
+function exercisePdfUrl(ex){
+  if(ex.pdf_embed_url) return ex.pdf_embed_url;
+  if(ex.pdf_url && ex.pdf_page) return `${ex.pdf_url}#page=${ex.pdf_page}`;
+  if(ex.pdf_path && ex.pdf_page) return `${ex.pdf_path}#page=${ex.pdf_page}`;
+  if(ex.source && ex.source.pdf){
+    const pages = exercisePages(ex);
+    return ex.source.pdf + (pages[0] ? `#page=${pages[0]}` : '');
+  }
+  return '';
+}
+
+function openEx(id,pane='enonce'){
+  modalEx = DATA.exercices.find(e => e.id === id);
+  if(!modalEx) return;
+
+  pageIndex = 0;
+  zoom = 1;
+  $('#zoom').value = '1';
+
+  const t = themeById(modalEx.thematique_id);
+  $('#modalTitle').textContent = modalEx.titre || 'Exercice';
+  $('#modalMeta').textContent =
+    `${modalEx.annee || ''} · ${modalEx.session || ''} · ${modalEx.zone || ''} · ${modalEx.points || ''} points · difficulté ${modalEx.difficulte || '?'}/3 · ${t.titre || ''}`;
+
+  $('#modalHelp').innerHTML =
+    '<ul>' + ((modalEx.aide || []).map(a => `<li>${fmt(a)}</li>`).join('') || '<li>Aide non disponible.</li>') + '</ul>';
+
+  $('#modalSolution').innerHTML = renderCorrige(modalEx);
+
+  $('#modalNotions').innerHTML =
+    (modalEx.notions || []).map(n => `<span class="tag">${esc(n)}</span>`).join('');
+
+  const pages = exercisePages(modalEx);
+  const imgs = exerciseImages(modalEx);
+  const pdfUrl = exercisePdfUrl(modalEx);
+
+  $('#modalSource').textContent =
+    `Source : ${modalEx.pdf_path || modalEx.pdf_url || modalEx.source?.pdf || 'PDF'} · pages ${pages.join(', ') || 'non renseignées'}`;
+
+  $('#openPdf').href = pdfUrl || modalEx.pdf_path || modalEx.pdf_url || '#';
+  $('#sourceNote').textContent = pdfUrl
+    ? `PDF intégré · ${imgs.length} image(s) disponible(s) en secours`
+    : `${imgs.length} page(s) image`;
+
+  $('#masterBtn').textContent = mastered.has(modalEx.id) ? '✅ Maîtrisé' : '○ Marquer comme maîtrisé';
+
+  $('#overlay').classList.add('open');
+  showPane(pane);
+  renderPage();
+  renderMath($('#pane-aide')); renderMath($('#pane-corrige')); renderMath($('#pane-notions'));
+}
+function showPane(name){
+  $$('.modal-tab').forEach(b=>b.classList.toggle('active',b.dataset.pane===name));
+  $$('.pane').forEach(p=>p.classList.remove('active'));
+  const pane = $('#pane-'+name);
+  pane.classList.add('active');
+  renderMath(pane);
+}
+function renderPage(){
+  const stage = $('#imageStage');
+  const pdfUrl = exercisePdfUrl(modalEx);
+
+  if(pdfUrl){
+    const pages = exercisePages(modalEx);
+    $('#pageInfo').textContent = pages.length ? `PDF · page ${pages[0]}` : 'PDF';
+    $('#prevPage').disabled = true;
+    $('#nextPage').disabled = true;
+    stage.innerHTML = `<iframe src="${esc(pdfUrl)}" title="Énoncé PDF" style="width:100%;height:76vh;border:0;background:#fff;border-radius:8px"></iframe>`;
+    return;
+  }
+
+  const imgs = exerciseImages(modalEx);
+  const pages = exercisePages(modalEx);
+
+  if(!imgs.length){
+    const enonce = modalEx?.enonce || modalEx?.texte_extrait || '';
+    stage.innerHTML = enonce
+      ? `<div class="page-error"><h3>Énoncé extrait</h3><div class="textblock">${fmt(enonce)}</div></div>`
+      : '<div class="page-error">Aucun PDF ni aucune image de page n’est associée à cet exercice.</div>';
+    return;
+  }
+
+  pageIndex = Math.max(0, Math.min(pageIndex, imgs.length - 1));
+  const img = imgs[pageIndex];
+
+  $('#pageInfo').textContent = `${pageIndex + 1}/${imgs.length} · page ${pages[pageIndex] || '?'}`;
+  $('#prevPage').disabled = pageIndex === 0;
+  $('#nextPage').disabled = pageIndex === imgs.length - 1;
+
+  stage.innerHTML = `<img class="page-img" src="${esc(img)}" alt="Page ${pages[pageIndex] || ''} du sujet" style="width:${Math.round(820 * zoom)}px">`;
+}
+function navPage(d){
+  if(!modalEx) return;
+  if(exercisePdfUrl(modalEx)) return;
+  const len = exerciseImages(modalEx).length;
+  if(!len) return;
+  const ni = Math.max(0, Math.min(len - 1, pageIndex + d));
+  if(ni !== pageIndex){
+    pageIndex = ni;
+    renderPage();
+  }
+}
+function closeModal(){$('#overlay').classList.remove('open');modalEx=null;$('#imageStage').innerHTML='';}
+function toggleMaster(id,fromModal){if(mastered.has(id))mastered.delete(id);else mastered.add(id);localStorage.setItem('bac_phychi_mastered',JSON.stringify([...mastered]));if(fromModal&&modalEx?.id===id)$('#masterBtn').textContent=mastered.has(id)?'✅ Maîtrisé':'○ Marquer comme maîtrisé';renderAll();}
+loadData();
+</script>
+</body>
+</html>
