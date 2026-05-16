@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -23,6 +24,7 @@ PROGRAMME_PATH = DATA / "programme.json"
 PROGRAMME_OFFICIEL_PATH = DATA / "programme_officiel.json"
 COURS_PATH = DATA / "cours.json"
 QUIZ_PATH = DATA / "quiz.json"
+MANIFEST_JSON_PATH = DATA / "manifest.json"
 
 # Source canonique : les fichiers individuels validés.
 GENERATED_EXERCISES_DIR = DATA / "generated" / "exercises"
@@ -30,6 +32,27 @@ GENERATED_EXERCISES_DIR = DATA / "generated" / "exercises"
 # Sorties
 EXERCICES_JSON = DATA / "exercices.json"
 DATA_JSON = DATA / "data.json"
+
+MANUAL_SOURCE_PDF_ALIASES = {
+    "2021-jour-1-po-physique-chimie-baccalaureat-generalj1-21-pycj1po1pdf-9":
+        "pdf/physique-chimie-baccalaureat-generalj1-21-pycj1po1pdf-91125.pdf",
+
+    "2022-jour-1-lr-baccalaur-g-n-ral-2022-physique-chimie-mayotte-santorin":
+        "pdf/baccalaur-g-n-ral-2022-physique-chimie-mayotte-santorin-jour-1-114668pdf-96066.pdf",
+
+    "2022-jour-2-lr-baccalaur-g-n-ral-2022-physique-chimie-mayotte-santorin":
+        "pdf/baccalaur-g-n-ral-2022-physique-chimie-mayotte-santorin-jour-2-114671pdf-96069.pdf",
+
+    "2022-jour-2-me-baccalaur-g-n-ral-2022-physique-chimie-preuve-du-12-mai":
+        "pdf/baccalaur-g-n-ral-2022-physique-chimie-preuve-du-12-mai-2022-114347pdf-96405.pdf",
+
+    "2022-jour-1-po-baccalaur-g-n-ral-2022-physique-chimie-pf-1-114761pdf-9":
+        "pdf/baccalaur-g-n-ral-2022-physique-chimie-pf-1-114761pdf-96285.pdf",
+
+    "2022-jour-2-po-baccalaur-g-n-ral-2022-physique-chimie-pf-2-114764pdf-9":
+        "pdf/baccalaur-g-n-ral-2022-physique-chimie-pf-2-114764pdf-96288.pdf",
+}
+
 
 
 def read_json(path: Path, default: Any = None) -> Any:
@@ -132,6 +155,105 @@ def load_generated_exercises() -> list[dict[str, Any]]:
     return exercises
 
 
+
+def normalize_pdf_path_for_site(value: Any) -> str:
+    """Normalise un chemin PDF pour le site publié depuis le dossier site/."""
+    value = str(value or "").strip()
+    if not value:
+        return ""
+    value = value.replace("\\", "/")
+    value = value.replace("site/", "")
+    value = value.replace("./", "")
+    value = value.lstrip("/")
+
+    if not value.startswith("pdf/"):
+        name = value.split("/")[-1]
+        if name.lower().endswith(".pdf"):
+            value = "pdf/" + name
+
+    return value
+
+
+def pdf_match_key(value: Any) -> str:
+    """Clé de rapprochement robuste : minuscules, lettres/chiffres seulement."""
+    return re.sub(r"[^a-z0-9]+", "", str(value or "").lower())
+
+
+def attach_pdf_paths_to_exercises(exercices: list[dict[str, Any]]) -> int:
+    """Ajoute pdf_path aux exercices à partir du manifest.
+
+    Le manifest et les exercices n'utilisent pas exactement les mêmes identifiants :
+    - manifest : 2021-jour1-21-pycj1g1pdf-91416
+    - exercices : 2021-jour-1-g1-21-pycj1g1pdf-91416
+
+    On tente donc :
+    1. une correspondance exacte ;
+    2. une correspondance normalisée ;
+    3. une correspondance par fragment de nom de PDF.
+    """
+    manifest = read_json(MANIFEST_JSON_PATH, default=[])
+
+    if isinstance(manifest, dict):
+        manifest_rows = list(manifest.values())
+    elif isinstance(manifest, list):
+        manifest_rows = manifest
+    else:
+        manifest_rows = []
+
+    exact: dict[str, dict[str, Any]] = {}
+    candidates: list[tuple[str, dict[str, Any]]] = []
+
+    for row in manifest_rows:
+        if not isinstance(row, dict):
+            continue
+
+        raw_id = str(row.get("id") or row.get("source_id") or "").strip()
+        pdf_path = normalize_pdf_path_for_site(row.get("pdf_path") or row.get("pdf") or "")
+        pdf_stem = Path(pdf_path).stem if pdf_path else ""
+
+        aliases = {
+            raw_id,
+            raw_id.replace("jour1", "jour-1").replace("jour2", "jour-2"),
+            pdf_stem,
+        }
+
+        for alias in aliases:
+            alias = str(alias or "").strip()
+            if not alias:
+                continue
+            exact[alias] = row
+            key = pdf_match_key(alias)
+            if key:
+                candidates.append((key, row))
+
+    patched = 0
+
+    for ex in exercices:
+        if not isinstance(ex, dict):
+            continue
+
+        sid = str(ex.get("source_id") or ex.get("sujet_id") or "").strip()
+        row = exact.get(sid)
+
+        sid_key = pdf_match_key(sid)
+
+        if row is None and sid_key:
+            for key, candidate in candidates:
+                if key and (key in sid_key or sid_key in key):
+                    row = candidate
+                    break
+
+        if row:
+            pdf = normalize_pdf_path_for_site(row.get("pdf_path") or row.get("pdf") or "")
+        else:
+            pdf = normalize_pdf_path_for_site(MANUAL_SOURCE_PDF_ALIASES.get(sid, ""))
+
+        if pdf:
+            ex["pdf_path"] = pdf
+            patched += 1
+
+    return patched
+
 def sort_key(ex: dict[str, Any]) -> tuple:
     return (
         str(ex.get("annee", "")),
@@ -150,6 +272,7 @@ def main() -> None:
 
     exercices = load_generated_exercises()
     exercices.sort(key=sort_key)
+    pdf_patched = attach_pdf_paths_to_exercises(exercices)
 
     programme = read_json(PROGRAMME_PATH, default={})
     programme_officiel = read_json(PROGRAMME_OFFICIEL_PATH, default={})
@@ -171,6 +294,7 @@ def main() -> None:
     print(f"Data site écrit  : {DATA_JSON}")
     print(f"Cours            : {len(cours) if isinstance(cours, dict) else type(cours).__name__}")
     print(f"Programme officiel : {'OK' if programme_officiel else 'absent'}")
+    print(f"PDF rattachés       : {pdf_patched}")
 
     # Contrôles simples
     bad_corrige = [ex["id"] for ex in exercices if not isinstance(ex.get("corrige"), dict)]
