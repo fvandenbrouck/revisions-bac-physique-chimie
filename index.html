@@ -1292,15 +1292,41 @@ function exercisePages(ex){
 }
 
 function exercisePdfUrl(ex){
+  if(!ex) return '';
+
   if(ex.pdf_embed_url) return ex.pdf_embed_url;
-  if(ex.pdf_url && ex.pdf_page) return `${ex.pdf_url}#page=${ex.pdf_page}`;
-  if(ex.pdf_path && ex.pdf_page) return `${ex.pdf_path}#page=${ex.pdf_page}`;
-  if(ex.source && ex.source.pdf){
-    const pages = exercisePages(ex);
-    return ex.source.pdf + (pages[0] ? `#page=${pages[0]}` : '');
+
+  let path =
+    ex.pdf_url ||
+    ex.pdf_path ||
+    ex.source_pdf ||
+    ex.source?.pdf ||
+    ex.source?.pdf_path ||
+    '';
+
+  path = String(path || '').trim();
+  if(!path) return '';
+
+  const page = ex.pdf_page || exercisePages(ex)[0];
+
+  if(path.startsWith('http://') || path.startsWith('https://')){
+    return path + (page ? `#page=${page}` : '');
   }
-  return '';
+
+  path = path.replace(/^site\//, '');
+  path = path.replace(/^\.\//, '');
+  path = path.replace(/^\/+/, '');
+
+  if(!path.startsWith('pdf/')){
+    const filename = path.split('/').pop();
+    if(filename && filename.toLowerCase().endsWith('.pdf')){
+      path = 'pdf/' + filename;
+    }
+  }
+
+  return encodeURI(path + (page ? `#page=${page}` : ''));
 }
+
 
 function openEx(id,pane='enonce'){
   modalEx = DATA.exercices.find(e => e.id === id);
@@ -1330,7 +1356,7 @@ function openEx(id,pane='enonce'){
   $('#modalSource').textContent =
     `Source : ${modalEx.pdf_path || modalEx.pdf_url || modalEx.source?.pdf || 'PDF'} · pages ${pages.join(', ') || 'non renseignées'}`;
 
-  $('#openPdf').href = pdfUrl || modalEx.pdf_path || modalEx.pdf_url || '#';
+  $('#openPdf').href = pdfUrl || '#';
   $('#sourceNote').textContent = pdfUrl
     ? `PDF intégré · ${imgs.length} image(s) disponible(s) en secours`
     : `${imgs.length} page(s) image`;
