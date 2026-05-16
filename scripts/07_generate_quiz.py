@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import random
 import sys
 import time
 from typing import Any
@@ -148,6 +149,42 @@ def call(
     raise RuntimeError(f"Échec génération quiz {theme_id}: {last_error}")
 
 
+
+def shuffle_quiz_options_in_place(
+    quiz_data: dict[str, list[dict[str, Any]]],
+    seed: int = 20260513,
+) -> dict[str, list[dict[str, Any]]]:
+    """Mélange les options de chaque question et recalcule l'indice de la bonne réponse."""
+    rng = random.Random(seed)
+
+    for theme_id, questions in (quiz_data or {}).items():
+        if not isinstance(questions, list):
+            continue
+
+        for q in questions:
+            if not isinstance(q, dict):
+                continue
+
+            options = q.get("options")
+            correct = q.get("correct")
+
+            if not isinstance(options, list) or len(options) != 4:
+                continue
+            if correct not in [0, 1, 2, 3]:
+                continue
+
+            indexed = list(enumerate(options))
+            rng.shuffle(indexed)
+
+            q["options"] = [option for old_index, option in indexed]
+            q["correct"] = next(
+                new_index
+                for new_index, (old_index, _) in enumerate(indexed)
+                if old_index == correct
+            )
+
+    return quiz_data
+
 def main() -> None:
     load_dotenv()
 
@@ -188,6 +225,7 @@ def main() -> None:
         )
         print(f"Quiz généré : {theme_id} ({len(quiz[theme_id])} questions)")
 
+    quiz = shuffle_quiz_options_in_place(quiz)
     write_json(QUIZ_JSON, quiz)
     print(f"Quiz écrit : {QUIZ_JSON}")
 
